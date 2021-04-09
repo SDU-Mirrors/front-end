@@ -1,5 +1,7 @@
 .PageHeader
 {
+    position: absolute;
+    color: #9c0c13;
     position: fixed;
     top:0;
     left:0;
@@ -18,5 +20,35 @@
     color: #fff;
     text-transform: uppercase;
     transition: 0.6s;
-
+    font-weight: 700px;
+    letter-spacing: 2px;
+}
+.PageHeader .HeaderListUl
+{
+    position: relative;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+.PageHeader .HeaderListUl .HeaderListLi
+{
+    position: relative;
+    list-style-type: none;
+}
+.PageHeader .HeaderListUl .HeaderListLi .HeaderListA
+{
+    position: relative;
+    text-decoration: none;
+    font-weight: 500px;
+    margin: 0 15px;
+    color: #fff;
+    font-size: 2em;
+    letter-spacing: 2px;
+}
+.Banner
+{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-size:cover ;
 }

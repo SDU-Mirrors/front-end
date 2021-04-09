@@ -1,0 +1,43 @@
+.LeftList
+{
+    display: inline-block;
+    float: left;
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    width: 60%;
+    height: 50%;
+    background: #fff;
+    border-radius: 10px;
+    /*溢出隐藏*/
+    overflow:hidden;
+    /*盒子阴影*/
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.2);
+}
+.RightContainer
+{
+    position: relative;
+    display: inline-block;
+}
+.RightContainer table{
+    /*让表格的边框合并在一起*/
+    border-collapse: collapse;
+}
+
+/*PC端*/
+.RightContainer table thead tr th{
+    color: #fff;
+    background-color: #9c0c13;
+}
+.RightContainer table thead tr th,
+.RightContainer table tbody tr td{
+    text-align: center;
+    padding: 20px 40px;
+}
+
+.RightContainer table tbody tr td{
+    border: 1px solid rgb(200, 200, 200);
+}
+.RightContainer table tbody:nth-child(odd){
+    background-color: #f8f8f8;
+}
