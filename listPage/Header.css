@@ -1,0 +1,22 @@
+.PageHeader
+{
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    padding: 20px 100px;
+    z-index: 10000;
+}
+.PageHeader .logo
+{
+    position: relative;
+    font-size: 2em;
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    transition: 0.6s;
+
+}
