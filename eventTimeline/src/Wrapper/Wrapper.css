@@ -1,0 +1,77 @@
+.wrapper{
+    font-family: roboto;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 800px;
+    margin: 0 auto;
+}
+.boxArea{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    width: 100%;
+}
+.boxDate{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    background: linear-gradient(to right,#fff 45%,#000 45%,#000 45%,#fff 50%);
+    order: 2;
+    text-align: center;
+    font-size: 28px;
+    flex-basis: 100px;
+    color: #fff;
+}
+.boxDate>span{
+    font-size: 20px;
+    padding: 10px;
+    margin: auto;
+    background: #000;
+}
+.boxText{
+    text-align: center;
+    padding: 20px;
+    border-radius: 25px;
+    color: #fff;
+    order: 3;
+    width: 80%;
+    padding-left: 10px;
+    background: #fc5795;
+    margin-bottom: 3%;
+}
+.boxText h2{
+    margin: 0;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+.boxText h3{
+    margin: 5px;
+    font-size: 14px;
+    color: #000;
+}
+
+@media(min-width:640px){
+    .boxText,
+    .custom{
+        width: 40%;
+    }
+    .boxRight .boxText{
+        order: 1;
+        padding-right: 10px;
+        border-radius: 25px;
+    }
+    .boxRight .custom{
+        order:3;
+    }
+}
+
