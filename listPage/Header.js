@@ -5,7 +5,7 @@ class Header extends React.Component{
         return(
             <div>
                 <header className="PageHeader">
-                    <a href="#" className="logo">LOGO</a>
+                    <a href="#" className="logo">山东大学镜像站</a>
                     <ul className='HeaderListUl'>
                         <li className='HeaderListLi'><a href="#" className='HeaderListA'>主页</a></li>
                         <li className='HeaderListLi'><a href="#" className='HeaderListA'>主页</a></li>

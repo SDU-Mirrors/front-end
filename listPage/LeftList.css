@@ -1,26 +1,37 @@
 .LeftList
 {
     display: inline-block;
-    float: left;
     position: absolute;
     top: 30%;
     left: 10%;
-    width: 60%;
-    height: 50%;
+    width: 50%;
     background: #fff;
     border-radius: 10px;
     /*溢出隐藏*/
-    overflow:hidden;
+    
     /*盒子阴影*/
     box-shadow: 0 15px 50px rgba(0, 0, 0, 0.2);
 }
+
 .RightContainer
 {
-    position: relative;
     display: inline-block;
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    width: 50%;
+    background: #fff;
+    border-radius: 10px;
+    
 }
 .RightContainer table{
+
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    width: 50%;
     /*让表格的边框合并在一起*/
+    width: auto;
     border-collapse: collapse;
 }
 
@@ -32,7 +43,7 @@
 .RightContainer table thead tr th,
 .RightContainer table tbody tr td{
     text-align: center;
-    padding: 20px 40px;
+    padding: 20px 70px;
 }
 
 .RightContainer table tbody tr td{

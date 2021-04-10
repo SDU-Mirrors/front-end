@@ -4,6 +4,7 @@ class App extends React.Component{
           <div className="Main">
               <Header/>
               <LeftList/>
+              <Right/>
           </div>
         );
       }
