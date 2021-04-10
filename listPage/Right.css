@@ -1,0 +1,30 @@
+.RightALL
+{
+    position: absolute;
+    top: 30%;
+    right: 0%;
+    width: 30%;
+}
+.RightALL h3 p a
+{
+    display: inline-block;
+    padding: 12px 36px;
+    margin: 10px 0;
+}
+
+.RightALL a
+{
+    display: inline-block;
+    padding: 12px 36px;
+    margin: 10px 0;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 18px;
+    /*字间距*/
+    letter-spacing: 2px;
+    /*圆角*/
+    border-radius: 40px;
+    /*颜色渐变*/
+    background: linear-gradient(90deg,#9c0c13,#ed556a);
+}

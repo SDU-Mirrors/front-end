@@ -1,0 +1,103 @@
+footer{
+    position:absolute;
+    bottom:0;
+    left: 0;
+    width: 100%;
+    background: #f1f1f1;
+    padding: 90px 0;
+}
+.footerContainer{
+    width: 1300px;
+    margin: auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+}
+.bottomLogo{
+    width: 180px;
+}
+.socialMedia{
+    margin: 20px 0;
+}
+.socialMedia a{
+    color: #001a21;
+    margin-right: 25px;
+    font-size: 22px;
+    text-decoration: none;
+    transition: .3s linear;
+}
+.socailMedia a:hover{
+    color: #9c0c13;
+}
+.rightCol h1{
+    font-size: 26px;
+}
+.border{
+    width: 100px;
+    height: 4px;
+    background: #9c0c13;
+}
+.newsLetterForm{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.rightCol .txtB{
+    flex: 1;
+    padding: 18px 40px;
+    font-size: 16px;
+    color: #293043;
+    background: #ddd;
+    border:none;
+    font-weight: 700;
+    outline: none;
+    border-radius: 30px;
+    min-width: 260px;
+}
+
+.rightCol .btn{
+    
+    padding: 18px 40px;
+    font-size: 16px;
+    color: #f1f1f1;
+    background: #9c0c13;
+    border:none;
+    font-weight: 700;
+    outline: none;
+    border-radius: 30px;
+    margin-left: 20px;
+    cursor: pointer;
+    transition: opacity .3s linear;
+}
+
+.rightCol .btn:hover{
+    opacity: .7;
+}
+
+
+@media screen and (max-width:960px){
+    .footerContainer{
+        width: 600px;
+    }
+    .rightCol{
+        width: 100%;
+        margin-bottom:60px;
+    }
+    .leftCol{
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:700px){
+    .rightCol .btn{
+        margin: 0;
+        width: 100%;
+        margin-top: 20px;
+    }
+    
+}
+

@@ -16,9 +16,9 @@
 .RightContainer
 {
     display: inline-block;
-    position: absolute;
+    position: relative;
     top: 30%;
-    left: 10%;
+    left: 0%;
     width: 50%;
     background: #fff;
     border-radius: 10px;
@@ -26,10 +26,10 @@
 }
 .RightContainer table{
 
-    position: absolute;
+    position: relative;
     top: 30%;
-    left: 10%;
-    width: 50%;
+    left: 0%;
+    
     /*让表格的边框合并在一起*/
     width: auto;
     border-collapse: collapse;

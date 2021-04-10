@@ -1,10 +1,13 @@
 class App extends React.Component{
     render() {
         return (
-          <div className="Main">
-              <Header/>
-              <LeftList/>
-              <Right/>
+          <div>
+            <Header/>
+            <div className="Main">
+                <LeftList/>
+                <Right/>
+            </div>
+            <Bottom/>
           </div>
         );
       }

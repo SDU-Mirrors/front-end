@@ -10,6 +10,8 @@
 }
 body
 {
+    margin: 0;
+    padding: 0;
     /*弹性布局，让界面元素垂直加上水平居中*/
     display: flex;
     justify-content: center;
@@ -20,5 +22,5 @@ body
 
 
     background-color: #fff;
-    min-height: 200vh;
+    min-height: 20vh;
 }
