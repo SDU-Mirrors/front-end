@@ -3,7 +3,7 @@ class LeftList extends React.Component{
         return (
             <div className="LeftList">
                 <div className="RightContainer">
-                    <table>
+                    <table className="table table-hover">
                         <thead>
                             <tr>
                                 <th>名称</th>

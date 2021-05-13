@@ -10,8 +10,8 @@ class Header extends React.Component{
                     </div>
                     <div>
                         <ul className="nav navbar-nav">
-                            <li className="active"><a href="#" className="a">主页</a></li>
-                            <li className="active"><a href="#" className="a">主页</a></li>
+                            <li className="li"><a href="#" className="a">主页</a></li>
+                            <li className="li"><a href="#" className="a">主页</a></li>
 
                         </ul>
                     </div>

@@ -26,25 +26,29 @@
     letter-spacing: 2px;
     display: flex;
 }
+.navbar{
+    background: #fff;
+    text-decoration:none;
+}
+.navbar .navbar-brand{
+    padding: 10px 20px;
+    margin: 20px 0;
+}
 .navbar .nav 
 {
+
     right: 10px;
-    top: 10px;
-    position: absolute;
     justify-content: center;
     display: flex;
     align-items: center;
 
 }
-.navbar .nav .active
+.navbar .nav .li
 {
-    position: relative;
     list-style-type: none;
 }
-.navbar .nav .active .a
+.navbar .nav .li .a
 {
-    display: block;
-    position: relative;
     text-decoration: none;
     text-transform: uppercase;
     font-weight: bold;
@@ -54,13 +58,13 @@
     padding: 10px 20px;
     margin: 20px 0;
 }
-.navbar .nav .active .a:hover
+.navbar .nav .li .a:hover
 {
     color: #fff;
 }
 
 
-.navbar .nav .active .a::before
+.navbar .nav .li .a::before
 {
     content: '';
     position: absolute;
@@ -75,13 +79,13 @@
     transition: .5s;
     z-index: -1;
 }
-.navbar .nav .active .a:hover::before
+.navbar .nav .li .a:hover::before
 {
     transform: scaleY(1);
     opacity: 1;
 }
 
-.navbar .nav .active .a::after
+.navbar .nav .li .a::after
 {
     content: '';
     position: absolute;
@@ -94,7 +98,7 @@
     transition: .5s;
     z-index: -1;
 }
-.navbar .nav .active .a:hover::after
+.navbar .nav .li .a:hover::after
 {
     transform: scale(1);
 }
