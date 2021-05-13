@@ -1,11 +1,9 @@
 import React,{Fragment} from 'react'
-import {Header,Footer} from './Layouts'
+import {Header,Footer,Content} from './Layouts'
 
 export default ()=>
     <Fragment>
         <Header/>
-        <div>
-            <h1>content</h1>
-        </div>
+        <Content/>
         <Footer/>
     </Fragment>

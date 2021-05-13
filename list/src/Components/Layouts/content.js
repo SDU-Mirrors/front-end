@@ -1,6 +1,15 @@
-import React from 'react';
+import React,{Fragment} from 'react';
+import {Grid,Paper} from '@material-ui/core'
+import {List} from '../Content/index'
 
 export default ()=>
-    <div>
-        <h1>content</h1>
-    </div>
+    <Grid container spacing={2}>
+        <Grid item sm>
+            <Paper>
+                <List/>
+            </Paper>
+        </Grid>
+        <Grid item sm>
+            right
+        </Grid>
+    </Grid>
