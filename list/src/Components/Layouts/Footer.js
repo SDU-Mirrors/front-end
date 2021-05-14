@@ -1,6 +1,7 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import {Container,Typography,Grid} from '@material-ui/core';
+import logo from '../source/logo.png'
 
   
 const useStyles = makeStyles((theme) => ({
@@ -26,9 +27,7 @@ export default function Footer() {
             </Typography>
           </Grid>
           <Grid item sm>
-            <Typography variant="body1">
-              山东大学开源镜像站
-            </Typography>
+            <img src={logo} alt= "" />
           </Grid>
         </Grid>
       </Container>
