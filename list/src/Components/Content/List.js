@@ -6,6 +6,7 @@ import TableBody from '@material-ui/core/TableBody';
 import TableCell from '@material-ui/core/TableCell';
 import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
+import {Grid,TextField} from '@material-ui/core';
 import Title from './Title'
 
 //创建表格数据
@@ -30,21 +31,31 @@ const useStyles = makeStyles((theme) => ({
     seeMore: {
       marginTop: theme.spacing(3),
     },
+    textField:{
+        width:300,
+        height:'auto'
+    },
 }));
 
 export default function Orders(){
     const classes = useStyles();
     return(
         <React.Fragment>
-            <Title>Recent Orders</Title>
+            <Grid container spacing={2}>
+                <Grid item sm>
+                    <Title>[ ] 镜像列表</Title>
+                </Grid>
+                <Grid item sm>
+                    <TextField className={classes.textField} id="outlined-basic" label="搜索" variant="outlined" />
+                </Grid>
+            </Grid>
             <Table size="small">
                 <TableHead>
                     <TableRow>
-                        <TableCell>Date</TableCell>
-                        <TableCell>Name</TableCell>
-                        <TableCell>Ship To</TableCell>
-                        <TableCell>Payment Method</TableCell>
-                        <TableCell align="right">Sale Amount</TableCell>
+                        <TableCell>镜像名称</TableCell>
+                        <TableCell>大小</TableCell>
+                        <TableCell>最近同步时间</TableCell>
+                        <TableCell>同步状态</TableCell>
                     </TableRow>
                 </TableHead>
                 <TableBody>
@@ -54,7 +65,6 @@ export default function Orders(){
                         <TableCell>{row.name}</TableCell>
                         <TableCell>{row.shipTo}</TableCell>
                         <TableCell>{row.paymentMethod}</TableCell>
-                        <TableCell align="right">{row.amount}</TableCell>
                         </TableRow>
                     ))}
                 </TableBody>

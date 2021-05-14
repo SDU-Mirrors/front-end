@@ -11,7 +11,16 @@ const useStyles = makeStyles((theme) => ({
     marginTop: 'auto',
     backgroundColor:
       theme.palette.type === 'light' ? theme.palette.grey[200] : theme.palette.grey[800],
-  }
+  },
+  typographyBody:{
+    fontSize:12,
+  },
+  typographyTitle:{
+
+  },
+  typographyFooter:{
+
+  },
 }));
 
 export default function Footer() {
@@ -22,12 +31,35 @@ export default function Footer() {
       <Container maxWidth="sm">
         <Grid container spacing={2}>
           <Grid item sm>
-            <Typography variant="body1">
-              山东大学开源镜像站
+            <Typography variant="h4" className={classes.typographyTitle}>
+              山东大学镜像站
             </Typography>
+            <Typography variant="body" className={classes.typographyBody}>
+              山东大学镜像站是由山东大学（青岛）学生oops计算机社团在山东大学（青岛）信息化工作办公室指导下建立，为技术爱好者、工程师、科研人员等提供开源软件镜像服务。
+            </Typography>
+            <Grid item sm>
+              <Typography className={classes.typographyFooter}>
+                相关链接
+              </Typography>
+            </Grid>
+            <Grid item sm>
+              <Typography className={classes.typographyFooter}>
+                山东大学
+              </Typography>
+            </Grid>
+            <Grid item sm>
+              <Typography className={classes.typographyFooter}>
+                XXXXX
+              </Typography>
+            </Grid>
+            <Grid item sm>
+              <Typography className={classes.typographyFooter}>
+                山东大学（青岛）学生oop计算机社团
+              </Typography>
+            </Grid>
           </Grid>
           <Grid item sm>
-            <img src={logo} alt= "" />
+            <img src={logo} alt= "" style={{maxWidth:200, height:'auto'}} />
           </Grid>
         </Grid>
       </Container>

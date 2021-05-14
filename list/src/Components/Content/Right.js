@@ -13,7 +13,12 @@ export default function Right(){
             <Grid>
                 <Grid>
                     <Typography variant="h5" align="left" color="textSecondary" paragraph>
-                        下载链接
+                        [ ]新闻公告：
+                    </Typography>
+                </Grid>
+                <Grid>
+                    <Typography variant="h5" align="left" color="textSecondary" paragraph>
+                        [ ]下载链接：
                     </Typography>
                     <Typography  align="left" color="textSecondary" paragraph>
                         各大主流Linux发行版的ISO文件下载
@@ -24,7 +29,7 @@ export default function Right(){
                 </Grid>
                 <Grid>
                     <Typography variant="h5" align="left" color="textSecondary" paragraph>
-                        配置生成
+                        [ ]配置生成：
                     </Typography>
                     <Typography  align="left" color="textSecondary" paragraph>
                         生成发行版的配置文件
@@ -32,6 +37,15 @@ export default function Right(){
                     <Button variant="outlined" color="secondary">
                         配置生成器
                     </Button>
+                </Grid>
+                <Grid>
+                    <Typography variant="h5" align="left" color="textSecondary" paragraph>
+                        [ ]联系我们：
+                    </Typography>
+                    <Typography  align="left" color="textSecondary" paragraph>
+                        GitHub：
+                        镜像站开放QQ群：
+                    </Typography>
                 </Grid>
             </Grid>
         </div>
