@@ -33,7 +33,7 @@ const useStyles = makeStyles((theme) => ({
     },
     textField:{
         width:300,
-        height:'auto'
+        height:'auto',
     },
 }));
 
@@ -46,7 +46,7 @@ export default function Orders(){
                     <Title>[ ] 镜像列表</Title>
                 </Grid>
                 <Grid item sm>
-                    <TextField className={classes.textField} id="outlined-basic" label="搜索" variant="outlined" />
+                    <TextField size="small" className={classes.textField} id="outlined-basic" label="搜索" variant="outlined" />
                 </Grid>
             </Grid>
             <Table size="small">
@@ -60,7 +60,7 @@ export default function Orders(){
                 </TableHead>
                 <TableBody>
                     {rows.map((row) => (
-                        <TableRow key={row.id}>
+                        <TableRow hover role="checkbox" key={row.id}>
                         <TableCell>{row.date}</TableCell>
                         <TableCell>{row.name}</TableCell>
                         <TableCell>{row.shipTo}</TableCell>

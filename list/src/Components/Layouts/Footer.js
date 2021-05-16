@@ -6,7 +6,9 @@ import logo from '../source/logo.png'
   
 const useStyles = makeStyles((theme) => ({
   footer: {
-    bottom: 0,
+    marginLeft:theme.spacing(-1),
+    marginRight:theme.spacing(-1),
+    marginBottom:theme.spacing(-1),
     padding: theme.spacing(3, 2),
     marginTop: 'auto',
     backgroundColor:
@@ -16,11 +18,16 @@ const useStyles = makeStyles((theme) => ({
     fontSize:12,
   },
   typographyTitle:{
-
+    
   },
   typographyFooter:{
 
   },
+  image:{
+    marginLeft:100,
+    maxWidth:200, 
+    height:'auto',
+  }
 }));
 
 export default function Footer() {
@@ -59,7 +66,7 @@ export default function Footer() {
             </Grid>
           </Grid>
           <Grid item sm>
-            <img src={logo} alt= "" style={{maxWidth:200, height:'auto'}} />
+            <img src={logo} alt= ""  className={classes.image} />
           </Grid>
         </Grid>
       </Container>

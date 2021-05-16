@@ -8,8 +8,16 @@ const useStyles = makeStyles((theme) => ({
         marginTop: theme.spacing(20),
         marginBottom: theme.spacing(5),
         marginLeft:theme.spacing(2),
-        marginRight:theme.spacing(20),
+        marginRight:theme.spacing(0),
     },
+    list:{
+        marginLeft:theme.spacing(15),
+        marginRight:theme.spacing(-10),
+    },
+    right:{
+        marginLeft:theme.spacing(20),
+        marginRight:theme.spacing(25),
+    }
 }));
 
 export default function Content(){
@@ -17,12 +25,12 @@ export default function Content(){
     return(
         <Grid container spacing={2} className={classes.content}>
             <Grid item sm>
-                <Paper>
+                <Paper className={classes.list}>
                     <List/>
                 </Paper>
             </Grid>
             <Grid item sm>
-                <Paper>
+                <Paper className={classes.right}>
                     <Right/>
                 </Paper>
             </Grid>
