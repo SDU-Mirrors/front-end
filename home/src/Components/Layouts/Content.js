@@ -96,7 +96,7 @@ export default function Content(){
         <Container className={classes.cardGrid} maxWidth="md">
           {/* End hero unit */}
           <Typography component="h1" variant="h2" align="left" color="textPrimary" gutterBottom>
-              博客站
+              [ ]博客站
             </Typography>
           <Grid container spacing={4}>
               <Blog/>
@@ -106,7 +106,7 @@ export default function Content(){
         <Container className={classes.cardGrid} maxWidth="md">
           {/* End hero unit */}
           <Typography component="h1" variant="h2" align="left" color="textPrimary" gutterBottom>
-              镜像站时间记录轴
+              [ ]镜像站时间记录轴
             </Typography>
           <Grid container spacing={4}>
               <CustomizedTimeline/>
