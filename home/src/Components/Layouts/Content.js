@@ -12,11 +12,18 @@ import logoBig from '../source/logoBig.png'
 
 import CustomizedTimeline from '../Timeline/CustomizedTimeline'
 import ImageAvatars from '../Avatar/ImageAvatars'
+import Picture from '../Picture/Picture';
+import Blog from '../Blog/Blog';
 
 const useStyles = makeStyles((theme) => ({
     image:{
         maxWidth:600, 
         height:'auto',
+    },
+    Picture:{
+        width:400, 
+        height:'auto', 
+
     },
     icon: {
       marginRight: theme.spacing(2),
@@ -86,7 +93,15 @@ export default function Content(){
           </Grid>
         </Container>
 
-
+        <Container className={classes.cardGrid} maxWidth="md">
+          {/* End hero unit */}
+          <Typography component="h1" variant="h2" align="left" color="textPrimary" gutterBottom>
+              博客站
+            </Typography>
+          <Grid container spacing={4}>
+              <Blog/>
+          </Grid>
+        </Container>
 
         <Container className={classes.cardGrid} maxWidth="md">
           {/* End hero unit */}
@@ -98,18 +113,7 @@ export default function Content(){
           </Grid>
         </Container>
 
-        <Container className={classes.cardGrid} maxWidth="md">
-          {/* End hero unit */}
-            
-          <Grid container spacing={4}>
-            <Paper>
-
-            </Paper>
-            <Typography component="h1" variant="h2" align="left" color="textPrimary" gutterBottom>
-              活动记录照片
-            </Typography>
-          </Grid>
-        </Container>
+        
       </main>
     )
 }

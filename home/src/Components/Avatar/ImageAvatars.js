@@ -1,6 +1,7 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Avatar from '@material-ui/core/Avatar';
+import Typography from '@material-ui/core/Typography';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -24,9 +25,31 @@ export default function ImageAvatars() {
 
   return (
     <div className={classes.root}>
-      <Avatar alt="Remy Sharp" src="/static/images/avatar/1.jpg" className={classes.large} />
-      <Avatar alt="Remy Sharp" src="/static/images/avatar/1.jpg" className={classes.large} />
-      <Avatar alt="Remy Sharp" src="/static/images/avatar/1.jpg" className={classes.large} />
+        <div>
+            <Avatar alt="Remy Sharp" src="/static/images/avatar/1.jpg" className={classes.large} />
+            <Typography variant="h5" align="center" color="textSecondary" paragraph>
+              开源镜像
+            </Typography>
+        </div>
+        <div>
+            <Avatar alt="Remy Sharp" src="/static/images/avatar/1.jpg" className={classes.large} />
+            <Typography variant="h5" align="center" color="textSecondary" paragraph>
+              博客
+            </Typography>
+        </div>
+        <div>
+            <Avatar alt="Remy Sharp" src="/static/images/avatar/1.jpg" className={classes.large} />
+
+        </div>
+        <div>
+            <Avatar alt="Remy Sharp" src="/static/images/avatar/1.jpg" className={classes.large} />
+        </div>
+        <div>
+            <Avatar alt="Remy Sharp" src="/static/images/avatar/1.jpg" className={classes.large} />
+            <Typography variant="h5" align="center" color="textSecondary" paragraph>
+              成员信息
+            </Typography>
+        </div>
     </div>
   );
 }
