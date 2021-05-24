@@ -1,6 +1,7 @@
 import React,{Fragment} from 'react'
-import {Header,Footer} from './Layouts'
+import {Header,Footer,Content} from './Layouts'
 import { makeStyles } from '@material-ui/core/styles';
+import CssBaseline from '@material-ui/core/CssBaseline';
 
 const useStyles = makeStyles((theme) => ({
     App: {
@@ -20,7 +21,9 @@ export default function App(){
     return (
         <div className={classes.App}>
             <Fragment>
+                <CssBaseline />
                 <Header/>
+                <Content/>
                 <Footer/>
             </Fragment>
         </div>
