@@ -8,7 +8,7 @@ const useStyles = makeStyles((theme) => ({
   footer: {
     marginLeft:theme.spacing(-1),
     marginRight:theme.spacing(-1),
-    marginBottom:theme.spacing(-1),
+    marginBottom:theme.spacing(-20),
     padding: theme.spacing(3, 2),
     marginTop: 'auto',
     backgroundColor:
