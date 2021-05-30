@@ -1,0 +1,76 @@
+[
+  {
+    "label": "Ubuntu",
+    "value": "ubuntu",
+    "children": [
+      {
+        "label": "20.04 LTS",
+        "value": "focal"
+      },
+      {
+        "label": "18.04 LTS",
+        "value": "bionic"
+      }
+    ]
+  },
+  {
+    "label": "Debian",
+    "value": "debian",
+    "children": [
+      {
+        "label": "11 bullseye(testing)",
+        "value": "bullseye"
+      },
+      {
+        "label": "10 buster",
+        "value": "buster"
+      },
+      {
+        "label": "9 stretch",
+        "value": "stretch"
+      },
+      {
+        "label": "8 jessie",
+        "value": "jessie"
+      }
+    ]
+  },
+  {
+    "label": "Archlinux",
+    "value": "archlinux",
+    "children": [
+      {
+        "label": "archlinux",
+        "value": "archlinux"
+      }
+    ]
+  },
+  {
+    "label": "CentOS",
+    "value": "centos",
+    "children": [
+      {
+        "label": "CentOS 6",
+        "value": 6
+      },
+      {
+        "label": "CentOS 7",
+        "value": 7
+      },
+      {
+        "label": "CentOS 8",
+        "value": 8
+      }
+    ]
+  },
+  {
+    "label": "openSUSE",
+    "value": "opensuse",
+    "children": [
+      {
+        "label": "Leap 15.2",
+        "value": 15.2
+      }
+    ]
+  }
+]
