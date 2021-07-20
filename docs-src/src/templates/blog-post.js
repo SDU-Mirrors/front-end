@@ -46,14 +46,14 @@ const BlogPostTemplate = ({ data, location }) => {
         >
           <li>
             {previous && (
-              <Button href={previous.fields.slug} variant="contained" color="primary">
+              <Button href={"/docs/" + previous.fields.slug} variant="contained" color="primary">
                 ← {previous.frontmatter.title}
               </Button>
             )}
           </li>
           <li>
             {next && (
-              <Button href={next.fields.slug} variant="contained" color="primary">
+              <Button href={"/docs/" + next.fields.slug} variant="contained" color="primary">
                 {next.frontmatter.title} →
               </Button>
             )}

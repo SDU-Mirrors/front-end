@@ -1,4 +1,5 @@
 module.exports = {
+  pathPrefix: `/docs`,
   siteMetadata: {
     title: `山东大学镜像站`,
     author: {

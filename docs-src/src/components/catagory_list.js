@@ -10,7 +10,7 @@ export default function Catagory(props){
           <ListGroup>
           {
             tags_list.map((v, i) => {
-                return (<ListGroup.Item key={i}><a href={'/'+v}>{v}</a></ListGroup.Item>);
+                return (<ListGroup.Item key={i}><a href={'/docs/'+v}>{v}</a></ListGroup.Item>);
             })
           }
           </ListGroup>

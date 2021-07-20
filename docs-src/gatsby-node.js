@@ -57,14 +57,14 @@ function createTagsPage(posts, tags, createPage){
   tags_list.forEach((v, i) => {
 
     createPage({
-      path: '/' + v,
+      path: v,
       component: tags,
       context: {
         tags: v,
         tags_list: tags_list,
       },
     });
-
+    // 新的slug
   });
 }
 
@@ -128,8 +128,8 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
     createNodeField({
       name: `slug`,
       node,
-      value,
-    });
+      value: `${value}`,
+    });//处理slug prepath
   }
 }
 

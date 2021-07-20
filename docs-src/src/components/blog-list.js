@@ -29,7 +29,7 @@ export default function BlogList(props){
                         <Col>
                           <div dangerouslySetInnerHTML={{
                                         __html: post.frontmatter.description + "<br/>" + post.excerpt,}}></div>
-                          <a href={post.fields.slug}>阅读全文</a>
+                          <a href={"/docs" + post.fields.slug}>阅读全文</a>
                         </Col>  
                         
                       </Row>
