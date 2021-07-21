@@ -23,7 +23,7 @@
 } */
 
 small{
-    font-size: 12px;
+    font-size: 15px;
     color: gray;    
 }
 /* .card{
@@ -50,7 +50,7 @@ small{
     margin: 20px;
     max-height: 100%;
     max-width: calc(min(100%, 20vh));
-    object-fit: cover;  
+    object-fit: fill;  
     border-color: green;
 }
 

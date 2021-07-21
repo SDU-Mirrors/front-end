@@ -11,24 +11,24 @@ export default function BlogList(props){
                 const title = post.frontmatter.title || post.fields.slug;
                 let s = "";
                 if(post.frontmatter.tags != undefined)
-                  post.frontmatter.tags.forEach((v)=>{s = s + ' ' + v;});
+                  post.frontmatter.tags.forEach((v)=>{s = s + ' ' + "<a href='/docs/" + v + "'>" + v + "</a>";});
                 return (
                   <div key={index}>
                       <div>
                         <h3>{post.frontmatter.title}</h3>
                         <small>Date: {post.frontmatter.date}    </small>
-                        <br/>
-                        <small>Tags: {s}</small>
+                        {/* <br/> */}
+                        <small>| Tags: <small dangerouslySetInnerHTML={{__html: s}}></small></small>
                       </div>
     
                       <Row>
-                        {/* ifpost.frontmatter.featuredImage.childImageSharp.fluid) */}
-                      <Col  bsPrefix="img-col col" xl={2}>
+                        
+                        {post.frontmatter.featuredImage != undefined && <Col  bsPrefix="img-col col" xl={2}>
                           <img src={post.frontmatter.featuredImage.childImageSharp.fluid.src}/>
-                        </Col>
+                        </Col>}
                         <Col>
                           <div dangerouslySetInnerHTML={{
-                                        __html: post.frontmatter.description + "<br/>" + post.excerpt,}}></div>
+                                        __html: post.frontmatter.description == null ? post.excerpt : post.frontmatter.description,}}></div>
                           <a href={"/docs" + post.fields.slug}>阅读全文</a>
                         </Col>  
                         
