@@ -24,10 +24,8 @@ export default function Content(){
     const classes=useStyles();
     return(
         <Grid container spacing={2} className={classes.content}>
-            <Grid item sm>
-                <Paper className={classes.list}>
+            <Grid item sm className={classes.list}>
                     <List />
-                </Paper>
             </Grid>
             <Grid item sm>
                 <Paper className={classes.right}>
