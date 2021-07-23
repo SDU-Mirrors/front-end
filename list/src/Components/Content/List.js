@@ -8,6 +8,9 @@ import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
 import {Grid,TextField} from '@material-ui/core';
 import Title from './Title'
+import Input from '@material-ui/core/Input';
+
+import ListIcon from '@material-ui/icons/List';
 
 //创建表格数据
 function createData(id, date, name, shipTo, paymentMethod, amount) {
@@ -33,7 +36,7 @@ const useStyles = makeStyles((theme) => ({
     },
     textField:{
         width:300,
-        height:'auto',
+        height:15,
     },
 }));
 
@@ -43,10 +46,10 @@ export default function Orders(){
         <React.Fragment>
             <Grid container spacing={2}>
                 <Grid item sm>
-                    <Title>[ ] 镜像列表</Title>
+                    <Title><ListIcon color="primary"/> 镜像列表</Title>
                 </Grid>
                 <Grid item sm>
-                    <TextField size="small" className={classes.textField} id="outlined-basic" label="搜索" variant="outlined" />
+                    <Input placeholder="搜索" inputProps={{ 'aria-label': 'description' }} />
                 </Grid>
             </Grid>
             <Table size="small">

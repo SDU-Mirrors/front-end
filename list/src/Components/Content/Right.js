@@ -5,6 +5,9 @@ import axios from "axios";
 import "./Right.css";
 import {Typography} from "antd";
 
+import GitHubIcon from '@material-ui/icons/GitHub';
+import AnnouncementIcon from '@material-ui/icons/Announcement';
+import CallIcon from '@material-ui/icons/Call';
 
 export default class Right extends Component{
     //const classes=useStyles();
@@ -64,7 +67,7 @@ export default class Right extends Component{
                 <div>
                     <div>
                         <Typography variant="h5" align="left" color="textSecondary" paragraph>
-                            [ ]新闻公告：
+                            <AnnouncementIcon color="secondary" />新闻公告：
                         </Typography>
                     </div>
                     <div className="side-card">
@@ -75,10 +78,10 @@ export default class Right extends Component{
                     </div>
                     <div>
                         <Typography variant="h5" align="left" color="textSecondary" paragraph>
-                            [ ]联系我们：
+                            <CallIcon color="secondary" />联系我们：
                         </Typography>
                         <Typography  align="left" color="textSecondary" paragraph>
-                            GitHub：
+                            GitHub：<GitHubIcon fontSize="small"/>
                             镜像站开放QQ群：
                         </Typography>
                     </div>
