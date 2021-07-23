@@ -10,6 +10,10 @@
       {
         "label": "18.04 LTS",
         "value": "bionic"
+      },
+      {
+        "label":"16.04 LTS",
+        "value":"xenial"
       }
     ]
   },
@@ -18,25 +22,13 @@
     "value": "debian",
     "children": [
       {
-        "label": "11 bullseye(testing)",
-        "value": "bullseye"
-      },
-      {
         "label": "10 buster",
         "value": "buster"
-      },
-      {
-        "label": "9 stretch",
-        "value": "stretch"
-      },
-      {
-        "label": "8 jessie",
-        "value": "jessie"
       }
     ]
   },
   {
-    "label": "Archlinux",
+    "label": "ArchLinux",
     "value": "archlinux",
     "children": [
       {
@@ -46,30 +38,12 @@
     ]
   },
   {
-    "label": "CentOS",
-    "value": "centos",
+    "label": "RockyLinux",
+    "value": "rocky",
     "children": [
       {
-        "label": "CentOS 6",
-        "value": 6
-      },
-      {
-        "label": "CentOS 7",
-        "value": 7
-      },
-      {
-        "label": "CentOS 8",
-        "value": 8
-      }
-    ]
-  },
-  {
-    "label": "openSUSE",
-    "value": "opensuse",
-    "children": [
-      {
-        "label": "Leap 15.2",
-        "value": 15.2
+        "label": "rockylinux",
+        "value": "rockylinux"
       }
     ]
   }

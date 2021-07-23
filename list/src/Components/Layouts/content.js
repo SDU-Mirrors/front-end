@@ -26,14 +26,14 @@ export default function Content(){
         <Grid container spacing={2} className={classes.content}>
             <Grid item sm>
                 <Paper className={classes.list}>
-                    <List/>
+                    <List />
                 </Paper>
             </Grid>
             <Grid item sm>
                 <Paper className={classes.right}>
-                    <Right/>
+                    <Right />
                 </Paper>
             </Grid>
         </Grid>
-    )
+    );
 }

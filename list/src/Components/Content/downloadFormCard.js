@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Button, Form, Modal, Row, Col, Cascader } from "antd";
 import { DownloadOutlined } from "@ant-design/icons";
+import "./Right.css"
 
 /**
  * 下载链接组件
@@ -12,6 +13,10 @@ export default class DownloadFormCard extends Component {
     // 选择的发行版的下载链接地址
     selectDistrib: undefined
   };
+  myStyle = {
+    buttonStyle : {color: '#9C0C13',borderColor: '#9C0C13'},
+    CascaderStyle: {}
+  }
 
   /**
    * 显示下载链接对话框
@@ -25,6 +30,8 @@ export default class DownloadFormCard extends Component {
    */
   handleDownloadFormCancel = () => {
     this.setState({ downloadFormVisible: false });
+    this.forceUpdate()
+    console.log("in hanleCancel")
   };
 
   /**
@@ -38,17 +45,17 @@ export default class DownloadFormCard extends Component {
     this.setState({ selectDistrib: selectedOptions[1] });
   };
 
-  render() {
+  render() {console.log(this.state.downloadFormVisible)
     return (
       <div>
+
         <h2>下载链接</h2>
         <p>各大主流Linux发行版的ISO文件下载</p>
         <Button
-          type="primary"
+          type="default"
           icon={<DownloadOutlined />}
           onClick={this.showDownloadForm}
-          variant="outlined"
-          color="secondary"
+          style={this.myStyle.buttonStyle}
         >
           获取下载链接
         </Button>
@@ -67,13 +74,15 @@ export default class DownloadFormCard extends Component {
                     placeholder="请选择发行版"
                     options={this.props.isoLinks}
                     onChange={this.onDownloadLinkChange}
+                    style={this.myStyle.CascaderStyle}
                   />
                 </Col>
                 <Col span={6}>
                   <Button
-                    type="primary"
+                    type="default"
                     icon={<DownloadOutlined />}
                     href={this.state.selectDistrib}
+                    style={this.myStyle.buttonStyle}
                   >
                     下载
                   </Button>
