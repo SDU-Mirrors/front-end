@@ -2,7 +2,7 @@ import React from 'react';
 import {AppBar,Toolbar, Typography,Link} from '@material-ui/core'
 import { makeStyles } from '@material-ui/core/styles';
 import logo from '../source/logo1.png'
-
+import oops_logo from '../source/oops_logo.png'
 const drawerWidth = 240;
 
 const useStyles = makeStyles((theme) => ({
@@ -41,22 +41,23 @@ export default function Header(){
     return(
         <AppBar position="absolute" color="default" className={classes.appBar}>
             <Toolbar className={classes.toolbar}>
+                <img src={oops_logo} alt= "" style={{maxWidth:200, height:50}} />
                 <img src={logo} alt= "" style={{maxWidth:200, height:50}} />
                 <Typography variant="h6" color="inherit" noWrap className={classes.toolbarTitle}>
 
                 </Typography>
                 <nav>
                     <Link variant="button" color="textPrimary" href="#" className={classes.link}>
-                        HOME
+                        镜像
                     </Link>
                     <Link variant="button" color="textPrimary" href="#" className={classes.link}>
-                        BLOG
+                        文档
                     </Link>
                     <Link variant="button" color="textPrimary" href="#" className={classes.link}>
-                        MIRRORS
+                        帮助
                     </Link>
                     <Link variant="button" color="textPrimary" href="#" className={classes.link}>
-                        HELP
+                        关于
                     </Link>
                 </nav>
             </Toolbar>
