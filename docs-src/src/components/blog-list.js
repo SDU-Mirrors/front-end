@@ -21,8 +21,8 @@ export default function BlogList(props){
                         <div class="tag-obj">  {post.frontmatter.date}    </div>
                         <Row>
                         
-                          {post.frontmatter.featuredImage != undefined && <Col  bsPrefix="img-col col" xl={2}>
-                            <img src={post.frontmatter.featuredImage.childImageSharp.fluid.src}/>
+                          {post.frontmatter.featuredImage != undefined && <Col  bsPrefix="test img-col col" xl={2}>
+                            <img className="card-img" src={post.frontmatter.featuredImage.childImageSharp.fluid.src}/>
                           </Col>}
                           <Col>
                             <div dangerouslySetInnerHTML={{
