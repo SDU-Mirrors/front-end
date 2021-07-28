@@ -3,7 +3,7 @@ import {Header,Footer,Content} from './Layouts'
 import { makeStyles } from '@material-ui/core/styles';
 // import Container from '@material-ui/core/Container';
 import {Container, Row} from 'react-bootstrap'
-import 'prismjs/themes/prism-twilight.css'
+import 'prismjs/themes/prism.css'
 
 const useStyles = makeStyles((theme) => ({
    Layout:{
