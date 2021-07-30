@@ -1,7 +1,8 @@
 import React,{Fragment} from 'react';
 import {Grid,Paper} from '@material-ui/core'
 import { makeStyles } from '@material-ui/core/styles';
-import {List,Right} from '../Content/index'
+import List from './List'
+import Right from './Right'
 
 const useStyles = makeStyles((theme) => ({
     content:{
@@ -20,7 +21,7 @@ const useStyles = makeStyles((theme) => ({
     }
 }));
 
-export default function Content(){
+export default function Mirror(){
     const classes=useStyles();
     return(
         <Grid container spacing={2} className={classes.content}>

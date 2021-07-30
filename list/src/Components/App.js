@@ -1,6 +1,8 @@
 import React,{Fragment} from 'react'
-import {Header,Footer,Content} from './Layouts'
+import {Header,Footer} from './Layouts'
+import {Mirror} from './Mirror'
 import { makeStyles } from '@material-ui/core/styles';
+import { Route, Redirect, Link, withRouter } from "react-router-dom";
 
 const useStyles = makeStyles((theme) => ({
     App: {
@@ -21,7 +23,11 @@ export default function App(){
         <div className={classes.App}>
             <Fragment>
                 <Header/>
-                <Content/>
+
+                <Route exact path="/">
+                    <Redirect to="/mirror" />
+                </Route>
+                <Route path="/mirror" component={Mirror} />
                 <Footer/>
             </Fragment>
         </div>

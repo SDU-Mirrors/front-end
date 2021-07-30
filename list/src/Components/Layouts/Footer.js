@@ -2,7 +2,7 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import {Container,Typography,Grid} from '@material-ui/core';
 import logo from '../source/logo.png'
-
+import { Col, Layout, Menu, Row } from "antd";
   
 const useStyles = makeStyles((theme) => ({
   footer: {
@@ -36,6 +36,7 @@ export default function Footer() {
   const classes = useStyles();
 
   return (
+
     <footer position="absolute" className={classes.footer}>
       
         <Grid container spacing={3} className={classes.ALL}>
@@ -64,5 +65,6 @@ export default function Footer() {
         </Grid>
       
     </footer>
+
   );
 }
