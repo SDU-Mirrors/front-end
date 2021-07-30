@@ -54,16 +54,17 @@ function getTagsList(posts){
 
 function createTagsPage(posts, tags, createPage){
   let tags_list = getTagsList(posts);
+  if(tags_list == undefined){return;}
   tags_list.forEach((v, i) => {
-
-    createPage({
-      path: v,
-      component: tags,
-      context: {
-        tags: v,
-        tags_list: tags_list,
-      },
-    });
+    if(v != null)
+      createPage({
+        path: v,
+        component: tags,
+        context: {
+          tags: v,
+          tags_list: tags_list,
+        },
+      });
     // 新的slug
   });
 }

@@ -1,0 +1,6 @@
+.tags > a{
+    color: #757575;
+    text-decoration: underline;
+    text-underline-position: under;
+    margin-left: 6px;
+}

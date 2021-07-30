@@ -16,34 +16,34 @@ const BlogPostTemplate = ({ data, location }) => {
   return (
     <App>
       <Container>
-          <article
+          {/* <article
             className="blog-post"
             itemScope
             itemType="http://schema.org/Article"
-          >
+          > */}
             <header>
               <h1 itemProp="headline">{post.frontmatter.title}</h1>
               <p>{post.frontmatter.date}</p>
             </header>
-            <Container>
-            <section
-              dangerouslySetInnerHTML={{ __html: post.html }}
-              itemProp="articleBody"
-            />
+            <br></br>
+            <Container className="blog-post" dangerouslySetInnerHTML={{ __html: post.html }}
+              itemProp="articleBody">
             </Container>
             <hr />
-          </article>
+          {/* </article> */}
       </Container>
-      <nav className="blog-post-nav">
+      {/* <nav className="blog-post-nav">
         <ul
           style={{
-            display: `flex`,
-            flexWrap: `wrap`,
-            justifyContent: `space-between`,
-            listStyle: `none`,
-            padding: 0,
+            display: `flex`
+            // display: `flex`,
+            // flexWrap: `wrap`,
+            // justifyContent: `space-between`,
+            // listStyle: `none`,
+            // padding: 0,
           }}
         >
+          
           <li>
             {previous && (
               <Button href={"/docs/" + previous.fields.slug} variant="contained" color="primary">
@@ -60,7 +60,23 @@ const BlogPostTemplate = ({ data, location }) => {
           </li>
         </ul>
         
-      </nav>
+      </nav> */}
+
+          <Container fluid={true}>
+            <Row fluid={true}>
+              <Col>{previous && (
+                        <Button href={"/docs" + previous.fields.slug} variant="contained" color="primary">
+                          ← {previous.frontmatter.title}
+                        </Button>
+                      )}</Col>
+              <Col xs={6}></Col>
+              <Col fluid={true}>{next && (
+                        <Button href={"/docs" + next.fields.slug} variant="contained" color="primary">
+                          {next.frontmatter.title} →
+                        </Button>
+                      )}</Col>
+            </Row>
+          </Container>
     </App>
   )
 }
