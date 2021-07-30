@@ -1,5 +1,5 @@
 import React,{Fragment} from 'react'
-import {Header,Footer,Content} from './Layouts'
+import {Header,Footer} from './Layouts'
 import { makeStyles } from '@material-ui/core/styles';
 // import Container from '@material-ui/core/Container';
 import {Container, Row} from 'react-bootstrap'

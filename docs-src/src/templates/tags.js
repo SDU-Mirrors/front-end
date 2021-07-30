@@ -1,40 +1,20 @@
 import * as React from "react"
-import { Link, graphql } from "gatsby"
-import {Card, CardDeck, CardColumns, CardGroup, Row, Col, Container, ListGroup} from "react-bootstrap"
+import { graphql } from "gatsby"
+import { Col } from "react-bootstrap"
 import "../css/card.css"
-import {Paper} from '@material-ui/core'
 import App from "../components/App"
-import Page from "../components/pagination"
-import BlogList from "../components/blog-list"
+import BlogList from "../components/BlogList"
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Img from "gatsby-image"
-import Catagory from "../components/catagory_list"
-var _currentPage = -1;
+import Catagory from "../components/CategoryList"
 
-function pageChanged(event, pageNum){
-  if(pageNum != _currentPage && _currentPage != -1){
-    if(pageNum == 1){
-      window.location.href = "/";
-    }else{
-      window.location.href = "/"+pageNum;
-    }
-  }
-}
 
 const TagsTem = function({ data, location,  pageContext }){
-  const siteTitle = data.site.siteMetadata?.title || `Title`
+  // const siteTitle = data.site.siteMetadata?.title || `Title`
   const posts = data.allMarkdownRemark.edges
-  console.log(posts);
-//   const { totalPage, currentPage } = pageContext
-
-//   _currentPage = currentPage;
-  console.log(pageContext, posts);
-
+  // console.log(posts);
+  // console.log(pageContext, posts);
   return (
     <App>
-      
-      
-
       <Col>
         <BlogList data={posts}/>
       </Col>
