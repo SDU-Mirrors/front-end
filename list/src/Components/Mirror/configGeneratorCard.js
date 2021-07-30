@@ -1,6 +1,9 @@
 import React, { Component } from "react";
 import { Button, Form, Modal, Row, Col, Cascader } from "antd";
 import { ThunderboltOutlined } from "@ant-design/icons";
+import SyntaxHighlighter from "react-syntax-highlighter"
+import { dark } from 'react-syntax-highlighter/dist/esm/styles/hljs';
+
 
 /**
  * 配置生成器组件
@@ -135,8 +138,9 @@ export default class ConfigGeneratorCard extends Component {
  */
 class ConfigBlock extends Component {
   render() {
-    let block = null;
+    let block = "";
     if (this.props.showConfigBlock) {
+      console.log(typeof this.props.configBlock);
       block = this.props.configBlock.split("\n").map(function(item, id) {
         return (
           <span key={id}>
@@ -145,12 +149,14 @@ class ConfigBlock extends Component {
           </span>
         );
       });
+      block = this.props.configBlock;
+      // block = block
     }
     return (
-      <Col className="config-block" span={24}>
-        <pre style={{ margin: 0 }}>
-          <code>{block}</code>
-        </pre>
+      <Col className="config-block" span={23}>
+        <SyntaxHighlighter language="plaintext" style={dark}>
+            {block}
+        </SyntaxHighlighter>
       </Col>
     );
   }
