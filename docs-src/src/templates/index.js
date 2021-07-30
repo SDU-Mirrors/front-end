@@ -25,7 +25,7 @@ const BlogIndex = function({ data, location,  pageContext }){
   const posts = data.allMarkdownRemark.edges
   const { totalPage, currentPage } = pageContext
   _currentPage = currentPage;
-  console.log(data, posts);
+  // console.log(data, posts);
 
   return (
     <App>

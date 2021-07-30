@@ -10,11 +10,11 @@ import './TagArea.css'
 class TagArea extends Component{
     constructor(props, context){
         super(props);
-        console.log(props);
+        // console.log(props);
         // console.log(style);
     }
     render(){
-        console.log(this.props.tags);
+        // console.log(this.props.tags);
         let tags = this.props.tags;
         if(tags === undefined || tags === null){
             return (<div></div>);
@@ -24,9 +24,9 @@ class TagArea extends Component{
                 {
                     tags.map((v, i) => {
                         if(i !== 0){
-                            return (<a href={"/docs/" + v}>{v}</a>)
+                            return (<a href={"/docs/" + v} key={i}>{v}</a>)
                         }else{
-                            return (<a href={"/docs/" + v}>{v}</a>)
+                            return (<a href={"/docs/" + v} key={i}>{v}</a>)
                         }
                     })
                 }

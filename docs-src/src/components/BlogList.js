@@ -18,7 +18,7 @@ export default function BlogList(props){
                   <div key={index}>
                       <div>
                         <h2>{post.frontmatter.title}</h2>
-                        <div class="tag-obj">  {post.frontmatter.date}    </div>
+                        <div className="tag-obj">  {post.frontmatter.date}    </div>
                         <Row>
                         
                           {post.frontmatter.featuredImage !== undefined &&post.frontmatter.featuredImage !== null && <Col  bsPrefix="test img-col col" xl={2}>
@@ -33,7 +33,7 @@ export default function BlogList(props){
                           
                         </Row>
 
-                        <div class="tag-obj"><TagArea tags={post.frontmatter.tags}/></div>
+                        <div className="tag-obj"><TagArea tags={post.frontmatter.tags}/></div>
                       </div>
                     <br />
                     <hr />

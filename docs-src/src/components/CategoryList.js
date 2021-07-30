@@ -2,7 +2,7 @@ import React from "react"
 import {Container, ListGroup} from "react-bootstrap"
 
 export default function Catagory(props){
-    console.log(props.tags_list);
+    // console.log(props.tags_list);
     const tags_list = props.tags_list;
     return (
         <Container>
