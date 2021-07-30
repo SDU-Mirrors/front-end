@@ -10,10 +10,10 @@ import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
 import logoBig from '../source/logoBig.png'
 
-import CustomizedTimeline from '../Timeline/CustomizedTimeline'
-import ImageAvatars from '../Avatar/ImageAvatars'
-import Picture from '../Picture/Picture';
-import Blog from '../Blog/Blog';
+import CustomizedTimeline from './Timeline/CustomizedTimeline'
+import ImageAvatars from './Avatar/ImageAvatars'
+import Picture from './Picture/Picture';
+import Blog from './Blog/Blog';
 
 const useStyles = makeStyles((theme) => ({
     image:{
@@ -58,7 +58,7 @@ const useStyles = makeStyles((theme) => ({
   
 const cards = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 
-export default function Content(){
+export default function Home(){
     const classes=useStyles();
     return(
         <main>

@@ -3,6 +3,7 @@ import {AppBar,Toolbar, Typography,Link} from '@material-ui/core'
 import { makeStyles } from '@material-ui/core/styles';
 import logo from '../source/logo1.png'
 import oops_logo from '../source/oops_logo.png'
+
 const drawerWidth = 240;
 
 const useStyles = makeStyles((theme) => ({
@@ -47,10 +48,10 @@ export default function Header(){
 
                 </Typography>
                 <nav>
-                    <Link variant="button" color="textPrimary" href="#" className={classes.link}>
+                    <Link to="/mirror" variant="button" color="textPrimary" href="#" className={classes.link}>
                         镜像
                     </Link>
-                    <Link variant="button" color="textPrimary" href="#" className={classes.link}>
+                    <Link to="/home" variant="button" color="textPrimary" href="#" className={classes.link}>
                         文档
                     </Link>
                     <Link variant="button" color="textPrimary" href="#" className={classes.link}>
