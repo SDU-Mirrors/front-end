@@ -6,7 +6,7 @@ import App from "../components/App"
 import Page from "../components/Pagination"
 import BlogList from "../components/BlogList"
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Catagory from "../components/CategoryList"
+import Category from "../components/CategoryList"
 
 var _currentPage = -1;
 
@@ -35,7 +35,7 @@ const BlogIndex = function({ data, location,  pageContext }){
         <BlogList data={posts}/>
       </Col>
       <Col xl="3" >
-        <Catagory tags_list={pageContext.tags_list}></Catagory>
+        <Category tags_list={pageContext.tags_list}></Category>
       </Col>
 
       <Page totalPage={totalPage} defaultPage={currentPage} onChange={pageChanged}></Page>

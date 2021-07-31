@@ -16,6 +16,10 @@
 }
 
 
+.tags-list{
+    text-align: center;
+    list-style: none;
+}
 
 .read-all{
     color: #fff;
