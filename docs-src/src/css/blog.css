@@ -1,4 +1,10 @@
 
+.blog-post div, p, h1, h2, h3, h4, h5, h6{
+    margin-bottom: 16px;
+}
+
+
+
 /* 大分辨率下的布局 */
 @media screen and (min-width: 1045px) {
     .blog-body-with-table{
