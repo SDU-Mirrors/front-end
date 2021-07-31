@@ -6,7 +6,7 @@ import App from "../components/App"
 import Page from "../components/Pagination"
 import BlogList from "../components/BlogList"
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Catagory from "../components/CategoryList"
+import Category from "../components/CategoryList"
 
 var _currentPage = -1;
 
@@ -29,17 +29,21 @@ const BlogIndex = function({ data, location,  pageContext }){
 
   return (
     <App>
-      
-      
-      <Col>
-        <BlogList data={posts}/>
-      </Col>
-      <Col xl="3" >
-        <Catagory tags_list={pageContext.tags_list}></Catagory>
-      </Col>
+      <div style={{display: "block"}}>
+        <div style={{width: "100%", display: "flex", justifyContent: "center"}}>
+          <div className="docs-body">
+          
+            <div>
+              <BlogList data={posts}/>
+            </div>
 
-      <Page totalPage={totalPage} defaultPage={currentPage} onChange={pageChanged}></Page>
-
+            <div className="docs-category">
+              <Category tags_list={pageContext.tags_list}></Category>
+            </div>
+          </div>  
+        </div>
+        <Page totalPage={totalPage} defaultPage={currentPage} onChange={pageChanged}></Page>
+      </div>
     </App>
   )
 }

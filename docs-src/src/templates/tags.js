@@ -1,11 +1,10 @@
 import * as React from "react"
 import { graphql } from "gatsby"
-import { Col } from "react-bootstrap"
 import "../css/card.css"
 import App from "../components/App"
 import BlogList from "../components/BlogList"
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Catagory from "../components/CategoryList"
+import Category from "../components/CategoryList"
 
 
 const TagsTem = function({ data, location,  pageContext }){
@@ -15,13 +14,20 @@ const TagsTem = function({ data, location,  pageContext }){
   // console.log(pageContext, posts);
   return (
     <App>
-      <Col>
-        <BlogList data={posts}/>
-      </Col>
-      <Col xl="3" >
-        <Catagory tags_list={pageContext.tags_list}></Catagory>
-      </Col>
+      <div style={{display: "block"}}>
+        <div style={{width: "100%", display: "flex", justifyContent: "center"}}>
+          <div className="docs-body">
+          
+            <div>
+              <BlogList data={posts}/>
+            </div>
 
+            <div className="docs-category">
+              <Category tags_list={pageContext.tags_list}></Category>
+            </div>
+          </div>  
+        </div>
+      </div>
     </App>
   )
 }

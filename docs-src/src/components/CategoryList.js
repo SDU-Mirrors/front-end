@@ -1,22 +1,30 @@
 import React from "react"
 import {Container, ListGroup} from "react-bootstrap"
 import "./Content/TagArea.css"
-export default function Catagory(props){
+import "../css/card.css"
+export default function Category(props){
     // console.log(props.tags_list);
     const tags_list = props.tags_list;
     return (
-        <Container>
+        <Container className="docs-category-body">
           <h4 className="center-text">标签</h4>
-          <ListGroup>
+          <br/>
+          <ul className="tags-list">
           {
             tags_list.map((v, i) => {
                 if(v != null)
-                return (<ListGroup.Item className="tags" key={i}><a href={'/docs/'+v}>{v}</a></ListGroup.Item>);
+                return (
+                  <li className="tags" key={i}>
+                    <a href={'/docs/'+v}>
+                    &lt; {v} /&gt;
+                    </a>
+                  </li>
+                );
                 else
                   return "";
             })
           }
-          </ListGroup>
+          </ul>
         </Container>
     );
 }

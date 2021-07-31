@@ -4,26 +4,27 @@ import { makeStyles } from '@material-ui/core/styles';
 // import Container from '@material-ui/core/Container';
 import {Container, Row} from 'react-bootstrap'
 import 'prismjs/themes/prism.css'
-
+import "../css/card.css"
 const useStyles = makeStyles((theme) => ({
    Layout:{
-        marginTop: 100,
-        display: "block"
+        marginTop: 100
+   },
+   Div:{
+       display: "flex",
    }
 }));
 
-export default function App({location, children}){
+export default function DivApp({location, children}){
     const classes = useStyles();
 
     return (
         <div >
             <Fragment>
                 <Header/>
-                
                 <Container className={classes.Layout}>
-                    {/* <Row> */}
+                    <div className="div-app">
                         {children}
-                    {/* </Row> */}
+                    </div>
                 </Container>
                 <Footer/>
             </Fragment>
