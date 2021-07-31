@@ -2,5 +2,6 @@
   "main.js": "render-page.js",
   "render-page.js.map": "render-page.js.map",
   "static/logo.png": "static/logo-2deb228628a1b5de3dbdb75b924b36a2.png",
-  "static/logo1.png": "static/logo1-04f6b19bc0e8db31286da6a83d5e9f71.png"
+  "static/logo1.png": "static/logo1-04f6b19bc0e8db31286da6a83d5e9f71.png",
+  "static/oops_logo.png": "static/oops_logo-b71c541185a4f8028e993d8733966514.png"
 }
