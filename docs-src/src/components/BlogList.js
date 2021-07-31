@@ -10,15 +10,11 @@ export default function BlogList(props){
         <Container>{
             posts.map((post, index) => {
                 post = post.node;
-                // const title = post.frontmatter.title || post.fields.slug;
-                // let s = "";
-                // if(post.frontmatter.tags != undefined)
-                //   post.frontmatter.tags.forEach((v)=>{s = s + ' ' + "<a href='/docs/" + v + "'>" + v + "</a>";});
                 return (
                   <div key={index}>
                       <div>
-                        <h2>{post.frontmatter.title}</h2>
-                        <div className="tag-obj">  {post.frontmatter.date}    </div>
+                        <a className="blog-link" href={"/docs" + post.fields.slug}><h2>{post.frontmatter.title}</h2></a>
+                        <div className="tag-obj">  📅 {post.frontmatter.date}    </div>
                         <Row>
                         
                           {post.frontmatter.featuredImage !== undefined &&post.frontmatter.featuredImage !== null && <Col  bsPrefix="test img-col col" xl={2}>
@@ -27,8 +23,6 @@ export default function BlogList(props){
                           <Col>
                             <div dangerouslySetInnerHTML={{
                                           __html: post.frontmatter.description === null ? post.excerpt : post.frontmatter.description,}}></div>
-                            {/* <a class="read-all" href={"/docs" + post.fields.slug}>阅读全文</a> */}
-                            <Button variant="outline-dark" size="sm" href={"/docs" + post.fields.slug}>阅读全文</Button>
                           </Col>  
                           
                         </Row>
@@ -37,7 +31,6 @@ export default function BlogList(props){
                       </div>
                     <br />
                     <hr />
-                    <br />
                   </div>
                 )
               }

@@ -7,7 +7,8 @@ import 'prismjs/themes/prism.css'
 
 const useStyles = makeStyles((theme) => ({
    Layout:{
-        marginTop: 100
+        marginTop: 100,
+        display: "block"
    }
 }));
 
@@ -20,9 +21,9 @@ export default function App({location, children}){
                 <Header/>
                 
                 <Container className={classes.Layout}>
-                    <Row>
+                    {/* <Row> */}
                         {children}
-                    </Row>
+                    {/* </Row> */}
                 </Container>
                 <Footer/>
             </Fragment>
