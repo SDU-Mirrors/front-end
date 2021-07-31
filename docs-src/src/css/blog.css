@@ -44,7 +44,8 @@
     border: 1px solid #e6e6e6;
     border-radius: 2px;
     padding: 0px;
-    top: calc(20vh)/*50px;*/
+    top: calc(20vh)/*50px;*/;
+    width: fit-content;
 }
 .css-aside a{
     color:gray;

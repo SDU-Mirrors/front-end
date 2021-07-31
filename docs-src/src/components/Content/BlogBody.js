@@ -19,8 +19,8 @@ class BlogBody extends Component{
                     itemProp="articleBody">
                 </Container>
                 <hr />
-                <BlogNavButton previous={this.props.previous} next={this.props.next}/>
             </div>
+            
         
         );
     }
