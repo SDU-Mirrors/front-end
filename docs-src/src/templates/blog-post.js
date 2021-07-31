@@ -1,16 +1,12 @@
 import * as React from "react"
 import { Button } from '@material-ui/core';
-import { Container, Nav, Row, Col } from 'react-bootstrap'
+import { Container, Row, Col } from 'react-bootstrap'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {  graphql } from "gatsby"
-import Layout from "../components/layout"
-import Seo from "../components/seo"
 import App from "../components/App"
-import { Drawer, Paper } from '@material-ui/core';
-
-const BlogPostTemplate = ({ data, location }) => {
+const BlogPostTemplate = ({data}) => {
   const post = data.markdownRemark
-  const siteTitle = data.site.siteMetadata?.title || `Title`
+  // const siteTitle = data.site.siteMetadata?.title || `Title`
   const { previous, next } = data
   console.log(post.tableOfContents);
   return (

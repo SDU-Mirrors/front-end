@@ -1,20 +1,18 @@
 import * as React from "react"
-import { Link, graphql } from "gatsby"
-import {Card, CardDeck, CardColumns, CardGroup, Row, Col, Container, ListGroup} from "react-bootstrap"
+import { graphql } from "gatsby"
+import { Col } from "react-bootstrap"
 import "../css/card.css"
-import {Paper} from '@material-ui/core'
 import App from "../components/App"
-import Page from "../components/pagination"
-import BlogList from "../components/blog-list"
+import Page from "../components/Pagination"
+import BlogList from "../components/BlogList"
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Img from "gatsby-image"
-import Catagory from "../components/catagory_list"
+import Catagory from "../components/CategoryList"
 
 var _currentPage = -1;
 
 function pageChanged(event, pageNum){
-  if(pageNum != _currentPage && _currentPage != -1){
-    if(pageNum == 1){
+  if(pageNum !== _currentPage && _currentPage !== -1){
+    if(pageNum === 1){
       window.location.href = "/";
     }else{
       window.location.href = "/"+pageNum;
@@ -23,11 +21,11 @@ function pageChanged(event, pageNum){
 }
 
 const BlogIndex = function({ data, location,  pageContext }){
-  const siteTitle = data.site.siteMetadata?.title || `Title`
+  // const siteTitle = data.site.siteMetadata?.title || `Title`
   const posts = data.allMarkdownRemark.edges
   const { totalPage, currentPage } = pageContext
   _currentPage = currentPage;
-  console.log(data, posts);
+  // console.log(data, posts);
 
   return (
     <App>

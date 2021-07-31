@@ -44,7 +44,7 @@ function createSeperatePage(posts, homePaginate, createPage){
 function getTagsList(posts){
   let tags_list = [];
   posts.forEach((v, i) => {
-    console.log(v);
+    // console.log(v);
       tags_list = tags_list.concat(v.frontmatter.tags);
   });
   tags_list = Array.from(new Set(tags_list));
