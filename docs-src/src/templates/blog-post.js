@@ -1,19 +1,25 @@
 import * as React from "react"
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {  graphql } from "gatsby"
-import App from "../components/App"
-import "../css/card.css"
+import DivApp from "../components/DivApp"
+import "../css/blog.css"
 import BlogBody from "../components/Content/BlogBody";
+import TocBody from "../components/Content/TocBody";
+
 const BlogPostTemplate = ({data}) => {
   const post = data.markdownRemark
   // const siteTitle = data.site.siteMetadata?.title || `Title`
   const { previous, next } = data
   console.log(post.tableOfContents);
   return (
-    <App>
-      <aside className="css-aside"><div>abab</div></aside>
-      <BlogBody article={post} previous={previous} next={next}></BlogBody>
-    </App>
+    <DivApp>
+      {
+        post.tableOfContents !== "" 
+        ? <BlogBody article={post} previous={previous} next={next} table="with-table" /> 
+        : <BlogBody article={post} previous={previous} next={next} table="without-table" />
+      }
+      {post.tableOfContents !== "" && <TocBody table={post.tableOfContents}/>}
+    </DivApp>
   )
 }
 
@@ -34,7 +40,9 @@ export const pageQuery = graphql`
       id
       excerpt(pruneLength: 160)
       html
-      tableOfContents
+      tableOfContents(
+        maxDepth: 3
+      )
       frontmatter {
         title
         date(formatString: "MMMM DD, YYYY")

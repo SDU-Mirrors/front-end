@@ -2,15 +2,16 @@ import React from "react"
 import { Component } from "react";
 import { Container } from "react-bootstrap";
 import BlogNavButton from "./BlogNavButton";
+import "../../css/blog.css"
 class BlogBody extends Component{
     constructor(props){
         super(props);
-        console.log(props);
+        // console.log(props);
     }
     render(){
         const post = this.props.article;
         return (
-            <Container>
+            <div className={"blog-body-" + this.props.table}>
                 <h1 itemProp="headline">{post.frontmatter.title}</h1>
                 <p>{post.frontmatter.date}</p>
                 <br/>
@@ -19,7 +20,7 @@ class BlogBody extends Component{
                 </Container>
                 <hr />
                 <BlogNavButton previous={this.props.previous} next={this.props.next}/>
-            </Container>
+            </div>
         
         );
     }
