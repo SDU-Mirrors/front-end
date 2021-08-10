@@ -1,1 +1,16 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 195 53"><defs><style>.cls-1{opacity:0.95;}.cls-2{fill:#1ae57c;}.cls-3{font-size:38.13px;fill:#fff;font-family:huangyinqizhaopai, huangyinqi zhaopai;}</style></defs><g id="图层_2" data-name="图层 2"><g id="图层_1-2" data-name="图层 1"><g class="cls-1"><rect class="cls-2" width="195" height="53" rx="26.5"/></g><text class="cls-3" transform="translate(6.69 37.74)">successed</text></g></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 195 53">
+    <defs>
+        <style>
+            .cls-1{opacity:0.95;}.cls-2{fill:#1ae57c;}.cls-3{font-size:38.13px;fill:#fff;font-family:huangyinqizhaopai,
+            huangyinqi zhaopai;}
+        </style>
+    </defs>
+    <g id="图层_2" data-name="图层 2">
+        <g id="图层_1-2" data-name="图层 1">
+            <g class="cls-1">
+                <rect class="cls-2" width="195" height="53" rx="26.5"/>
+            </g>
+            <text class="cls-3" transform="translate(6.69 37.74)">successed</text>
+        </g>
+    </g>
+</svg>

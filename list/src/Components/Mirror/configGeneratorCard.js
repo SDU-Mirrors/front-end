@@ -1,9 +1,10 @@
-import React, { Component } from "react";
-import { Button, Form, Modal, Row, Col, Cascader } from "antd";
-import { ThunderboltOutlined } from "@ant-design/icons";
+import React, {Component} from "react";
+import {Button, Form, Modal, Row, Col, Cascader} from "antd";
+import Icon from "@ant-design/icons";
 import SyntaxHighlighter from "react-syntax-highlighter"
-import { dark } from 'react-syntax-highlighter/dist/esm/styles/hljs';
-
+import {dark} from 'react-syntax-highlighter/dist/esm/styles/hljs';
+import {ReactComponent as ConfigSVG} from "./source/配置.svg"
+import {ReactComponent as DownloadedSVG} from "./source/下载.svg";
 
 /**
  * 配置生成器组件
@@ -22,7 +23,7 @@ export default class ConfigGeneratorCard extends Component {
     configBlock: undefined
   };
   myStyle = {
-    buttonStyle : {color: '#9C0C13',borderColor: '#9C0C13'},
+    buttonStyle: {color: '#9C0C13', borderColor: '#9C0C13'},
     CascaderStyle: {outlineColor: '#9C0C13'}
 
   }
@@ -31,14 +32,14 @@ export default class ConfigGeneratorCard extends Component {
    * 显示配置生成器对话框
    */
   showDownloadForm = () => {
-    this.setState({ configGeneratorVisible: true });
+    this.setState({configGeneratorVisible: true});
   };
 
   /**
    * 退出配置生成器对话框
    */
   handleConfigGeneratorCancel = () => {
-    this.setState({ configGeneratorVisible: false });
+    this.setState({configGeneratorVisible: false});
   };
 
   /**
@@ -62,19 +63,19 @@ export default class ConfigGeneratorCard extends Component {
     switch (this.state.selectDistrib) {
       case "ubuntu":
         configBlock = buildUbuntuBlock(this.state.selectVersion);
-        this.setState({ showConfigBlock: true, configBlock: configBlock });
+        this.setState({showConfigBlock: true, configBlock: configBlock});
         break;
       case "debian":
         configBlock = buildDebianBlock(this.state.selectVersion);
-        this.setState({ showConfigBlock: true, configBlock: configBlock });
+        this.setState({showConfigBlock: true, configBlock: configBlock});
         break;
       case "archlinux":
         configBlock = buildArchBlock();
-        this.setState({ showConfigBlock: true, configBlock: configBlock });
+        this.setState({showConfigBlock: true, configBlock: configBlock});
         break;
       case "rocky":
         configBlock = buildRockyBlock();
-        this.setState({ showConfigBlock: true, configBlock: configBlock });
+        this.setState({showConfigBlock: true, configBlock: configBlock});
         break;
       default:
         break;
@@ -83,52 +84,56 @@ export default class ConfigGeneratorCard extends Component {
 
   render() {
     return (
-      <div>
-        <h2>配置生成</h2>
-        <p>生成发行版的配置文件</p>
-        <Button
-          type="default"
-          icon={<ThunderboltOutlined />}
-          onClick={this.showDownloadForm}
-          style={this.myStyle.buttonStyle}
-        >
-          配置生成器
-        </Button>
-        <Modal
-          visible={this.state.configGeneratorVisible}
-          title={"配置生成器"}
-          onCancel={this.handleConfigGeneratorCancel}
-          footer={null}
-          width={800}
-        >
-          <Form layout="vertical">
-            <Form.Item>
-              <Row gutter={8}>
-                <Col span={20}>
-                  <Cascader
-                    expandTrigger="hover"
-                    placeholder="请选择发行版"
-                    options={this.props.config}
-                    onChange={this.onConfigChange}
-                    autoFocus={<style></style>}
+        <div>
+          <h2>配置生成</h2>
+          <p>生成发行版的配置文件</p>
+          <Button
+              type="default"
+              icon={<Icon component={ConfigSVG}/>}
+              onClick={this.showDownloadForm}
+              style={this.myStyle.buttonStyle}
+          >
+            配置生成器
+          </Button>
+          <Modal
+              visible={this.state.configGeneratorVisible}
+              title={"配置生成器"}
+              onCancel={this.handleConfigGeneratorCancel}
+              footer={null}
+              width={800}
+          >
+            <Form layout="vertical">
+              <Form.Item>
+                <Row gutter={8}>
+                  <Col span={20}>
+                    <Cascader
+                        expandTrigger="hover"
+                        placeholder="请选择发行版"
+                        options={this.props.config}
+                        onChange={this.onConfigChange}
+                        autoFocus={<style></style>}
+                    />
+                  </Col>
+                  <Col span={4}>
+                    <Button type="default"
+                            onClick={this.handleGenerateConfig}
+                            icon={<Icon component={ConfigSVG}/>}
+                            style={this.myStyle.buttonStyle}>
+                      生成
+                    </Button>
+
+                  </Col>
+                </Row>
+                <Row>
+                  <ConfigBlock
+                      showConfigBlock={this.state.showConfigBlock}
+                      configBlock={this.state.configBlock}
                   />
-                </Col>
-                <Col span={4}>
-                  <Button type="default" onClick={this.handleGenerateConfig} style={this.myStyle.buttonStyle}>
-                    生成
-                  </Button>
-                </Col>
-              </Row>
-              <Row>
-                <ConfigBlock
-                  showConfigBlock={this.state.showConfigBlock}
-                  configBlock={this.state.configBlock}
-                />
-              </Row>
-            </Form.Item>
-          </Form>
-        </Modal>
-      </div>
+                </Row>
+              </Form.Item>
+            </Form>
+          </Modal>
+        </div>
     );
   }
 }
@@ -149,15 +154,15 @@ class ConfigBlock extends Component {
       //     </span>
       //   );
       // });
-        block = this.props.configBlock;
-        block = block.substring(0, block.length-1);
+      block = this.props.configBlock;
+      block = block.substring(0, block.length - 1);
     }
     return (
-      <Col className="config-block" span={24}>
-        <SyntaxHighlighter language="powershell" style={dark}>
+        <Col className="config-block" span={24}>
+          <SyntaxHighlighter language="powershell" style={dark}>
             {block}
-        </SyntaxHighlighter>
-      </Col>
+          </SyntaxHighlighter>
+        </Col>
     );
   }
 }
@@ -171,10 +176,10 @@ class ConfigBlock extends Component {
  */
 function buildUbuntuLine(val, version) {
   return (
-    val +
-    " https://mirrors.sdu.edu.cn/ubuntu/ " +
-    version +
-    " main restricted universe multiverse\n"
+      val +
+      " https://mirrors.sdu.edu.cn/ubuntu/ " +
+      version +
+      " main restricted universe multiverse\n"
   );
 }
 
@@ -186,10 +191,10 @@ function buildUbuntuLine(val, version) {
  */
 function buildUbuntuBlock(version) {
   return (
-    // "# 默认注释了源码镜像以提高 apt update 速度，如有需要可自行取消注释\n" +
-    buildUbuntuLine("deb", version) +
-    buildUbuntuLine("deb", version + "-security") +
-    buildUbuntuLine("deb", version + "-updates")
+      // "# 默认注释了源码镜像以提高 apt update 速度，如有需要可自行取消注释\n" +
+      buildUbuntuLine("deb", version) +
+      buildUbuntuLine("deb", version + "-security") +
+      buildUbuntuLine("deb", version + "-updates")
   );
 }
 
@@ -202,10 +207,10 @@ function buildUbuntuBlock(version) {
  */
 function buildDebianLine(val, version) {
   return (
-    val +
-    " https://mirrors.sdu.edu.cn/debian" +
-    version +
-    " main contrib non-free\n"
+      val +
+      " https://mirrors.sdu.edu.cn/debian" +
+      version +
+      " main contrib non-free\n"
 
   );
 }
@@ -218,10 +223,10 @@ function buildDebianLine(val, version) {
  */
 function buildDebianBlock(version) {
   return (
-    // "目前还未提供debian-security，请注意添加\n" +
-    buildDebianLine("deb","") +
-    buildDebianLine("deb", "" + "-security buster/updates") +
-    buildDebianLine("deb", " " + "buster-updates")
+      // "目前还未提供debian-security，请注意添加\n" +
+      buildDebianLine("deb", "") +
+      buildDebianLine("deb", "" + "-security buster/updates") +
+      buildDebianLine("deb", " " + "buster-updates")
   );
 }
 
@@ -233,17 +238,18 @@ function buildDebianBlock(version) {
 function buildArchBlock() {
   return "Server = https://mirrors.sdu.edu.cn/archlinux/$repo/os/$arch ";
 }
+
 /**
  * 构建RockyLinux软件源配置的文本块
  *
  * @returns {string} 返回RockyLinux配置命令
  */
-function buildRockyBlock(){
+function buildRockyBlock() {
   return "# 1. 将所有的官方主镜像地址替换为山东大学镜像站地址。\n" +
       "sed -e 's|^mirrorlist=|#mirrorlist=|g' \\\n" +
       "    -e 's|^#baseurl=http://dl.rockylinux.org/$contentdir|baseurl=https://mirrors.sdu.edu.cn/rocky|g' \\\n" +
       "    -i.bak \\\n" +
-      "    /etc/yum.repos.d/Rocky-*.repo\n"+
-      "# 2. 更新缓存。\n"+
+      "    /etc/yum.repos.d/Rocky-*.repo\n" +
+      "# 2. 更新缓存。\n" +
       "     dnf makecache"
 }
