@@ -92,8 +92,8 @@ function Header(){
                     <Link to="/mirror" variant="button" color="textPrimary" href="#" className={classes.link}>
                         镜像
                     </Link>
-                    <Link variant="button" color="textPrimary" href="#" className={classes.link}>
-                        文档
+                    <Link to="" variant="button" color="textPrimary" href="#" className={classes.link}>
+                            文档                     
                     </Link>
                     <Link to="/help" variant="button" color="textPrimary" href="#" className={classes.link}>
                         帮助
