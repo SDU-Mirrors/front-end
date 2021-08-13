@@ -8,7 +8,7 @@ export default function Category(props){
     return (
         <Container className="docs-category-body">
           <h4 className="center-text">标签</h4>
-          <br/>
+
           <ul className="tags-list">
           {
             tags_list.map((v, i) => {
