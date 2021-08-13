@@ -60,6 +60,10 @@
     .div-app{
         display: block;
     }
+
+    .css-aside-body{
+        display: none;
+    }
 }
 
 /* blog TOC的布局 */
