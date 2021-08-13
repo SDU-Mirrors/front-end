@@ -2,10 +2,8 @@
 title:  Rocky Linux 镜像源使用说明
 date: "2021-05-12T22:12:03.284Z"
 description: ""
-tags: ["guide"]
+tags: ["帮助文档"]
 ---
-# Rocky Linux 镜像源使用说明
-
 本镜像是 Tier 1 Mirror，每日从官方主节点同步一次。
 
 镜像源更换步骤如下。

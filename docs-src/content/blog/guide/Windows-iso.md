@@ -2,10 +2,8 @@
 title:  Windows 安装指南
 date: "2021-05-12T22:12:03.284Z"
 description: ""
-tags: ["guide"]
+tags: ["帮助文档"]
 ---
-# Windows 安装指南
-
 请根据电脑的正版授权情况，从 `Business`、`Customer` 和 `China Get Genuine` 中选择正确的版本，否则安装成功后将无法激活。如果不确定需要哪个版本，请选择 Business 版本，并通过[山东大学正版软件管理平台](http://softms.sdu.edu.cn)完成正版激活。
 
 ## Windows 10 半年频道

@@ -2,10 +2,8 @@
 title:校内用户必看：路由器关闭 Rebind Protection
 date: "2021-05-12T22:12:03.284Z"
 description: ""
-tags: ["guide"]
+tags: ["帮助文档"]
 ---
-# 校内用户必看：路由器关闭 Rebind Protection
-
 ## 什么是 Rebind Protection，为什么要关闭它？
 
 dnsmasq 提供了名为 rebind protection 的功能，意思是，当上游 DNS 返回了私有 IP 解析结果时，认为遭到了 DNS 劫持，从而拒绝此结果，以 NXDOMAIN 取代之。

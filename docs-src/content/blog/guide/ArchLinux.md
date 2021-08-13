@@ -2,10 +2,8 @@
 title:  Arch Linux 镜像源使用说明
 date: "2021-05-12T22:12:03.284Z"
 description: ""
-tags: ["guide"]
+tags: ["帮助文档"]
 ---
-# Arch Linux 镜像源使用说明
-
 编辑 `/etc/pacman.d/mirrorlist`，改为以下内容：
 
 ```ini

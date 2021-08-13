@@ -2,10 +2,8 @@
 title:   Debian 镜像源使用说明
 date: "2021-05-12T22:12:03.284Z"
 description: ""
-tags: ["guide"]
+tags: ["帮助文档"]
 ---
-# Debian 镜像源使用说明
-
 受镜像站硬盘容量限制，只对部分内容进行了同步。
 
 - 支持的指令集：仅 amd64。
