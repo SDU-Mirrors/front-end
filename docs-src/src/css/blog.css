@@ -123,3 +123,7 @@
 .blog-nav-buttons{
     margin-bottom: 24px;
 }
+
+.blog-post{
+    min-height: calc(30vh);
+}
