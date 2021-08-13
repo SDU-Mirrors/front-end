@@ -57,6 +57,13 @@ export const pageQuery = graphql`
             title
             description
             tags
+          }
+        }
+      }
+    }
+  }
+`
+/*
             featuredImage {
               childImageSharp {
                 fluid(maxWidth: 800) {
@@ -64,9 +71,4 @@ export const pageQuery = graphql`
                 }
               }
             }
-          }
-        }
-      }
-    }
-  }
-`
+ */
