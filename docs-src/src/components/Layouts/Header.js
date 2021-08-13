@@ -54,7 +54,7 @@ export default function Header(){
                     <Link to="/home" variant="button" color="textPrimary" href="#" className={classes.link}>
                         文档
                     </Link>
-                    <Link variant="button" color="textPrimary" href="#" className={classes.link}>
+                    <Link to="/help" variant="button" color="textPrimary" href="#" className={classes.link}>
                         帮助
                     </Link>
                     <Link variant="button" color="textPrimary" href="#" className={classes.link}>

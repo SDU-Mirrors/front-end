@@ -7,7 +7,7 @@ class BlogNavButton extends Component{
     }
     render(){
         return (
-            <div style={{display: "flex", justifyContent: "center"}}>
+            <div className="blog-nav-buttons" style={{display: "flex", justifyContent: "center"}}>
                 <div>
                     {
                     this.props.previous && (

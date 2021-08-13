@@ -13,9 +13,9 @@ var _currentPage = -1;
 function pageChanged(event, pageNum){
   if(pageNum !== _currentPage && _currentPage !== -1){
     if(pageNum === 1){
-      window.location.href = "/";
+      window.location.href = "/docs";
     }else{
-      window.location.href = "/"+pageNum;
+      window.location.href = "/docs/"+pageNum;
     }
   }
 }
@@ -74,6 +74,13 @@ export const pageQuery = graphql`
             title
             description
             tags
+          }
+        }
+      }
+    }
+  }
+`
+/*
             featuredImage {
               childImageSharp {
                 fluid(maxWidth: 800) {
@@ -81,9 +88,4 @@ export const pageQuery = graphql`
                 }
               }
             }
-          }
-        }
-      }
-    }
-  }
-`
+ */
