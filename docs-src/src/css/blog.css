@@ -4,11 +4,35 @@
     margin-bottom: 8px;
 }
 
-.blog-post h1, h2, h3, h4, h5, h6{
+.blog-post h1{
     margin-top: 24px;
     margin-bottom: 24px;
 }
 
+.blog-post h2{
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+.blog-post h3{
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+.blog-post h4{
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+.blog-post h5{
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+.blog-post h6{
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
 /* 大分辨率下的布局 */
 @media screen and (min-width: 1045px) {
     .blog-body-with-table{
