@@ -11,7 +11,7 @@ class TocBody extends Component{
         return(
             <aside>
                 <div className="css-aside-body">
-                <h5 className="css-aside-top">目录</h5>
+                <h4 className="css-aside-top">目录</h4>
                 <div  className="css-aside" dangerouslySetInnerHTML={{ __html: this.props.table }}>
 
                 </div>
