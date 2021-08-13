@@ -77,10 +77,16 @@
     width: fit-content;
     min-width: calc(20vw);
 }
+.css-aside{
+    color:gray;
+    white-space: nowrap;
+}
+
 .css-aside a{
     color:gray;
     white-space: nowrap;
 }
+
 /* .css-aside >ul{
     padding-left: 5px;
     padding-right: 5px;
