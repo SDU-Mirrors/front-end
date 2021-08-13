@@ -11,9 +11,10 @@ export default function BlogList(props){
             posts.map((post, index) => {
                 post = post.node;
                 return (
-                  <div key={index}>
+                  <div key={index} className="blog-card">
                       <div>
                         <a className="blog-link" href={"/docs" + post.fields.slug}><h2>{post.frontmatter.title}</h2></a>
+                        <hr />
                         <div className="tag-obj">  📅 {post.frontmatter.date}    </div>
                         <Row>
                         
@@ -30,7 +31,7 @@ export default function BlogList(props){
                         <div className="tag-obj"><TagArea tags={post.frontmatter.tags}/></div>
                       </div>
                     <br />
-                    <hr />
+                   
                   </div>
                 )
               }
