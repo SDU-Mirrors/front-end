@@ -23,7 +23,7 @@ export default function BlogList(props){
                           </Col>}
                           <Col>
                             <div dangerouslySetInnerHTML={{
-                                          __html: post.frontmatter.description === null ? post.excerpt : post.frontmatter.description,}}></div>
+                                          __html: post.frontmatter.description == null || post.frontmatter.description == "" ? post.excerpt : post.frontmatter.description,}}></div>
                           </Col>  
                           
                         </Row>

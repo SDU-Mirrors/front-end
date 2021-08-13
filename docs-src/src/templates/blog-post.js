@@ -44,7 +44,7 @@ export const pageQuery = graphql`
     }
     markdownRemark(id: { eq: $id }) {
       id
-      excerpt(pruneLength: 160)
+      excerpt(pruneLength: 300)
       html
       tableOfContents(
         maxDepth: 3
