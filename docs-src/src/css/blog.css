@@ -47,6 +47,7 @@
     /* DivApp的布局 */
     .div-app{
         display: flex;
+        justify-content: center;
     }
 }
 /* 小分辨率下的布局 */
@@ -77,6 +78,7 @@
 }
 .css-aside a{
     color:gray;
+    white-space: nowrap;
 }
 .css-aside >ul{
     padding-left: 5px;
