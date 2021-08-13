@@ -59,8 +59,12 @@
 }
 
 .blog-link > h2{
-    text-decoration: underline;
+    /* text-decoration: underline; */
     color: rgb(173, 13, 47);
+}
+
+.blog-link:hover, .blog-link:active, .blog-link:visited, .blog-link:link {
+    text-decoration: none;
 }
 
 @media screen and (min-width: 1045px) {
