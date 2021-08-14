@@ -13,7 +13,7 @@ export default function BlogList(props){
                 return (
                   <div key={index} className="blog-card">
                       <div>
-                        <a className="blog-link" href={"/docs" + post.fields.slug}><h2>{post.frontmatter.title}</h2></a>
+                        <a className="blog-link" href={"/docs" + post.fields.slug}><h4>{post.frontmatter.title}</h4></a>
                         <hr />
                         <div className="tag-obj">  📅 {post.frontmatter.date}    </div>
                         <Row>
