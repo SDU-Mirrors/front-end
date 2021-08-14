@@ -15,14 +15,18 @@ const BlogPostTemplate = ({data}) => {
   return (
     <App>
       <div className="div-app">
-      {
-        post.tableOfContents !== "" 
-        ? <BlogBody article={post} previous={previous} next={next} table="with-table" /> 
-        : <BlogBody article={post} previous={previous} next={next} table="without-table" />
-      }
+        <div>
+          {
+          post.tableOfContents !== "" 
+          ? <BlogBody article={post} previous={previous} next={next} table="with-table" /> 
+          : <BlogBody article={post} previous={previous} next={next} table="without-table" />
+          }
+          <BlogNavButton previous={previous} next={next}/>
+        </div>
+
       {post.tableOfContents !== "" && <TocBody table={post.tableOfContents}/>}
       </div>
-      <BlogNavButton previous={previous} next={next}/>
+      
 
       
     </App>
