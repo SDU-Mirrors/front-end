@@ -143,7 +143,7 @@ export default class ConfigGeneratorCard extends Component {
  */
 class ConfigBlock extends Component {
     render() {
-        let block = "";
+        let block = null;
         if (this.props.showConfigBlock) {
             // console.log(typeof this.props.configBlock);
             // block = this.props.configBlock.split("\n").map(function(item, id) {
@@ -157,13 +157,19 @@ class ConfigBlock extends Component {
             block = this.props.configBlock;
             block = block.substring(0, block.length - 1);
         }
-        return (
-            <Col className="config-block" span={24}>
-                <SyntaxHighlighter language="powershell" style={dark}>
-                    {block}
-                </SyntaxHighlighter>
-            </Col>
-        );
+        if (block != null) {
+            return (
+                <Col className="config-block" span={24}>
+                    <SyntaxHighlighter language="powershell" style={dark}>
+                        {block}
+                    </SyntaxHighlighter>
+                </Col>
+            );
+        } else {
+            return (
+                null
+            );
+        }
     }
 }
 
