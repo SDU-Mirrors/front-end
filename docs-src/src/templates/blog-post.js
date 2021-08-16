@@ -8,7 +8,7 @@ import BlogBody from "../components/Content/BlogBody";
 import TocBody from "../components/Content/TocBody";
 import BlogNavButton from "../components/Content/BlogNavButton";
 import $ from "jquery";
-
+const isBrowser = typeof window !== "undefined";
 function getAbsolutePosition(element){
   if(element == null)return {x: 0, y: 0};
   let cur = element;
@@ -34,7 +34,8 @@ function calcDistance(scrollTop, element){
 }
 
 function loopingAnchors(anchors){
-  let scrollTop = document.documentElement.scrollTop;
+  // 避免因为分数出问题
+  let scrollTop = Math.ceil(document.documentElement.scrollTop);
   if(anchors.length == 0) return;
   let chooser = 0;
   let flag = 1;
@@ -46,7 +47,9 @@ function loopingAnchors(anchors){
       chooser = i;
     }
   }
+  // 都在下面时选最近的
   if(flag){
+    chooser = 0;
     for(let i = 1; i < anchors.length; i++){
       let di = getAbsolutePosition(anchors[i])['y'];
       let dc = getAbsolutePosition(anchors[chooser])['y'];
@@ -91,7 +94,6 @@ function onSroll(event){
     let i = loopingAnchors(anchors);
     as[i].classList.add("a-scroll");
     let uls = $(as[i]).parents("ul");
-    // console.log(uls);
     for(let j = 0; j < uls.length; j ++){
       uls[j].classList.remove("ul-hide");
     }
@@ -101,9 +103,11 @@ const BlogPostTemplate = ({data}) => {
   const post = data.markdownRemark
   // const siteTitle = data.site.siteMetadata?.title || `Title`
   const { previous, next } = data
-  console.log(post.tableOfContents);
-  flush();
-  window.onscroll = onSroll;
+  if(isBrowser){
+    flush();
+    window.onscroll = onSroll;
+  }
+
   return (
     <App>
       <div className={post.tableOfContents !== "" ? "div-app" : "div-app-without-toc"}>
