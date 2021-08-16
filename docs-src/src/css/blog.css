@@ -49,6 +49,9 @@
         display: flex;
         justify-content: center;
     }
+    .div-app-without-toc{
+        display: block;
+    }
 }
 /* 小分辨率下的布局 */
 @media screen and (max-width: 1045px) {
@@ -59,6 +62,9 @@
     }
     /* DivApp的布局 */
     .div-app{
+        display: block;
+    }
+    .div-app-without-toc{
         display: block;
     }
 
@@ -136,4 +142,12 @@
 
 .blog-post{
     min-height: calc(30vh);
+}
+
+.ul-hide{
+    display: none;
+}
+
+.a-scroll{
+    color: rgb(173, 13, 47)!important;
 }
