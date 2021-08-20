@@ -1,2 +1,0 @@
-(self.webpackChunkgatsby_starter_blog=self.webpackChunkgatsby_starter_blog||[]).push([[970],{2815:function(t,a,e){"use strict";e.r(a);var n=e(7294);a.default=function(t){t.data,t.path,t.location;return n.createElement("div",null,"404 not found.")}}}]);
-//# sourceMappingURL=component---src-pages-using-typescript-tsx-3aa664a07bf0be56bfd4.js.map
