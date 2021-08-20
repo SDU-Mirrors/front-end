@@ -2,8 +2,10 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import {Container,Typography,Grid} from '@material-ui/core';
 import logo from '../source/logo.png'
+import sduMirror from '../source/SDUMirror.png'
+import oops from '../source/oops.jpg'
+import sna from '../source/sna.jpg'
 
-  
 const useStyles = makeStyles((theme) => ({
   footer: {
     padding: theme.spacing(3, 2),
@@ -13,6 +15,9 @@ const useStyles = makeStyles((theme) => ({
   },
   ALL:{
     marginLeft:100,
+  },
+  left:{
+    marginTop:30,
   },
   typographyBody:{
     fontSize:12,
@@ -39,20 +44,15 @@ export default function Footer() {
       <Container >
         <Grid container spacing={3} className={classes.ALL}>
           <Grid item xs={6} sm={6}>
-            <Grid item xs={8} sm={8}>
-              <Typography variant="h4" className={classes.typographyTitle}>
-                山东大学镜像站
+            <Grid item xs={8} sm={8} className={classes.left} >
+              <Typography variant="body" className={classes.typographyBody}>
+                山东大学镜像站是由山东大学（青岛）学生oops计算机社团在山东大学（青岛）信息化工作办公室指导下立项，由山东大学（青岛）网管会镜像站学生运营团队运营的开源镜像站平台。
               </Typography>
             </Grid>
 
-            <Grid item xs={4} sm={4}>
+            <Grid item xs={8} sm={8} className={classes.left}>
               <Typography variant="body" className={classes.typographyBody}>
-                山东大学镜像站是由山东大学（青岛）学生oops计算机社团在山东大学（青岛）信息化工作办公室指导下建立，为技术爱好者、工程师、科研人员等提供开源软件镜像服务。
-              </Typography>
-            </Grid>
-            <Grid item xs={8} sm={8}>
-              <Typography className={classes.typographyFooter}>
-                相关链接:     山东大学    XXXXX     山东大学（青岛）学生oop计算机社团
+                本镜像站为技术爱好者、工程师、科研人员等开源爱好者提供开源软件镜像服务，致力于打造以山东大学为中心的开源爱好者社区，提高山东大学影响力。
               </Typography>
             </Grid>
             
@@ -66,13 +66,13 @@ export default function Footer() {
             </Grid>
             <Grid container justifyContent="center" xs={8} sm={8}>
               <Grid item  xs={4} sm={4}>
-                <img src={logo} alt= ""  className={classes.image} />
+                <img src={sduMirror} alt= ""  className={classes.image} />
               </Grid>
               <Grid item  xs={4} sm={4}>
-                <img src={logo} alt= ""  className={classes.image} />
+                <img src={oops} alt= ""  className={classes.image} />
               </Grid>
               <Grid item  xs={4} sm={4}>
-                <img src={logo} alt= ""  className={classes.image} />
+                <img src={sna} alt= ""  className={classes.image} />
               </Grid>
             </Grid>
             <Grid container justifyContent="center" xs={8} sm={8} >
