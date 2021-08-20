@@ -8,12 +8,16 @@ const useStyles = makeStyles((theme) => ({
     content:{
         marginTop: theme.spacing(20),
         marginBottom: theme.spacing(5),
-        marginLeft:theme.spacing(2),
-        marginRight:theme.spacing(0),
+        
+        
+    },
+    main: {
+        marginTop: theme.spacing(8),
+        marginBottom: theme.spacing(2),
     },
     list:{
         marginLeft:theme.spacing(15),
-        marginRight:theme.spacing(-10),
+        
     },
     right:{
         marginLeft:theme.spacing(20),
@@ -24,6 +28,7 @@ const useStyles = makeStyles((theme) => ({
 export default function Mirror(){
     const classes=useStyles();
     return(
+        <div className={classes.main}>
         <Grid container spacing={2} className={classes.content}>
             <Grid item sm className={classes.list}>
                     <List />
@@ -34,5 +39,6 @@ export default function Mirror(){
                 </Paper>
             </Grid>
         </Grid>
+        </div>
     );
 }

@@ -7,7 +7,7 @@ import { Cards } from './Cards'
 import { makeStyles } from '@material-ui/core/styles';
 import { Route, Redirect, Link,withRouter } from "react-router-dom";
 
-import {AppBar,Toolbar, Typography} from '@material-ui/core'
+import {AppBar,Toolbar, Typography,CssBaseline} from '@material-ui/core'
 import logo from './source/logo1.png'
 import oops_logo from './source/oops_logo.png'
 
@@ -24,11 +24,8 @@ const useStyles = makeStyles((theme) => ({
       marginBottom: theme.spacing(2),
     },
     appBar: {
-        zIndex: theme.zIndex.drawer + 1,
-        transition: theme.transitions.create(['width', 'margin'], {
-          easing: theme.transitions.easing.sharp,
-          duration: theme.transitions.duration.leavingScreen,
-        }),
+        position: 'relative',
+        borderBottom: `1px solid ${theme.palette.divider}`,
         //backgroundColor:'#9c0c13',
       },
       appBarShift: {
@@ -39,9 +36,9 @@ const useStyles = makeStyles((theme) => ({
           duration: theme.transitions.duration.enteringScreen,
         }),
       },
-      toolbar: {
-          flexWrap: 'wrap',
-        },
+    toolbar: {
+        flexWrap: 'wrap',
+    },
         toolbarTitle: {
           flexGrow: 1,
       },
@@ -57,15 +54,16 @@ export default function App(){
     return (
         <div className={classes.App}>
             <Fragment>
+                <CssBaseline />
                 <Header/>
 
-                <Route exact path="/">
-                    <Redirect to="/mirror" />
+                <Route className={classes.main} exact path="/">
+                    <Redirect className={classes.main} to="/mirror" />
                 </Route>
-                <Route path="/mirror" component={Mirror} />
-                <Route path="/home" component={HomePage} />
-                <Route path="/help" component={HelpPage} />
-                <Route path="/cards" component={Cards} />
+                <Route className={classes.main} path="/mirror" component={Mirror} />
+                <Route className={classes.main} path="/home" component={HomePage} />
+                <Route className={classes.main} path="/help" component={HelpPage} />
+                <Route className={classes.main} path="/cards" component={Cards} />
                 <Footer/>
             </Fragment>
         </div>
@@ -80,7 +78,7 @@ function Header(){
     const classes=useStyles();
     
     return(
-        <AppBar position="absolute" color="default" className={classes.appBar}>
+        <AppBar position="static" color="default" elevation={0} className={classes.appBar}>
             <Toolbar className={classes.toolbar}>
                 <img src={oops_logo} alt= "" style={{maxWidth:200, height:50}} />
                 <img src={logo} alt= "" style={{maxWidth:200, height:50}} />

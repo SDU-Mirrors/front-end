@@ -6,9 +6,6 @@ import logo from '../source/logo.png'
   
 const useStyles = makeStyles((theme) => ({
   footer: {
-    marginLeft:theme.spacing(-1),
-    marginRight:theme.spacing(-1),
-    marginBottom:theme.spacing(-20),
     padding: theme.spacing(3, 2),
     marginTop: 'auto',
     backgroundColor:
@@ -24,10 +21,11 @@ const useStyles = makeStyles((theme) => ({
     
   },
   typographyFooter:{
-
+    fontSize:10,
   },
   image:{
-    maxWidth:200, 
+    maxWidth:100, 
+    padding: theme.spacing(5, 0),
     height:'auto',
   }
 }));
@@ -37,10 +35,10 @@ export default function Footer() {
 
   return (
 
-    <footer position="absolute" className={classes.footer}>
-      
+    <footer  className={classes.footer}>
+      <Container >
         <Grid container spacing={3} className={classes.ALL}>
-          <Grid item xs={8} sm={8}>
+          <Grid item xs={6} sm={6}>
             <Grid item xs={8} sm={8}>
               <Typography variant="h4" className={classes.typographyTitle}>
                 山东大学镜像站
@@ -59,11 +57,39 @@ export default function Footer() {
             </Grid>
             
           </Grid>
-          <Grid item xs={4}>
-            <img src={logo} alt= ""  className={classes.image} />
+
+          <Grid item  xs={6} sm={6}>
+            <Grid item >
+              <Typography variant="h4" className={classes.typographyTitle}>
+                联系我们
+              </Typography>
+            </Grid>
+            <Grid container justifyContent="center" xs={8} sm={8}>
+              <Grid item  xs={4} sm={4}>
+                <img src={logo} alt= ""  className={classes.image} />
+              </Grid>
+              <Grid item  xs={4} sm={4}>
+                <img src={logo} alt= ""  className={classes.image} />
+              </Grid>
+              <Grid item  xs={4} sm={4}>
+                <img src={logo} alt= ""  className={classes.image} />
+              </Grid>
+            </Grid>
+            <Grid container justifyContent="center" xs={8} sm={8} >
+              <Grid item xs={8} sm={8} >
+                  <Typography variant="body" className={classes.typographyFooter}>
+                    Copyright @ 2012-2015 ALL rights reserved  
+                  </Typography>
+              </Grid>
+              <Grid item xs={4} sm={4}>
+                  <Typography variant="body" className={classes.typographyFooter}>
+                    鲁ICP备案XXXXX号
+                  </Typography>
+              </Grid>
+            </Grid>
           </Grid>
         </Grid>
-      
+      </Container>
     </footer>
 
   );
