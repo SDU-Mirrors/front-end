@@ -1,0 +1,105 @@
+[{
+        "name": "ArchLinux",
+        "url": "/archlinux/",
+        "help_url": "/guide/ArchLinux.html",
+        "size": 72586,
+        "last_timestamp": 1628787728,
+        "status": 0
+    },
+    {
+        "name": "ArchLinux-iso",
+        "url": "/archlinux/iso/latest/",
+        "help_url": "",
+        "size": 0,
+        "last_timestamp": 0,
+        "status": 0
+    },
+    {
+        "name": "Debian",
+        "url": "/debian/",
+        "help_url": "/guide/Debian.html",
+        "size": 75211,
+        "last_timestamp": 1628798439,
+        "status": 0
+    },
+    {
+        "name": "Debian-iso",
+        "url": "/debian-iso/",
+        "help_url": "",
+        "size": 0,
+        "last_timestamp": 0,
+        "status": 0
+    },
+    {
+        "name": "Debian-security",
+        "url": "/debian-security/",
+        "help_url": "",
+        "size": 7599,
+        "last_timestamp": 1628798432,
+        "status": 0
+    },
+    {
+        "name": "lxc-images",
+        "url": "/lxc-images/",
+        "help_url": "/guide/lxc-images.html",
+        "size": 20787,
+        "last_timestamp": 1616004242,
+        "status": 0
+    },
+    {
+        "name": "RockyLinux",
+        "url": "/rocky/",
+        "help_url": "/guide/RockyLinux.html",
+        "size": 332218,
+        "last_timestamp": 1628789604,
+        "status": 0
+    },
+    {
+        "name": "RockyLinux8-iso",
+        "url": "/rocky/8/isos/",
+        "help_url": "",
+        "size": 0,
+        "last_timestamp": 0,
+        "status": 0
+    },
+    {
+        "name": "TexLive-iso",
+        "url": "/texlive-iso/",
+        "help_url": "",
+        "size": 0,
+        "last_timestamp": 0,
+        "status": 0
+    },
+    {
+        "name": "Ubuntu",
+        "url": "/ubuntu/",
+        "help_url": "/guide/Ubuntu.html",
+        "size": 636571,
+        "last_timestamp": 1628791606,
+        "status": 0
+    },
+    {
+        "name": "Ubuntu-iso",
+        "url": "/ubuntu-iso/",
+        "help_url": "",
+        "size": 0,
+        "last_timestamp": 0,
+        "status": 0
+    },
+    {
+        "name": "Windows-iso",
+        "url": "/guide/Windows-iso.html",
+        "help_url": "/guide/Windows-iso.html",
+        "size": 0,
+        "last_timestamp": 0,
+        "status": 0
+    },
+    {
+        "name": "\u5e38\u7528\u8f6f\u4ef6",
+        "url": "/software/",
+        "help_url": "",
+        "size": 0,
+        "last_timestamp": 0,
+        "status": 0
+    }
+]

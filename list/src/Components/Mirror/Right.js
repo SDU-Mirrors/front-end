@@ -9,7 +9,7 @@ import GitHubIcon from '@material-ui/icons/GitHub';
 import AnnouncementIcon from '@material-ui/icons/Announcement';
 import CallIcon from '@material-ui/icons/Call';
 
-export default class Right extends Component{
+export default class Right extends Component {
     //const classes=useStyles();
     state = {
         // ISO下载链接
@@ -30,7 +30,7 @@ export default class Right extends Component{
             method: "get"
         }).then(response => {
             const isoLinks = response.data;
-            console.log(isoLinks);
+            console.log("in fetch_iso_links", isoLinks);
             this.setState({
                 isoLinks: isoLinks
             });
@@ -49,7 +49,7 @@ export default class Right extends Component{
             method: "get"
         }).then(response => {
             const config = response.data;
-            console.log(config);
+            console.log("in fetch_config", config);
             this.setState({
                 config: config
             });
@@ -58,29 +58,30 @@ export default class Right extends Component{
 
     componentDidMount() {
         this.fetch_iso_links();
-        console.log(this.state.isoLinks)
+        //console.log(this.state.isoLinks)
         this.fetch_config();
     }
-    render(){
-        return(
+
+    render() {
+        return (
             <div>
                 <div>
                     <div>
                         <Typography variant="h5" align="left" color="textSecondary" paragraph>
-                            <AnnouncementIcon color="secondary" />新闻公告：
+                            <AnnouncementIcon color="secondary"/>新闻公告：
                         </Typography>
                     </div>
                     <div className="side-card">
-                        <DownloadFormCard isoLinks={this.state.isoLinks} />
+                        <DownloadFormCard isoLinks={this.state.isoLinks}/>
                     </div>
                     <div className="side-card">
-                        <ConfigGeneratorCard config={this.state.config} />
+                        <ConfigGeneratorCard config={this.state.config}/>
                     </div>
                     <div>
                         <Typography variant="h5" align="left" color="textSecondary" paragraph>
-                            <CallIcon color="secondary" />联系我们：
+                            <CallIcon color="secondary"/>联系我们：
                         </Typography>
-                        <Typography  align="left" color="textSecondary" paragraph>
+                        <Typography align="left" color="textSecondary" paragraph>
                             GitHub：<GitHubIcon fontSize="small"/>
                             镜像站开放QQ群：
                         </Typography>

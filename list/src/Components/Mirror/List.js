@@ -1,82 +1,135 @@
-import React from 'react';
+import React, {Component} from 'react';
+import axios from "axios";
 import Link from '@material-ui/core/Link';
-import { makeStyles } from '@material-ui/core/styles';
+import {makeStyles} from '@material-ui/core/styles';
 import Table from '@material-ui/core/Table';
 import TableBody from '@material-ui/core/TableBody';
 import TableCell from '@material-ui/core/TableCell';
 import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
-import {Grid,TextField} from '@material-ui/core';
+import {Grid} from '@material-ui/core';
 import Title from './Title'
 import Input from '@material-ui/core/Input';
 
 import ListIcon from '@material-ui/icons/List';
+import './List.css'
+// "name": "TexLive-iso",
+// "url": "/texlive-iso/",
+// "help_url": "",
+// "size": 0,
+// "last_timestamp": 0,
+// "status": 0
+
+//Unix时间戳转时间
+function timeTransfer(last_timestamp) {
+    let unixTimestamp = new Date(last_timestamp * 1000);
+    let commonTime = unixTimestamp.toLocaleString();
+    return commonTime;
+}
+
+//将数字转换成带逗号格式
+function formatNumber(num) {
+    if (isNaN(+num))
+        return "";
+    return (num + "").replace(/(?<!.*\..*)\B(?=((\d{3})+)\b)/g, ",")
+}
 
 //创建表格数据
-function createData(id, date, name, shipTo, paymentMethod, amount) {
-    return { id, date, name, shipTo, paymentMethod, amount };
+function createData(name, url, help_url, size, last_timestamp, status) {
+    let Name;
+    if (help_url != '') {
+        Name =
+            <div>
+                <a href={"/" + url}>{name}</a>
+                <a href={"/" + help_url} class="Help">HELP</a>
+            </div>;
+    } else {
+        Name = <a href={"/" + url}>{name}</a>;
+    }
+    let update_timestamp = timeTransfer(last_timestamp);
+    let Size = formatNumber(size) + ' MB';
+    return {Name, update_timestamp, Size, status};
 }
 
-//测试数据
-const rows = [
-    createData(0, '16 Mar, 2019', 'Elvis Presley', 'Tupelo, MS', 'VISA ⠀•••• 3719', 312.44),
-    createData(1, '16 Mar, 2019', 'Paul McCartney', 'London, UK', 'VISA ⠀•••• 2574', 866.99),
-    createData(2, '16 Mar, 2019', 'Tom Scholz', 'Boston, MA', 'MC ⠀•••• 1253', 100.81),
-    createData(3, '16 Mar, 2019', 'Michael Jackson', 'Gary, IN', 'AMEX ⠀•••• 2000', 654.39),
-    createData(4, '15 Mar, 2019', 'Bruce Springsteen', 'Long Branch, NJ', 'VISA ⠀•••• 5919', 212.79),
-  ];
-   
-function preventDefault(event){
-    event.preventDefault();
-}
 
-const useStyles = makeStyles((theme) => ({
-    seeMore: {
-      marginTop: theme.spacing(3),
-    },
-    textField:{
-        width:300,
-        height:15,
-    },
-}));
+export default class List extends Component {
+    state = {
+        // 镜像列表
+        mirrorsList: null,
+        // 是否已经获取了镜像列表
+        loaded: false
+    };
 
-export default function Orders(){
-    const classes = useStyles();
-    return(
-        <React.Fragment>
-            <Grid container spacing={2}>
-                <Grid item sm>
-                    <Title><ListIcon color="primary"/> 镜像列表</Title>
+    /**
+     * 获取镜像列表
+     */
+    fetch_mirrors_list = () => {
+        this.setState({
+            fetching_slots: true
+        });
+        axios({
+            url: "/static/sync.json",
+            method: "get"
+        }).then(response => {
+            const mirrorsList = response.data;
+            mirrorsList.sort((a, b) => {
+                return a.name < b.name ? -1 : 1;
+            });
+            this.setState({
+                mirrorsList: mirrorsList,
+                loaded: true
+            });
+            console.log("in fetch_mirrors_list", mirrorsList);
+        });
+    };
+    
+    //测试数据
+    rows = [
+        createData('TexLive-iso', '/texlive-iso/', '/guide/Ubuntu.html', 10000, 1628791606, 0),
+    ];
+
+    componentDidMount() {
+        this.fetch_mirrors_list();
+        console.log("in componentDidMount", this.state.mirrorsList)
+    }
+
+    render() {
+        return (
+            <React.Fragment>
+                <Grid container spacing={2}>
+                    <Grid item sm>
+                        <Title><ListIcon color="primary"/> 镜像列表</Title>
+                    </Grid>
+                    <Grid item sm>
+                        <Input placeholder="搜索" inputProps={{'aria-label': 'description'}}/>
+                    </Grid>
                 </Grid>
-                <Grid item sm>
-                    <Input placeholder="搜索" inputProps={{ 'aria-label': 'description' }} />
-                </Grid>
-            </Grid>
-            <Table size="small">
-                <TableHead>
-                    <TableRow>
-                        <TableCell>镜像名称</TableCell>
-                        <TableCell>大小</TableCell>
-                        <TableCell>最近同步时间</TableCell>
-                        <TableCell>同步状态</TableCell>
-                    </TableRow>
-                </TableHead>
-                <TableBody>
-                    {rows.map((row) => (
-                        <TableRow hover role="checkbox" key={row.id}>
-                        <TableCell>{row.date}</TableCell>
-                        <TableCell>{row.name}</TableCell>
-                        <TableCell>{row.shipTo}</TableCell>
-                        <TableCell>{row.paymentMethod}</TableCell>
+                <Table size="small">
+                    <TableHead>
+                        <TableRow>
+                            <TableCell>镜像名称</TableCell>
+                            <TableCell>大小</TableCell>
+                            <TableCell>最近同步时间</TableCell>
+                            <TableCell>同步状态</TableCell>
                         </TableRow>
-                    ))}
-                </TableBody>
-            </Table>
-            <div className={classes.seeMore}>
-                <Link color="primary" href="#" onClick={preventDefault}>
-                    See more orders
-                </Link>
-            </div>
-        </React.Fragment>
-    )
+                    </TableHead>
+                    <TableBody>
+                        {this.rows.map((row) => (
+                            <TableRow hover role="checkbox" key={row.id}>
+                                <TableCell>{row.Name}</TableCell>
+                                <TableCell>{row.Size}</TableCell>
+                                <TableCell>{row.update_timestamp}</TableCell>
+                                <TableCell>{row.status}</TableCell>
+                            </TableRow>
+                        ))}
+                    </TableBody>
+                </Table>
+                {/*<div className={classes.seeMore}>*/}
+                {/*    <Link color="primary" href="#" onClick={preventDefault}>*/}
+                {/*        See more orders*/}
+                {/*    </Link>*/}
+                {/*</div>*/}
+            </React.Fragment>
+        )
+    };
 }

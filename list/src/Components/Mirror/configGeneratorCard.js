@@ -160,7 +160,7 @@ class ConfigBlock extends Component {
         if (block != null) {
             return (
                 <Col className="config-block" span={24}>
-                    <SyntaxHighlighter language="powershell" style={dark}>
+                    <SyntaxHighlighter language="plaintext" style={dark}>
                         {block}
                     </SyntaxHighlighter>
                 </Col>
