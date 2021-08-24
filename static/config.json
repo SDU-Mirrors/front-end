@@ -1,0 +1,50 @@
+[
+  {
+    "label": "Ubuntu",
+    "value": "ubuntu",
+    "children": [
+      {
+        "label": "20.04 LTS",
+        "value": "focal"
+      },
+      {
+        "label": "18.04 LTS",
+        "value": "bionic"
+      },
+      {
+        "label":"16.04 LTS",
+        "value":"xenial"
+      }
+    ]
+  },
+  {
+    "label": "Debian",
+    "value": "debian",
+    "children": [
+      {
+        "label": "10 buster",
+        "value": "buster"
+      }
+    ]
+  },
+  {
+    "label": "ArchLinux",
+    "value": "archlinux",
+    "children": [
+      {
+        "label": "archlinux",
+        "value": "archlinux"
+      }
+    ]
+  },
+  {
+    "label": "RockyLinux",
+    "value": "rocky",
+    "children": [
+      {
+        "label": "rockylinux",
+        "value": "rockylinux"
+      }
+    ]
+  }
+]
