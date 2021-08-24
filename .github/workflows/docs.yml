@@ -36,7 +36,7 @@ jobs:
           cd ..
           cd ./list
           npm install
-          Export CI=false
+          npm set CI=false
           npm run-script build
           cp -r ./build ../build-part
           cd ..
