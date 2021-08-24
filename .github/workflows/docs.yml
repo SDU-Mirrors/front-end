@@ -34,13 +34,13 @@ jobs:
           npm set CI=false
           echo "begin generating main-page"
           npm run-script build
+          cp -r ./build ../build-part
           cd ..
           cd ./docs-src
           npm install
           npm i -g gatsby-cli
           gatsby build --prefix-paths
           cp -r ./public ../docs-part
-          cp -r ./build ../build-part
           cd ..
           cp -r ./docs-part ./build-part/docs
           # mkdir ./public
