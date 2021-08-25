@@ -82,7 +82,7 @@ export default class List extends Component {
             console.log("in fetch_mirrors_list", mirrorsList);
         });
     };
-    
+
     //测试数据
     rows = [
         createData('TexLive-iso', '/texlive-iso/', '/guide/Ubuntu.html', 10000, 1628791606, 0),
@@ -90,7 +90,7 @@ export default class List extends Component {
 
     componentDidMount() {
         this.fetch_mirrors_list();
-        console.log("in componentDidMount", this.state.mirrorsList)
+        console.log("in componentDidMount", this.state.mirrorsList);
     }
 
     render() {
