@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: Docs-Build
+name: Build
 
 # Controls when the workflow will run
 on:
@@ -28,19 +28,30 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: Build
         run: |
+          cd ./list
+          echo "begin installing"
+          npm install
+          npm set CI=false
+          echo "begin generating main-page"
+          npm run build-linux
+          cp -r ./build ../build-part
+          cd ..
           cd ./docs-src
           npm install
           npm i -g gatsby-cli
           gatsby build --prefix-paths
+          cp -r ./public ../docs-part
+          cd ..
+          cp -r ./docs-part ./build-part/docs
           # mkdir ./public
-          # cp -r ./public ../docs
+          # cp -r ./public ../page/docs
           # echo test, and deploy your project.
       - name: Deploy
         uses: s0/git-publish-subdir-action@develop
         env:
           REPO: self
           BRANCH: build # The branch name where you want to push the assets
-          FOLDER: ./docs-src/public # The directory where your assets are generated
+          FOLDER: ./build-part # The directory where your assets are generated
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # GitHub will automatically add this - you don't need to bother getting a token
           MESSAGE: "Build: ({sha}) {msg}" # The commit message
           
