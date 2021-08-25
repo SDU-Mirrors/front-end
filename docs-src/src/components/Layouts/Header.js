@@ -57,17 +57,17 @@ export default function Header(){
                     <Link to="" variant="button" color="textPrimary" href="/index.html#/home" className={classes.link}>
                         主页
                     </Link>
-                    <Link to="" variant="button" color="textPrimary" href="/index.html#/home" className={classes.link}>
+                    <Link to="" variant="button" color="textPrimary" href="/index.html#/mirror" className={classes.link}>
                         镜像
                     </Link>
                     {/* <a className={classes.link} variant="button" color="textPrimary" href="/docs">文档</a> */}
                     <Link to="" variant="button" color="textPrimary" href="/docs" className={classes.link}>
                             文档                     
                     </Link>
-                    <Link to="" variant="button" color="textPrimary" href="/index.html#/home" className={classes.link}>
+                    <Link to="" variant="button" color="textPrimary" href="/index.html#/help" className={classes.link}>
                         帮助
                     </Link>
-                    <Link to="" variant="button" color="textPrimary" href="/index.html#/home" className={classes.link}>
+                    <Link to="" variant="button" color="textPrimary" href="/index.html#/about" className={classes.link}>
                         关于
                     </Link>
                 </nav>
