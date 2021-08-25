@@ -33,7 +33,7 @@ jobs:
           npm install
           npm set CI=false
           echo "begin generating main-page"
-          npm run-script build
+          npm run build-linux
           cp -r ./build ../build-part
           cd ..
           cd ./docs-src
