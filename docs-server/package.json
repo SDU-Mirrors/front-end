@@ -2,6 +2,9 @@
   "dependencies": {
     "express": "^4.17.1",
     "front-matter": "^4.0.2",
+    "markdown-it": "^12.2.0",
+    "markdown-it-anchor": "^8.3.0",
+    "markdown-it-toc-done-right": "^4.2.0",
     "remove-markdown": "^0.3.0"
   }
 }

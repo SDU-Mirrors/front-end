@@ -19,6 +19,14 @@ const config = {
 // excerpt string
 var fileList = [];
 
+function getMarkdownHtml(markdown){
+
+}
+
+function getMarkdownTOC(markdown){
+
+}
+
 // 得到tag
 function getMarkdownTag(markdown, default_tag = null){
     const parsedMarkdown = frontMatter(markdown);
@@ -110,6 +118,19 @@ function updateFileJson(){
 }
 
 const app = express();
+app.get('/article/:time/:title' , (req , res)=>{
+    let tmpPath = ModulePath.join(config.path);
+    let tmpPath = ModulePath.join(tmpPath, config.params.title);
+    if(fs.existsSync(tmpPath)){
+        const data = fs.readFileSync(tmpPath);
+        res.send({
+            'body': getMarkdownHtml(data),
+            'toc': getMarkdownTOC(data)
+        });
+    }else{
+        res.send('no such article');
+    }
+})
 app.get('/list', (req, res)=>{
     res.send(fileList);
 });
