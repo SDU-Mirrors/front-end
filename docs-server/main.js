@@ -110,16 +110,23 @@ function updateFileJson(){
 }
 
 const app = express();
+app.get('/list', (req, res)=>{
+    res.send(fileList);
+});
+
 app.get('/update/:time/:title', function(req, res){
     let tmp = updateFile(ModulePath.join(config.path + '/' + req.params.time + '/' + req.params.title));
     res.send(tmp);
 });
+
 app.get('/update', function(req, res){
     updateFileJson();
     // res.send('update');
     res.send('正在更新');
 });
+
 app.get('/', function(req, res){
     res.send('abab');
 });
+
 app.listen(3000);
