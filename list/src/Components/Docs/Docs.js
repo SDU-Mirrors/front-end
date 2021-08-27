@@ -7,6 +7,7 @@ import { Container } from "react-bootstrap";
 import { Route, Redirect } from "react-router-dom";
 import Page from "./Page";
 import Tag from "./Tag"
+import Article from "./Article";
 class Docs extends React.Component{
     constructor(props){
         super(props);
