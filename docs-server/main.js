@@ -3,7 +3,7 @@ const fs = require("fs");
 const ModulePath = require("path");
 const frontMatter = require('front-matter');
 const removeMd = require('remove-markdown');
-
+const markdownIt = require('markdown-it');
 
 // 配置文件
 const config = {
@@ -18,14 +18,24 @@ const config = {
 // tag string 类别
 // excerpt string
 var fileList = [];
+var md = markdownIt({
+    html: true,
+    linkify: true,
+    typographer: true,
+})
+.use(require("markdown-it-anchor"), {permalink: true, permalinkBefore: true, permalinkSymbol: '§'})
+.use(require('markdown-it-toc-done-right'))
 
-function getMarkdownHtml(markdown){
-
+function getMarkdown(markdown){
+    const parsedMarkdown = frontMatter(markdown);
+    return parsedMarkdown.body;
+    // return md.render(parsedMarkdown.body + '\n\$\{TOC\}');
 }
 
-function getMarkdownTOC(markdown){
-
-}
+// function getMarkdownTOC(markdown){
+//     const parsedMarkdown = frontMatter(markdown);
+//     return md.render(parsedMarkdown.body + '\n\$\{TOC\}');
+// }
 
 // 得到tag
 function getMarkdownTag(markdown, default_tag = null){
@@ -117,15 +127,17 @@ function updateFileJson(){
     parseTime(config.path);
 }
 
+updateFileJson();
 const app = express();
 app.get('/article/:time/:title' , (req , res)=>{
-    let tmpPath = ModulePath.join(config.path);
-    let tmpPath = ModulePath.join(tmpPath, config.params.title);
+    // console.log(req);
+    let tmpPath = ModulePath.join(ModulePath.join(config.path, req.params.time), req.params.title);
     if(fs.existsSync(tmpPath)){
-        const data = fs.readFileSync(tmpPath);
+        console.log(tmpPath);
+        const data = fs.readFileSync(ModulePath.join(tmpPath, 'main.md'), 'utf8');
         res.send({
-            'body': getMarkdownHtml(data),
-            'toc': getMarkdownTOC(data)
+            'markdown': getMarkdown(data),
+            // 'toc': getMarkdownTOC(data)
         });
     }else{
         res.send('no such article');
