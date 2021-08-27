@@ -129,6 +129,14 @@ function updateFileJson(){
 
 updateFileJson();
 const app = express();
+app.all('*', function(req, res, next) {
+    res.header("Access-Control-Allow-Origin", "*");
+    res.header("Access-Control-Allow-Headers", "X-Requested-With");
+    res.header("Access-Control-Allow-Methods","PUT,POST,GET,DELETE,OPTIONS");
+    res.header("X-Powered-By",' 3.2.1')
+    res.header("Content-Type", "application/json;charset=utf-8");
+    next();
+});
 app.get('/article/:time/:title' , (req , res)=>{
     // console.log(req);
     let tmpPath = ModulePath.join(ModulePath.join(config.path, req.params.time), req.params.title);
@@ -162,4 +170,4 @@ app.get('/', function(req, res){
     res.send('abab');
 });
 
-app.listen(3000);
+app.listen(4000);

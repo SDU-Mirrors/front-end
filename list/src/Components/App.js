@@ -2,6 +2,7 @@ import React,{Fragment} from 'react'
 import {Footer} from './Layouts'
 import {Mirror} from './Mirror'
 import {HomePage} from './HomePage'
+import {Docs} from './Docs'
 import {HelpPage} from './HelpPage'
 import { Cards } from './Cards'
 import { makeStyles } from '@material-ui/core/styles';
@@ -62,6 +63,7 @@ export default function App(){
                 </Route>
                 <Route className={classes.main} path="/mirror" component={Mirror} />
                 <Route className={classes.main} path="/home" component={HomePage} />
+                <Route className={classes.main} path="/docs" component={Docs} />
                 <Route className={classes.main} path="/help" component={HelpPage} />
                 <Route className={classes.main} path="/cards" component={Cards} />
                 <Footer/>
@@ -92,7 +94,7 @@ function Header(){
                     <Link to="/mirror" variant="button" color="textPrimary" href="#" className={classes.link}>
                         镜像
                     </Link>
-                    <Link to="" variant="button" color="textPrimary" href="#" className={classes.link}>
+                    <Link to="/docs" variant="button" color="textPrimary" href="#" className={classes.link}>
                             文档                     
                     </Link>
                     <Link to="/help" variant="button" color="textPrimary" href="#" className={classes.link}>
