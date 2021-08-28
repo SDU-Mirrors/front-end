@@ -52,7 +52,7 @@ function createData(name, url, help_url, size, last_timestamp, status) {
     let update_timestamp = timeTransfer(last_timestamp);
     let Size = null;
     if (size != 0) {
-        Size = formatNumber(size) + ' MB'
+        Size = formatNumber(size) + ' MB';
     }
     return {Name, update_timestamp, Size, status};
 }
@@ -63,7 +63,9 @@ export default class List extends Component {
         // 镜像列表
         mirrorsList: null,
         // 是否已经获取了镜像列表
-        loaded: false
+        loaded: false,
+        // 搜索
+        pattern_value: ''
     };
 
     /**
@@ -89,21 +91,33 @@ export default class List extends Component {
         });
     };
 
+    handleOnChange = (event) => {
+        //console.log("on change");
+        //console.log(event.target.value);
+        this.setState({
+            pattern_value: event.target.value
+        })
+    }
+
     componentDidMount() {
         this.fetch_mirrors_list();
     }
 
     render() {
         const mirrorsList = this.state.mirrorsList;
+        const pattern_value = this.state.pattern_value.toLowerCase();
+        //console.log(this.state.pattern_value)
         if (mirrorsList == null)
             return null;
         //console.log("in render", mirrorsList);
         //console.log(typeof mirrorsList)
         let rows = [];
         for (let key in mirrorsList) {
-            rows.push(createData(mirrorsList[key]['name'], mirrorsList[key]['url'], mirrorsList[key]['help_url'],
-                mirrorsList[key]['size'], mirrorsList[key]['last_timestamp'], mirrorsList[key]['status']));
-            console.log(mirrorsList[key]['name'])
+            const tmpName = mirrorsList[key]['name'].toLowerCase();
+            if (tmpName.indexOf(pattern_value) >= 0)
+                rows.push(createData(mirrorsList[key]['name'], mirrorsList[key]['url'], mirrorsList[key]['help_url'],
+                    mirrorsList[key]['size'], mirrorsList[key]['last_timestamp'], mirrorsList[key]['status']));
+            //console.log(mirrorsList[key]['name'])
         }
         return (
             <React.Fragment>
@@ -112,7 +126,8 @@ export default class List extends Component {
                         <Title><ListIcon color="primary"/> 镜像列表</Title>
                     </Grid>
                     <Grid item sm>
-                        <Input placeholder="搜索" inputProps={{'aria-label': 'description'}}/>
+                        <Input placeholder="搜索" inputProps={{'aria-label': 'description'}}
+                               onChange={this.handleOnChange.bind(this)}/>
                     </Grid>
                 </Grid>
                 <Table size="small">
@@ -142,5 +157,6 @@ export default class List extends Component {
                 {/*</div>*/}
             </React.Fragment>
         )
-    };
+    }
+    ;
 }
