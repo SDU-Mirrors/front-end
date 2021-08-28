@@ -21,7 +21,7 @@ class TagArea extends Component{
             return (<div></div>);
         }else{
             return (<div className="tag">
-                <span role="img" aria-label="tag">🔖<Link to={"/docs/tag/" + tag}>tag</Link></span>
+                <span role="img" aria-label="tag">🔖<Link className="tag-link" to={"/docs/tag/" + tag}>{tag}</Link></span>
 
             </div>
             );

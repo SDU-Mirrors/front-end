@@ -1,5 +1,6 @@
 import React from "react";
 import axios from "axios";
+import "./Config.js"
 import BlogList from "./Components/BlogList";
 import Category from "./Components/CategoryList";
 class Page extends React.Component{
@@ -12,7 +13,7 @@ class Page extends React.Component{
         };
     }
     componentDidMount(){
-        axios.get('http://localhost:4000/list').then(res=>{
+        axios.get(global.getList()).then(res=>{
             console.log(res);
             let tmpList = [];
             res.data.forEach((item) => {
