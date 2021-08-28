@@ -5,6 +5,7 @@ import MarkdownItTOC from "markdown-it-table-of-contents";
 import { Container } from "react-bootstrap";
 import TocBody from "./Components/TocBody";
 import "./Config.js"
+import BlogBody from "./Components/BlogBody";
 function transformLink(link) {
     return "javascript:return false;";
   }
@@ -19,7 +20,8 @@ class Article extends React.Component{
             time: this.props.match.params.article.substring(0, 8),
             title: this.props.match.params.article.substring(8),
             markdown: "",
-            body:""
+            body:"",
+            toc: ""
         };
     }
     componentDidMount(){
@@ -53,8 +55,9 @@ class Article extends React.Component{
     render(){
         return (
         <div className="div-app">
-            <div className=".blog-post blog-body-with-table" dangerouslySetInnerHTML={{__html: this.state.body}}></div>
-            {this.state.toc == "" ? <div></div> : 
+            <BlogBody date={this.state.time} title={this.state.title} html={this.state.body}></BlogBody>
+            {/* <div className=".blog-post blog-body-with-table" dangerouslySetInnerHTML={{__html: this.state.body}}></div> */}
+            {this.state.toc.lastIndexOf("</li>") == -1 ? <div></div> : 
                 <TocBody toc={this.state.toc}></TocBody>
             }
         </div>

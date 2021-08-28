@@ -23,6 +23,7 @@ class Page extends React.Component{
                 if(flag == false)
                     tmpList.push(item.tag);
             });
+            global.sortByLogicalPath(res.data);
             this.setState({
                 fileList: res.data,
                 tagList: tmpList

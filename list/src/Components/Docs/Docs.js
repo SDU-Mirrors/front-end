@@ -1,6 +1,8 @@
 import React from "react";
 import "./Components/blog.css"
 import "./Components/card.css"
+import "./Components/style.css"
+// import "./Components/normalize.css"
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Container } from "react-bootstrap";
 import { Route, Redirect } from "react-router-dom";
