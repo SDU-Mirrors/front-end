@@ -24,7 +24,7 @@ class BlogList extends React.Component{
                         <Row>
 
                           <Col>
-                            <div dangerouslySetInnerHTML={{              __html: post.excerpt}}></div>
+                            <div dangerouslySetInnerHTML={{__html: post.excerpt}}></div>
                           </Col>  
                           
                         </Row>

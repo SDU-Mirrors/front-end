@@ -79,6 +79,7 @@
     /* border: 1px solid #e6e6e6; */
     /* border-radius: 2px; */
     padding-left: 10px;
+    margin-left: 10px;
     top: calc(20vh)/*50px;*/;
     width: fit-content;
     min-width: calc(20vw);
@@ -100,6 +101,7 @@
 
 .css-aside li{
     margin-bottom: 0;
+    margin-left: 3px;
 }
 
 .css-aside li > p{
@@ -114,6 +116,7 @@
     list-style-position: outside;
     margin-bottom: 0;
     margin-left: 10px;
+    padding-left: 0px;
 }
 
 .css-aside ul p{

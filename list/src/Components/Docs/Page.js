@@ -1,6 +1,7 @@
 import React from "react";
 import axios from "axios";
 import BlogList from "./Components/BlogList";
+import "./Config.js"
 class Page extends React.Component{
     constructor(props){
         super(props);
@@ -10,7 +11,7 @@ class Page extends React.Component{
         };
     }
     componentDidMount(){
-        axios.get('http://localhost:4000/list').then(res=>{
+        axios.get(global.getList()).then(res=>{
             console.log(res);
             this.setState({fileList: res.data});
         },
