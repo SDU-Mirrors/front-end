@@ -6,6 +6,10 @@ global.getArticle = (time, title) => {
     return global.config.host + "/article/" + time + "/" + title;
 }
 
+global.getArticleByLogicalPath = (path) => {
+    return global.getArticle(path.substring(0, 8), path.substring(8));
+}
+
 global.getList = () => {
     return global.config.host + "/list";
 }
@@ -18,4 +22,8 @@ global.sortByLogicalPath = (arr) => {
     arr.sort((a, b) => {
         return a.logicalPath > b.logicalPath;
     });
+}
+
+global.logicalPathToSubURL = (path) => {
+    return path.substring(0, 8) + "/" + path.substring(8);
 }

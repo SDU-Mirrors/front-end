@@ -2,6 +2,7 @@ import axios from "axios";
 import React from "react";
 import MarkdownIt from "markdown-it";
 import MarkdownItTOC from "markdown-it-table-of-contents";
+import BlogNavButton from "./Components/BlogNavButton";
 import { Container } from "react-bootstrap";
 import TocBody from "./Components/TocBody";
 import "./Config.js"
@@ -21,7 +22,9 @@ class Article extends React.Component{
             title: this.props.match.params.article.substring(8),
             markdown: "",
             body:"",
-            toc: ""
+            toc: "",
+            pre: "",
+            next: ""
         };
     }
     componentDidMount(){
@@ -51,11 +54,34 @@ class Article extends React.Component{
                 console.log("cannot get this article");
             }
         )
+
+        axios.get(global.getList()).then(res=>{
+            global.sortByLogicalPath(res.data);
+            let loc = -1;
+            res.data.forEach((item, i) => {
+                if(item.logicalPath == this.state.logicalPath){
+                    loc = i;
+                }
+            });
+            console.log("number", loc);
+            this.setState({
+                pre: loc == 0 ? "" : res.data[loc - 1].logicalPath,
+                next: loc == res.data.length-1 ? "" : res.data[loc + 1].logicalPath
+            }, ()=>{
+                console.log(this.state);
+            });
+        },
+        error=>{
+            console.log("get list failed");
+        });
     }
     render(){
         return (
         <div className="div-app">
-            <BlogBody date={this.state.time} title={this.state.title} html={this.state.body}></BlogBody>
+            <div>
+                <BlogBody date={this.state.time} title={this.state.title} html={this.state.body}></BlogBody>
+                <BlogNavButton pre={this.state.pre} next={this.state.next}></BlogNavButton>
+            </div>
             {/* <div className=".blog-post blog-body-with-table" dangerouslySetInnerHTML={{__html: this.state.body}}></div> */}
             {this.state.toc.lastIndexOf("</li>") == -1 ? <div></div> : 
                 <TocBody toc={this.state.toc}></TocBody>
