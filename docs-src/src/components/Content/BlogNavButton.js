@@ -17,6 +17,7 @@ class BlogNavButton extends Component{
                     )
                     }
                 </div>
+                <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
                 <div>
                     {this.props.next && (
                         <Button href={"/docs" + this.props.next.fields.slug} variant="contained" color="primary">

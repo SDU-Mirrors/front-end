@@ -14,7 +14,7 @@ class BlogBody extends Component{
             <div className={"blog-body-" + this.props.table}>
                 <h1 itemProp="headline">{post.frontmatter.title}</h1>
                 <p>{post.frontmatter.date}</p>
-                <br/>
+                {/* <br/> */}
                 <Container className="blog-post" dangerouslySetInnerHTML={{ __html: post.html }}
                     itemProp="articleBody">
                 </Container>
