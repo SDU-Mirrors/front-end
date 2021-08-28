@@ -8040,10 +8040,10 @@
   "resolved" "https://registry.nlark.com/markdown-it-anchor/download/markdown-it-anchor-8.3.0.tgz"
   "version" "8.3.0"
 
-"markdown-it-toc-done-right@^4.2.0":
-  "integrity" "sha1-PM3OItUCL/rnuZHQcmGxsd5UWdA="
-  "resolved" "https://registry.nlark.com/markdown-it-toc-done-right/download/markdown-it-toc-done-right-4.2.0.tgz"
-  "version" "4.2.0"
+"markdown-it-table-of-contents@^0.5.2":
+  "integrity" "sha1-L5QdOGwneIeRDyx6ihb1oXrLgpw="
+  "resolved" "https://registry.npm.taobao.org/markdown-it-table-of-contents/download/markdown-it-table-of-contents-0.5.2.tgz"
+  "version" "0.5.2"
 
 "markdown-it@*", "markdown-it@^12.2.0":
   "integrity" "sha1-CR9yD9XbIG+A3nqNHxpwNf0NONs="

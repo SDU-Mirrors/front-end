@@ -1,8 +1,12 @@
 import axios from "axios";
 import React from "react";
 import MarkdownIt from "markdown-it";
-import markdownItAnchor from 'markdown-it-anchor'
-import markdownItTocDoneRight from 'markdown-it-toc-done-right'
+import MarkdownItTOC from "markdown-it-table-of-contents";
+function transformLink(link) {
+    return "javascript:return false;";
+  }
+  
+
 class Article extends React.Component{
     constructor(props){
         super(props);
@@ -23,11 +27,10 @@ class Article extends React.Component{
                     html: false,
                     xhtmlOut: true,
                     typographer: true
-                }).use( markdownItAnchor, { permalink: true, permalinkBefore: true, permalinkSymbol: '§' } )
-                  .use( markdownItTocDoneRight );
+                }).use( MarkdownItTOC, {listType: "ul", transformLink:transformLink});
                   this.setState({
                       markdown: res.data.markdown,
-                      body: md.render(res.data.markdown + " \$\{TOC\}")
+                      body: md.render(res.data.markdown + " \[\[TOC\]\]")
                     });
                 console.log(res);
             },
@@ -37,7 +40,7 @@ class Article extends React.Component{
         )
     }
     render(){
-        return (<div dangerouslySetInnerHTML={{__html: this.state.body}}></div>);
+        return (<div className="blog-post" dangerouslySetInnerHTML={{__html: this.state.body}}></div>);
     }
 }
 
