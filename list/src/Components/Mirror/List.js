@@ -13,15 +13,12 @@ import Input from '@material-ui/core/Input';
 
 import ListIcon from '@material-ui/icons/List';
 import './List.css'
-// "name": "TexLive-iso",
-// "url": "/texlive-iso/",
-// "help_url": "",
-// "size": 0,
-// "last_timestamp": 0,
-// "status": 0
+
 
 //Unix时间戳转时间
 function timeTransfer(last_timestamp) {
+    if (last_timestamp == 0)
+        return null;
     let unixTimestamp = new Date(last_timestamp * 1000);
     let commonTime = unixTimestamp.toLocaleString();
     return commonTime;
@@ -40,14 +37,17 @@ function createData(name, url, help_url, size, last_timestamp, status) {
     if (help_url != '') {
         Name =
             <div>
-                <a href={"/" + url}>{name}</a>
-                <a href={"/" + help_url} class="Help">HELP</a>
+                <a href={url}>{name}</a>
+                <a href={help_url} class="Help">HELP</a>
             </div>;
     } else {
-        Name = <a href={"/" + url}>{name}</a>;
+        Name = <a href={url}>{name}</a>;
     }
     let update_timestamp = timeTransfer(last_timestamp);
-    let Size = formatNumber(size) + ' MB';
+    let Size = null;
+    if (size != 0) {
+        Size = formatNumber(size) + ' MB';
+    }
     return {Name, update_timestamp, Size, status};
 }
 
@@ -57,7 +57,9 @@ export default class List extends Component {
         // 镜像列表
         mirrorsList: null,
         // 是否已经获取了镜像列表
-        loaded: false
+        loaded: false,
+        // 搜索
+        pattern_value: ''
     };
 
     /**
@@ -83,17 +85,34 @@ export default class List extends Component {
         });
     };
 
-    //测试数据
-    rows = [
-        createData('TexLive-iso', '/texlive-iso/', '/guide/Ubuntu.html', 10000, 1628791606, 0),
-    ];
+    handleOnChange = (event) => {
+        //console.log("on change");
+        //console.log(event.target.value);
+        this.setState({
+            pattern_value: event.target.value
+        })
+    }
 
     componentDidMount() {
         this.fetch_mirrors_list();
-        console.log("in componentDidMount", this.state.mirrorsList);
     }
 
     render() {
+        const mirrorsList = this.state.mirrorsList;
+        const pattern_value = this.state.pattern_value.toLowerCase();
+        //console.log(this.state.pattern_value)
+        if (mirrorsList == null)
+            return null;
+        //console.log("in render", mirrorsList);
+        //console.log(typeof mirrorsList)
+        let rows = [];
+        for (let key in mirrorsList) {
+            const tmpName = mirrorsList[key]['name'].toLowerCase();
+            if (tmpName.indexOf(pattern_value) >= 0)
+                rows.push(createData(mirrorsList[key]['name'], mirrorsList[key]['url'], mirrorsList[key]['help_url'],
+                    mirrorsList[key]['size'], mirrorsList[key]['last_timestamp'], mirrorsList[key]['status']));
+            //console.log(mirrorsList[key]['name'])
+        }
         return (
             <React.Fragment>
                 <Grid container spacing={2}>
@@ -101,7 +120,8 @@ export default class List extends Component {
                         <Title><ListIcon color="primary"/> 镜像列表</Title>
                     </Grid>
                     <Grid item sm>
-                        <Input placeholder="搜索" inputProps={{'aria-label': 'description'}}/>
+                        <Input placeholder="搜索" inputProps={{'aria-label': 'description'}}
+                               onChange={this.handleOnChange.bind(this)}/>
                     </Grid>
                 </Grid>
                 <Table size="small">
@@ -110,16 +130,16 @@ export default class List extends Component {
                             <TableCell>镜像名称</TableCell>
                             <TableCell>大小</TableCell>
                             <TableCell>最近同步时间</TableCell>
-                            <TableCell>同步状态</TableCell>
+                            {/*<TableCell>同步状态</TableCell>*/}
                         </TableRow>
                     </TableHead>
                     <TableBody>
-                        {this.rows.map((row) => (
+                        {rows.map((row) => (
                             <TableRow hover role="checkbox" key={row.id}>
                                 <TableCell>{row.Name}</TableCell>
                                 <TableCell>{row.Size}</TableCell>
                                 <TableCell>{row.update_timestamp}</TableCell>
-                                <TableCell>{row.status}</TableCell>
+                                {/*<TableCell>{row.status}</TableCell>*/}
                             </TableRow>
                         ))}
                     </TableBody>
@@ -131,5 +151,6 @@ export default class List extends Component {
                 {/*</div>*/}
             </React.Fragment>
         )
-    };
+    }
+    ;
 }

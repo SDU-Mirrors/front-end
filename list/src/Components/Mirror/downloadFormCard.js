@@ -1,6 +1,6 @@
 import React, {Component} from "react";
 import {Button, Form, Modal, Row, Col, Cascader} from "antd";
-import Icon, {DownloadOutlined} from "@ant-design/icons";
+import Icon from "@ant-design/icons";
 import {ReactComponent as DownloadedSVG} from "./source/下载.svg"
 import "./Right.css"
 

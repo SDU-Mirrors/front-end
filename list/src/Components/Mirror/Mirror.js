@@ -6,7 +6,7 @@ import Right from './Right'
 
 const useStyles = makeStyles((theme) => ({
     content: {
-        marginTop: theme.spacing(20),
+        marginTop: theme.spacing(5),
         marginBottom: theme.spacing(5),
     },
     main: {
@@ -18,7 +18,7 @@ const useStyles = makeStyles((theme) => ({
 
     },
     right: {
-        marginLeft: theme.spacing(20),
+        marginLeft: theme.spacing(15),
         marginRight: theme.spacing(25),
     }
 }));
