@@ -13,13 +13,7 @@ import Input from '@material-ui/core/Input';
 
 import ListIcon from '@material-ui/icons/List';
 import './List.css'
-import {queryHelpers} from "@testing-library/react";
-// "name": "TexLive-iso",
-// "url": "/texlive-iso/",
-// "help_url": "",
-// "size": 0,
-// "last_timestamp": 0,
-// "status": 0
+
 
 //Unix时间戳转时间
 function timeTransfer(last_timestamp) {
