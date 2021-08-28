@@ -37,11 +37,11 @@ function createData(name, url, help_url, size, last_timestamp, status) {
     if (help_url != '') {
         Name =
             <div>
-                <a href={"/" + url}>{name}</a>
-                <a href={"/" + help_url} class="Help">HELP</a>
+                <a href={url}>{name}</a>
+                <a href={help_url} class="Help">HELP</a>
             </div>;
     } else {
-        Name = <a href={"/" + url}>{name}</a>;
+        Name = <a href={url}>{name}</a>;
     }
     let update_timestamp = timeTransfer(last_timestamp);
     let Size = null;
