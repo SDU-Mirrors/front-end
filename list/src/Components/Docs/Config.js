@@ -1,5 +1,5 @@
 global.config = {
-    "host": "http://localhost:4000"
+    "host": "http://1.117.55.149:4000"
 };
 
 global.getArticle = (time, title) => {

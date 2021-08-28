@@ -34,10 +34,16 @@ class Article extends React.Component{
                     html: false,
                     xhtmlOut: true,
                     typographer: true
-                }).use( MarkdownItTOC, {listType: "ul", transformLink:transformLink});
+                }).use( MarkdownItTOC, 
+                    {
+                        listType: "ul",
+                        transformLink:transformLink,
+                        includeLevel: [1, 3]
+                    });
 
                 let body_with_toc = md.render(res.data.markdown + "\n\[\[TOC\]\]")
-                let tocLoc = body_with_toc.lastIndexOf("<p><div class=\"table-of-contents\">");
+                console.log("with-toc", body_with_toc);
+                let tocLoc = body_with_toc.lastIndexOf("<div class=\"table-of-contents\">");
                 let toc = body_with_toc.substring(tocLoc)
                 .replace(/<a href=\"javascript:return false;">/g, "<p>")
                 .replace(/<\/a>/g, "</p>");
