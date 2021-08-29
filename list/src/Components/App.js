@@ -92,12 +92,14 @@ function Header(){
                     <Link to="/mirror" variant="button" color="textPrimary" href="#" className={classes.link}>
                         镜像
                     </Link>
-                    <Link to="" variant="button" color="textPrimary" href="#" className={classes.link}>
+                    <a href="/docs" className={classes.link}>文档</a>
+                    <a href="/docs/帮助文档" className={classes.link}>帮助</a>
+                    {/* <Link to="" variant="button" color="textPrimary" href="#" className={classes.link}>
                             文档                     
-                    </Link>
-                    <Link to="/help" variant="button" color="textPrimary" href="#" className={classes.link}>
+                    </Link> */}
+                    {/* <Link to="/help" variant="button" color="textPrimary" href="#" className={classes.link}>
                         帮助
-                    </Link>
+                    </Link> */}
                     <Link to="/cards" variant="button" color="textPrimary" href="#" className={classes.link}>
                         关于
                     </Link>
