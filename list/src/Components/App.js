@@ -58,7 +58,7 @@ export default function App(){
                 <Header/>
 
                 <Route className={classes.main} exact path="/">
-                    <Redirect className={classes.main} to="/mirror" />
+                    <Redirect className={classes.main} to="/home" />
                 </Route>
                 <Route className={classes.main} path="/mirror" component={Mirror} />
                 <Route className={classes.main} path="/home" component={HomePage} />

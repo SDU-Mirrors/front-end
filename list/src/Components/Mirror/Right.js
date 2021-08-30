@@ -66,26 +66,26 @@ export default class Right extends Component {
         return (
             <div>
                 <div>
-                    <div>
-                        <Typography variant="h5" align="left" color="textSecondary" paragraph>
-                            <AnnouncementIcon color="secondary"/>新闻公告：
-                        </Typography>
-                    </div>
+                    {/*<div>*/}
+                    {/*    <Typography variant="h5" align="left" color="textSecondary" paragraph>*/}
+                    {/*        <AnnouncementIcon color="secondary"/>新闻公告：*/}
+                    {/*    </Typography>*/}
+                    {/*</div>*/}
                     <div className="side-card">
                         <DownloadFormCard isoLinks={this.state.isoLinks}/>
                     </div>
                     <div className="side-card">
                         <ConfigGeneratorCard config={this.state.config}/>
                     </div>
-                    <div>
-                        <Typography variant="h5" align="left" color="textSecondary" paragraph>
-                            <CallIcon color="secondary"/>联系我们：
-                        </Typography>
-                        <Typography align="left" color="textSecondary" paragraph>
-                            GitHub：<GitHubIcon fontSize="small"/>
-                            镜像站开放QQ群：
-                        </Typography>
-                    </div>
+                    {/*<div>*/}
+                    {/*    <Typography variant="h5" align="left" color="textSecondary" paragraph>*/}
+                    {/*        <CallIcon color="secondary"/>联系我们：*/}
+                    {/*    </Typography>*/}
+                    {/*    <Typography align="left" color="textSecondary" paragraph>*/}
+                    {/*        GitHub：<GitHubIcon fontSize="small"/>*/}
+                    {/*        镜像站开放QQ群：*/}
+                    {/*    </Typography>*/}
+                    {/*</div>*/}
                 </div>
             </div>
         );

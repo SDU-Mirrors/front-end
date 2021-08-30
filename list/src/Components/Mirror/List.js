@@ -10,9 +10,9 @@ import TableRow from '@material-ui/core/TableRow';
 import {Grid} from '@material-ui/core';
 import Title from './Title'
 import Input from '@material-ui/core/Input';
+import {ReactComponent as ListSVG} from "./source/list.svg"
 
-
-import ListIcon from '@material-ui/icons/List';
+import Icon from "@ant-design/icons";//material-ui 的icon存在与文字不对齐的问题
 import './List.css'
 
 
@@ -118,7 +118,7 @@ export default class List extends Component {
             <React.Fragment>
                 <Grid container spacing={2}>
                     <Grid item sm>
-                        <Title><ListIcon color="primary"/> 镜像列表</Title>
+                        <Title><Icon component={ListSVG}/> 镜像列表</Title>
                     </Grid>
                     <Grid item sm>
                         <Input placeholder="搜索" inputProps={{'aria-label': 'description'}}
