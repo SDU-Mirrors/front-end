@@ -21,7 +21,6 @@ const useStyles = makeStyles((theme) => ({
         marginLeft:-25,
         maxWidth:600,
         height:'auto',
-
     },
     Picture:{
         width:400, 
@@ -68,7 +67,7 @@ export default function HomePage(){
         {/* Hero unit */}
         <div className={classes.heroContent}>
           <Container maxWidth="sm">
-            <img src={logoBig} alt= ""  className={classes.image} />
+            <img src={logoBig} alt= ""  className={classes.image} style={{marginBottom: 30}}/>
             <Typography variant="h5" align="center" color="textSecondary" paragraph>
               这里是山东大学镜像站，在这里我们将提供给您丰富的镜像资源，以及相关的学习和帮助资料，并且展示我们相关的动态。
             </Typography>
@@ -89,11 +88,9 @@ export default function HomePage(){
           </Container>
         </div>
 
-        <Container className={classes.cardGrid} maxWidth="md">
+        <Container maxWidth="md">
           {/* End hero unit */}
-          <Grid container spacing={4}>
             <ImageAvatars/>
-          </Grid>
         </Container>
 
         <Container className={classes.cardGrid} maxWidth="md">
