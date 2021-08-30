@@ -14,45 +14,48 @@ import CustomizedTimeline from './Timeline/CustomizedTimeline'
 import ImageAvatars from './Avatar/ImageAvatars'
 import Picture from './Picture/Picture';
 import Blog from './Blog/Blog';
+import {Link} from "react-router-dom";
 
 const useStyles = makeStyles((theme) => ({
     image:{
-        maxWidth:600, 
+        marginLeft:-25,
+        maxWidth:600,
         height:'auto',
+
     },
     Picture:{
         width:400, 
-        height:'auto', 
-
+        height:'auto',
     },
     icon: {
-      marginRight: theme.spacing(2),
+        marginRight: theme.spacing(2),
     },
     heroContent: {
-      //backgroundColor: theme.palette.background.paper,
-      padding: theme.spacing(15, 0, 6),
+        margin:'auto',
+        padding: theme.spacing(15, 0, 6),
+        textAlign: 'center',
     },
     heroButtons: {
-      marginTop: theme.spacing(4),
+        marginTop: theme.spacing(4),
     },
     cardGrid: {
-      paddingTop: theme.spacing(8),
-      paddingBottom: theme.spacing(8),
+        paddingTop: theme.spacing(8),
+        paddingBottom: theme.spacing(8),
     },
     card: {
-      height: '100%',
-      display: 'flex',
-      flexDirection: 'column',
+        height: '100%',
+        display: 'flex',
+        flexDirection: 'column',
     },
     cardMedia: {
-      paddingTop: '56.25%', // 16:9
+        paddingTop: '56.25%', // 16:9
     },
     cardContent: {
-      flexGrow: 1,
+        flexGrow: 1,
     },
     footer: {
-      backgroundColor: theme.palette.background.paper,
-      padding: theme.spacing(6),
+        backgroundColor: theme.palette.background.paper,
+        padding: theme.spacing(6),
     },
   }));
   
@@ -67,18 +70,18 @@ export default function HomePage(){
           <Container maxWidth="sm">
             <img src={logoBig} alt= ""  className={classes.image} />
             <Typography variant="h5" align="center" color="textSecondary" paragraph>
-              这里是山东大学镜像站，这里将提供给您丰富的镜像资源,相关的学习、帮助资料。并且提供我们相关的动态。
+              这里是山东大学镜像站，在这里我们将提供给您丰富的镜像资源，以及相关的学习和帮助资料，并且展示我们相关的动态。
             </Typography>
             <div className={classes.heroButtons}>
               <Grid container spacing={2} justify="center">
                 <Grid item>
-                  <Button variant="contained" color="primary">
-                    Main call to action
+                  <Button variant="contained" color="primary" href="#/mirror">
+                      镜 像 资 源
                   </Button>
                 </Grid>
                 <Grid item>
-                  <Button variant="outlined" color="primary">
-                    Secondary action
+                  <Button variant="outlined" color="primary" href="#/cards">
+                      关 于 我 们
                   </Button>
                 </Grid>
               </Grid>

@@ -45,6 +45,8 @@ export default function CustomizedTimeline() {
           </Paper>
         </TimelineContent>
       </TimelineItem>
+
+
       <TimelineItem>
         <TimelineOppositeContent>
           <Typography variant="body2" color="textSecondary">
@@ -67,6 +69,8 @@ export default function CustomizedTimeline() {
           </Paper>
         </TimelineContent>
       </TimelineItem>
+
+
       <TimelineItem>
         <TimelineSeparator>
           <TimelineDot color="primary" variant="outlined">
@@ -84,12 +88,34 @@ export default function CustomizedTimeline() {
           </Paper>
         </TimelineContent>
       </TimelineItem>
+
+
       <TimelineItem>
         <TimelineSeparator>
           <TimelineDot color="secondary">
             
 
           </TimelineDot>
+          <TimelineConnector />
+        </TimelineSeparator>
+        <TimelineContent>
+          <Paper elevation={3} className={classes.paper}>
+            <Typography variant="h6" component="h1">
+              Repeat
+            </Typography>
+            <Typography>Because this is the life you love!</Typography>
+          </Paper>
+        </TimelineContent>
+      </TimelineItem>
+
+
+      <TimelineItem>
+        <TimelineSeparator>
+          <TimelineDot color="secondary">
+
+
+          </TimelineDot>
+
         </TimelineSeparator>
         <TimelineContent>
           <Paper elevation={3} className={classes.paper}>
