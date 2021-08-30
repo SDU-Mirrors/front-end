@@ -1,7 +1,7 @@
 import React, {Component} from "react";
 import {Button, Form, Modal, Row, Col, Cascader} from "antd";
 import Icon from "@ant-design/icons";
-import {ReactComponent as DownloadedSVG} from "./source/下载.svg"
+import {ReactComponent as DownloadedSVG} from "./source/download.svg"
 import "./Right.css"
 
 

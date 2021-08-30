@@ -3,8 +3,8 @@ import {Button, Form, Modal, Row, Col, Cascader} from "antd";
 import Icon from "@ant-design/icons";
 import SyntaxHighlighter from "react-syntax-highlighter"
 import {dark} from 'react-syntax-highlighter/dist/esm/styles/hljs';
-import {ReactComponent as ConfigSVG} from "./source/配置.svg"
-import {ReactComponent as DownloadedSVG} from "./source/下载.svg";
+import {ReactComponent as ConfigSVG} from "./source/config.svg"
+import {ReactComponent as DownloadedSVG} from "./source/download.svg";
 import "./Right.css"
 
 /**
