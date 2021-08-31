@@ -88,7 +88,7 @@ function onSroll(event){
     if(as.length == 0) return;
     for(let i = 0; i < as.length; i ++){
       let cur = $(document.body).find("a[href='" +as[i].getAttribute("href") + "'].anchor");
-      if(cur.length != 1){window.alert("wrong!");}
+      if(cur.length != 1){/*window.alert("wrong!");*/console.log("same anchor are mulity");}
       anchors.push(cur[0]);
     }
     let i = loopingAnchors(anchors);
