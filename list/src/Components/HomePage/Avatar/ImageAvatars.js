@@ -7,7 +7,7 @@ const useStyles = makeStyles((theme) => ({
   root: {
       display: 'flex',
       '& > *': {
-          margin: theme.spacing(1),
+          margin: 'auto',
       },
   },
   small: {
@@ -40,10 +40,15 @@ export default function ImageAvatars() {
         </div>
         <div>
             <Avatar alt="Remy Sharp" src="/static/images/avatar/1.jpg" className={classes.large} />
-
+            <Typography variant="h5" align="center" color="textSecondary" paragraph>
+                空位
+            </Typography>
         </div>
         <div>
             <Avatar alt="Remy Sharp" src="/static/images/avatar/1.jpg" className={classes.large} />
+            <Typography variant="h5" align="center" color="textSecondary" paragraph>
+                空位
+            </Typography>
         </div>
         <div>
             <Avatar alt="Remy Sharp" src="/static/images/avatar/1.jpg" className={classes.large} />
