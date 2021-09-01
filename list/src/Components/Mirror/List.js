@@ -114,17 +114,10 @@ export default class List extends Component {
             if(match >= 0){
                 mirrorsList[key]['help_url'] = '/docs/guide/' + mirrorsList[key]['name']
             }
-           
-            // switch (tmpName) {
-            //     case 'archlinux':
-            //         mirrorsList[key]['help_url'] = '/docs/guide/ArchLinux/'
-            //         break
-            //     case 'debian':
-            //         mirrorsList
-            // }
-            if (tmpName.indexOf(pattern_value) >= 0)
+            if (tmpName.indexOf(pattern_value) >= 0){
                 rows.push(createData(mirrorsList[key]['name'], mirrorsList[key]['url'], mirrorsList[key]['help_url'],
                     mirrorsList[key]['size'], mirrorsList[key]['last_timestamp'], mirrorsList[key]['status']));
+            }
             //console.log(mirrorsList[key]['name'])
         }
         return (
