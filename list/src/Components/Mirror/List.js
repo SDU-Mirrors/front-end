@@ -116,7 +116,7 @@ export default class List extends Component {
         }
         return (
             <React.Fragment>
-                <Grid container spacing={2}>
+                <Grid container spacing={3} justifyContent="space-between">
                     <Grid item sm>
                         <Title><Icon component={ListSVG}/> 镜像列表</Title>
                     </Grid>
@@ -129,8 +129,8 @@ export default class List extends Component {
                     <TableHead>
                         <TableRow>
                             <TableCell>镜像名称</TableCell>
-                            <TableCell>大小</TableCell>
-                            <TableCell>最近同步时间</TableCell>
+                            <TableCell align={"right"}>大小</TableCell>
+                            <TableCell align={"right"}>最近同步时间</TableCell>
                             {/*<TableCell>同步状态</TableCell>*/}
                         </TableRow>
                     </TableHead>
@@ -138,8 +138,8 @@ export default class List extends Component {
                         {rows.map((row) => (
                             <TableRow hover role="checkbox" key={row.id}>
                                 <TableCell>{row.Name}</TableCell>
-                                <TableCell>{row.Size}</TableCell>
-                                <TableCell>{row.update_timestamp}</TableCell>
+                                <TableCell align={"right"}>{row.Size}</TableCell>
+                                <TableCell align={"right"}>{row.update_timestamp}</TableCell>
                                 {/*<TableCell>{row.status}</TableCell>*/}
                             </TableRow>
                         ))}

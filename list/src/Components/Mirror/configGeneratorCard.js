@@ -24,8 +24,21 @@ export default class ConfigGeneratorCard extends Component {
         configBlock: undefined
     };
     myStyle = {
-        buttonStyle: {color: '#9C0C13', borderColor: '#9C0C13'},
-        CascaderStyle: {outlineColor: '#9C0C13'}
+        buttonStyle: {
+            color: '#9C0C13',
+            borderColor: '#9C0C13'
+        },
+        CascaderStyle: {
+            outlineColor: '#9C0C13'
+        },
+        header:{
+            fontWeight: 700,
+            color: 'rgba(0,0,0,0.8)'
+        },
+        text:{
+            fontWeight: 400,
+            color: 'rgba(0,0,0,0.8)',
+        }
     }
 
     /**
@@ -85,7 +98,7 @@ export default class ConfigGeneratorCard extends Component {
     render() {
         return (
             <div>
-                <h2>配置生成</h2>
+                <h2 style={this.myStyle.header}>配置生成</h2>
                 <p>生成发行版的配置文件</p>
                 <Button
                     type="default"
