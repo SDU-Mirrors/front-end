@@ -98,11 +98,11 @@ export default class ConfigGeneratorCard extends Component {
     render() {
         return (
             <div>
-                <h2 style={this.myStyle.header}>配置生成</h2>
+                <h2 style={this.myStyle.header}><Icon component={ConfigSVG}/> 配置生成</h2>
                 <p>生成发行版的配置文件</p>
                 <Button
                     type="default"
-                    icon={<Icon component={ConfigSVG}/>}
+                    // icon={<Icon component={ConfigSVG}/>}
                     onClick={this.showDownloadForm}
                     style={this.myStyle.buttonStyle}
                 >

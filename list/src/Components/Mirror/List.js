@@ -109,6 +109,19 @@ export default class List extends Component {
         let rows = [];
         for (let key in mirrorsList) {
             const tmpName = mirrorsList[key]['name'].toLowerCase();
+            const help_list = 'archlinux|debian|rockylinux|ubuntu|windows-iso|lxc-images'
+            let match = help_list.search(tmpName)
+            if(match >= 0){
+                mirrorsList[key]['help_url'] = '/docs/guide/' + mirrorsList[key]['name']
+            }
+           
+            // switch (tmpName) {
+            //     case 'archlinux':
+            //         mirrorsList[key]['help_url'] = '/docs/guide/ArchLinux/'
+            //         break
+            //     case 'debian':
+            //         mirrorsList
+            // }
             if (tmpName.indexOf(pattern_value) >= 0)
                 rows.push(createData(mirrorsList[key]['name'], mirrorsList[key]['url'], mirrorsList[key]['help_url'],
                     mirrorsList[key]['size'], mirrorsList[key]['last_timestamp'], mirrorsList[key]['status']));
@@ -116,14 +129,16 @@ export default class List extends Component {
         }
         return (
             <React.Fragment>
-                <Grid container spacing={3} justifyContent="space-between">
-                    <Grid item sm>
+                <Grid container spacing={2} justifyContent="space-between"  style={{marginBottom:3}}>
+                    {/*<Grid item sm>*/}
                         <Title><Icon component={ListSVG}/> 镜像列表</Title>
-                    </Grid>
-                    <Grid item sm>
+                    {/*</Grid>*/}
+                    {/*<Grid item sm>*/}
+                    <div>
                         <Input placeholder="搜索" inputProps={{'aria-label': 'description'}}
                                onChange={this.handleOnChange.bind(this)}/>
-                    </Grid>
+                    </div>
+                    {/*</Grid>*/}
                 </Grid>
                 <Table size="small">
                     <TableHead>

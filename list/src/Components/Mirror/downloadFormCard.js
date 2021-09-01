@@ -65,12 +65,12 @@ export default class DownloadFormCard extends Component {
         console.log(this.state.downloadFormVisible)
         return (
             <div>
-                <h2 style={this.myStyle.header}>下载链接</h2>
-                {/*<Title style={this.myStyle.header}>下载链接</Title>*/}
-                <p style={this.myStyle.text}>各大主流Linux发行版的ISO文件下载</p>
+                <h2 style={this.myStyle.header}><Icon component={DownloadedSVG}/> 下载链接</h2>
+                {/*<Title style={this.myStyle.header}><Icon component={DownloadedSVG}/> 下载链接</Title>*/}
+                <p style={this.myStyle.text}>常用 Linux 发行版 iso 文件下载</p>
                 <Button
                     type="default"
-                    icon={<Icon component={DownloadedSVG}/>}
+                    // icon={<Icon component={DownloadedSVG}/>}
                     onClick={this.showDownloadForm}
                     style={this.myStyle.buttonStyle}
                 >
