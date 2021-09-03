@@ -15,7 +15,6 @@ const useStyles = makeStyles((theme) => ({
     },
     list: {
         marginLeft: theme.spacing(30),
-
     },
     right: {
         marginLeft: theme.spacing(10),

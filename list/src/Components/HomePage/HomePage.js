@@ -4,11 +4,15 @@ import Card from '@material-ui/core/Card';
 import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
-import {Grid,Paper} from '@material-ui/core'
+import {Grid, Paper} from '@material-ui/core'
 import Typography from '@material-ui/core/Typography';
-import { makeStyles } from '@material-ui/core/styles';
+import {makeStyles} from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
 import logoBig from '../source/logobig.png'
+import {ReactComponent as TimelineSVG} from "./source/timeline1.svg"
+import {ReactComponent as DocsSVG} from "./source/docs.svg"
+import Icon from "@ant-design/icons";
+
 
 import CustomizedTimeline from './Timeline/CustomizedTimeline'
 import ImageAvatars from './Avatar/ImageAvatars'
@@ -17,20 +21,20 @@ import Blog from './Blog/Blog';
 import {Link} from "react-router-dom";
 
 const useStyles = makeStyles((theme) => ({
-    image:{
-        marginLeft:-25,
-        maxWidth:600,
-        height:'auto',
+    image: {
+        marginLeft: -25,
+        maxWidth: 600,
+        height: 'auto',
     },
-    Picture:{
-        width:400, 
-        height:'auto',
+    Picture: {
+        width: 400,
+        height: 'auto',
     },
     icon: {
         marginRight: theme.spacing(2),
     },
     heroContent: {
-        margin:'auto',
+        margin: 'auto',
         padding: theme.spacing(15, 0, 6),
         textAlign: 'center',
     },
@@ -56,63 +60,63 @@ const useStyles = makeStyles((theme) => ({
         backgroundColor: theme.palette.background.paper,
         padding: theme.spacing(6),
     },
-  }));
-  
+}));
+
 const cards = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 
-export default function HomePage(){
-    const classes=useStyles();
-    return(
+export default function HomePage() {
+    const classes = useStyles();
+    return (
         <main>
-        {/* Hero unit */}
-        <div className={classes.heroContent}>
-          <Container maxWidth="sm">
-            <img src={logoBig} alt= ""  className={classes.image} style={{marginBottom: 30}}/>
-            <Typography variant="h5" align="center" color="textSecondary" paragraph>
-              这里是山东大学镜像站，在这里我们将提供给您丰富的镜像资源，以及相关的学习和帮助资料，并且展示我们相关的动态。
-            </Typography>
-            <div className={classes.heroButtons}>
-              <Grid container spacing={2} justify="center">
-                <Grid item>
-                  <Button variant="contained" color="primary" href="#/mirror">
-                      镜 像 资 源
-                  </Button>
-                </Grid>
-                <Grid item>
-                  <Button variant="outlined" color="primary" href="#/cards">
-                      关 于 我 们
-                  </Button>
-                </Grid>
-              </Grid>
+            {/* Hero unit */}
+            <div className={classes.heroContent}>
+                <Container maxWidth="sm">
+                    <img src={logoBig} alt="" className={classes.image} style={{marginBottom: 30}}/>
+                    <Typography variant="h5" align="center" color="textSecondary" paragraph>
+                        这里是山东大学镜像站，在这里我们将提供给您丰富的镜像资源，以及相关的学习和帮助资料，并且展示我们相关的动态。
+                    </Typography>
+                    <div className={classes.heroButtons}>
+                        <Grid container spacing={2} justify="center">
+                            <Grid item>
+                                <Button variant="contained" color="primary" href="#/mirror">
+                                    镜 像 资 源
+                                </Button>
+                            </Grid>
+                            <Grid item>
+                                <Button variant="outlined" color="primary" href="#/cards">
+                                    关 于 我 们
+                                </Button>
+                            </Grid>
+                        </Grid>
+                    </div>
+                </Container>
             </div>
-          </Container>
-        </div>
 
-        <Container maxWidth="md">
-          {/* End hero unit */}
-            <ImageAvatars/>
-        </Container>
+            <Container maxWidth="md">
+                {/* End hero unit */}
+                <ImageAvatars/>
+            </Container>
 
-        <Container className={classes.cardGrid} maxWidth="md">
-          {/* End hero unit */}
-          <Typography component="h1" variant="h2" align="left" color="textPrimary" gutterBottom>
-              [ ]博客站
-            </Typography>
-          <Grid container spacing={4}>
-              <Blog/>
-          </Grid>
-        </Container>
+            <Container className={classes.cardGrid} maxWidth="md">
+                {/* End hero unit */}
+                <Typography component="h1" variant="h4" align="left" color="textPrimary" gutterBottom>
+                    <Icon component={DocsSVG}/> 博客站
+                </Typography>
+                <Grid container spacing={4} style={{marginTop: 2}}>
+                    <Blog/>
+                </Grid>
+            </Container>
 
-        <Container className={classes.cardGrid} maxWidth="md">
-          {/* End hero unit */}
-          <Typography component="h1" variant="h2" align="left" color="textPrimary" gutterBottom>
-              [ ]镜像站时间记录轴
-            </Typography>
-          <Grid container spacing={4}>
-              <CustomizedTimeline/>
-          </Grid>
-        </Container>
+            <Container className={classes.cardGrid} maxWidth="md">
+                {/* End hero unit */}
+                <Typography component="h1" variant="h4" align="left" color="textPrimary" gutterBottom>
+                    <Icon component={TimelineSVG}/> 镜像站时间记录轴
+                </Typography>
+                <Grid container spacing={4} style={{marginTop: 2}}>
+                    <CustomizedTimeline/>
+                </Grid>
+            </Container>
 
-      </main>
+        </main>
     )
 }

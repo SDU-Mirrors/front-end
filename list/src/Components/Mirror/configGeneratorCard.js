@@ -4,7 +4,6 @@ import Icon from "@ant-design/icons";
 import SyntaxHighlighter from "react-syntax-highlighter"
 import {dark} from 'react-syntax-highlighter/dist/esm/styles/hljs';
 import {ReactComponent as ConfigSVG} from "./source/config.svg"
-import {ReactComponent as DownloadedSVG} from "./source/download.svg";
 import "./Right.css"
 
 /**
@@ -31,11 +30,11 @@ export default class ConfigGeneratorCard extends Component {
         CascaderStyle: {
             outlineColor: '#9C0C13'
         },
-        header:{
+        header: {
             fontWeight: 700,
             color: 'rgba(0,0,0,0.8)'
         },
-        text:{
+        text: {
             fontWeight: 400,
             color: 'rgba(0,0,0,0.8)',
         }
