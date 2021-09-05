@@ -11,36 +11,119 @@ export default function About() {
     const classes = styles();
     return (
         <React.Fragment>
-            <Container maxWidth="lg" className={classes.authorContainer}>
-                {render_all(data)}
+            <Container maxWidth="lg">
+                {render_all(group1, "镜像站第一届维护成员")}
+                <div className={classes.devider}></div>
+                {render_all(group2, "镜像站第二届维护成员·技术组")}
+                <div className={classes.devider}></div>
+                {render_all(group3, "镜像站第二届维护成员·宣传组")}
             </Container>
+
         </React.Fragment>
     );
 }
 
 
-const data = [
+const group1 = [
     {
-        name: "icy",
-        position: "123",
+        name: "齐划一",
+        position: "后端维护",
         description: "",
         image:"https://icys.top/images/avatar/teafrogsf.jpg"
     }, {
-        name:"yci",
-        position:"456",
+        name:"苏晓斌",
+        position:"前端搭建",
         description: "",
         image: "https://icys.top/images/avatar/teafrogsf.jpg"
     }, {
-        name: "icy",
-        position: "123",
+        name: "薛天扬",
+        position: "运营维护",
+        description: "",
+        image:"https://icys.top/images/avatar/teafrogsf.jpg"
+    },
+]
+
+const group2 = [
+    {
+        name: "齐划一",
+        position: "技术组组长",
         description: "",
         image:"https://icys.top/images/avatar/teafrogsf.jpg"
     }, {
-        name:"yci",
-        position:"456",
+        name:"于逸潇",
+        position:"前后端维护",
         description: "",
         image: "https://icys.top/images/avatar/teafrogsf.jpg"
-    }
+    }, {
+        name: "张祖源",
+        position: "前端搭建",
+        description: "",
+        image:"https://icys.top/images/avatar/teafrogsf.jpg"
+    }, {
+        name: "洪吉祥",
+        position: "前后端维护",
+        description: "",
+        image:"https://icys.top/images/avatar/teafrogsf.jpg"
+    }, {
+        name: "顿凯",
+        position: "前后端维护",
+        description: "",
+        image:"https://icys.top/images/avatar/teafrogsf.jpg"
+    }, {
+        name: "宋家庆",
+        position: "前后端维护",
+        description: "",
+        image:"https://icys.top/images/avatar/teafrogsf.jpg"
+    }, {
+        name: "冉德龙",
+        position: "前后端维护",
+        description: "",
+        image:"https://icys.top/images/avatar/teafrogsf.jpg"
+    },
+]
+
+const group3 = [
+    {
+        name: "黄敬成",
+        position: "宣传组组长",
+        description: "",
+        image:"https://icys.top/images/avatar/teafrogsf.jpg"
+    }, {
+        name:"李星烁",
+        position:"视频录制",
+        description: "",
+        image: "https://icys.top/images/avatar/teafrogsf.jpg"
+    }, {
+        name: "从春雨",
+        position: "推文制作",
+        description: "",
+        image:"https://icys.top/images/avatar/teafrogsf.jpg"
+    }, {
+        name: "倪士平",
+        position: "图案设计",
+        description: "",
+        image:"https://icys.top/images/avatar/teafrogsf.jpg"
+    }, {
+        name: "刘姿彤",
+        position: "视频配音",
+        description: "",
+        image:"https://icys.top/images/avatar/teafrogsf.jpg"
+    }, {
+        name: "高恺琦",
+        position: "视频制作",
+        description: "",
+        image:"https://icys.top/images/avatar/teafrogsf.jpg"
+    }, {
+        name: "张炳琪",
+        position: "视频后期",
+        description: "",
+        image:"https://icys.top/images/avatar/teafrogsf.jpg"
+    }, {
+        name: "高子寒",
+        position: "视频策划",
+        description: "",
+        image:"https://icys.top/images/avatar/teafrogsf.jpg"
+    },
 ]
 
 function render_item(item) {
@@ -55,7 +138,8 @@ function render_item(item) {
                                 {item.name}
                             </h1>
                             <p className={classes.p}>
-                                {item.position}
+                                {item.position}<br/>
+                                {item.description}
                             </p>
                         </div>
                 </div>
@@ -64,17 +148,24 @@ function render_item(item) {
     </div>
 }
 
-function render_all(list) {
-    return list.map(item => render_item(item));
+function render_all(list, name) {
+    const classes = styles();
+    return <div className={classes.list}>
+        <h2 className={classes.h2}>{name}</h2>
+        <div className={classes.authorContainer}>
+            {list.map(item => render_item(item))}
+        </div>
+    </div>
 }
 
 const styles = makeStyles((themes) => ({
     p:{
         position:'relative',
-        top:"-35px",
+        top:"-30px",
     },
     authorContainer:{
-        marginBottom: "30px",
+        display: "flex",
+        flexWrap: "wrap",
     },
     img:{
         borderRadius: "50%",
@@ -95,7 +186,7 @@ const styles = makeStyles((themes) => ({
         paddingLeft: "10px",
     },
     name:{
-        paddingBottom: "5px",
+        paddingBottom: "8px",
         borderBottom: "2px solid #fff",
         position: "relative",
         top: "-15px",
@@ -110,8 +201,19 @@ const styles = makeStyles((themes) => ({
         backgroundImage: "linear-gradient(to top, #48c6ef 0%, #6f86d6 100%)",
         // border: "1px solid #000",
         padding: "0 0.75rem",
-        margin: "20px 10px",
+        margin: "10px",
         borderRadius: "8px",
     },
-
+    devider: {
+        borderTop: "1px solid rgba(34,36,38,0.15)",
+        borderBottom: "1px solid hsla(0,0%,100%,0.1)",
+        margin: "10px 0",
+    },
+    list: {
+        display: "block",
+    },
+    h2: {
+        // marginBottom: "-0.5px",
+        fontWeight: "bold",
+    }
 }));
