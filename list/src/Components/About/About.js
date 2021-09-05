@@ -6,17 +6,21 @@ import Typography from '@material-ui/core/Typography';
 import Container from '@material-ui/core/Container';
 import { makeStyles } from "@material-ui/core";
 import './card.css'
+import logoBig from '../source/logobig.png'
 
 export default function About() {
     const classes = styles();
     return (
         <React.Fragment>
-            <Container maxWidth="lg">
-                {render_all(group1, "镜像站第一届维护成员")}
+            <Container maxWidth="sm">
+                <img src={logoBig} alt="" className={classes.image}/>
+            </Container>
+            <Container maxWidth="lg" style={{marginBottom: "80px"}}>
+                {render_all(group1, "镜像站第一届运营成员")}
                 <div className={classes.devider}></div>
-                {render_all(group2, "镜像站第二届维护成员·技术组")}
+                {render_all(group2, "镜像站第二届运营成员·技术组")}
                 <div className={classes.devider}></div>
-                {render_all(group3, "镜像站第二届维护成员·宣传组")}
+                {render_all(group3, "镜像站第二届运营成员·宣传组")}
             </Container>
 
         </React.Fragment>
@@ -213,7 +217,12 @@ const styles = makeStyles((themes) => ({
         display: "block",
     },
     h2: {
-        // marginBottom: "-0.5px",
         fontWeight: "bold",
-    }
+    },
+    image: {
+        maxWidth: "600px",
+        height: "auto",
+        marginTop: "100px",
+        marginBottom: "80px",
+    },
 }));
