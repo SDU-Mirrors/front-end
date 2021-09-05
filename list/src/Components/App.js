@@ -4,6 +4,7 @@ import {Mirror} from './Mirror'
 import {HomePage} from './HomePage'
 import {HelpPage} from './HelpPage'
 import { Cards } from './Cards'
+import {About} from './About'
 import { makeStyles } from '@material-ui/core/styles';
 import { Route, Redirect, Link,withRouter } from "react-router-dom";
 
@@ -63,7 +64,7 @@ export default function App(){
                 <Route className={classes.main} path="/mirror" component={Mirror} />
                 <Route className={classes.main} path="/home" component={HomePage} />
                 <Route className={classes.main} path="/help" component={HelpPage} />
-                <Route className={classes.main} path="/cards" component={Cards} />
+                <Route className={classes.main} path="/about" component={About} />
                 <Footer/>
             </Fragment>
         </div>
@@ -100,7 +101,7 @@ function Header(){
                     {/* <Link to="/help" variant="button" color="textPrimary" href="#" className={classes.link}>
                         帮助
                     </Link> */}
-                    <Link to="/cards" variant="button" color="textPrimary" href="#" className={classes.link}>
+                    <Link to="/about" variant="button" color="textPrimary" href="#" className={classes.link}>
                         关于
                     </Link>
                 </nav>
