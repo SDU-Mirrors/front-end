@@ -8,6 +8,7 @@ import { makeStyles } from "@material-ui/core";
 import './card.css'
 import logoBig from '../source/logobig.png'
 
+
 export default function About() {
     const classes = styles();
     return (
@@ -31,117 +32,121 @@ export default function About() {
 const group1 = [
     {
         name: "齐划一",
+        short: "qhy",
         position: "后端维护",
         description: "",
-        image:"https://icys.top/images/avatar/teafrogsf.jpg"
     }, {
         name:"苏晓斌",
+        short: "sxb",
         position:"前端搭建",
         description: "",
-        image: "https://icys.top/images/avatar/teafrogsf.jpg"
     }, {
         name: "薛天扬",
+        short: "xty",
         position: "运营维护",
         description: "",
-        image:"https://icys.top/images/avatar/teafrogsf.jpg"
     },
 ]
 
 const group2 = [
     {
         name: "齐划一",
+        short: "qhy",
         position: "技术组组长",
         description: "",
-        image:"https://icys.top/images/avatar/teafrogsf.jpg"
     }, {
         name:"于逸潇",
+        short: "yyx",
         position:"前后端维护",
         description: "",
-        image: "https://icys.top/images/avatar/teafrogsf.jpg"
     }, {
         name: "张祖源",
+        short: "zzy",
         position: "前端搭建",
         description: "",
-        image:"https://icys.top/images/avatar/teafrogsf.jpg"
     }, {
         name: "洪吉祥",
+        short: "hjx",
         position: "前后端维护",
         description: "",
-        image:"https://icys.top/images/avatar/teafrogsf.jpg"
     }, {
         name: "顿凯",
+        short: "dk",
         position: "前后端维护",
         description: "",
-        image:"https://icys.top/images/avatar/teafrogsf.jpg"
     }, {
         name: "宋家庆",
+        short: "sjq",
         position: "前后端维护",
         description: "",
-        image:"https://icys.top/images/avatar/teafrogsf.jpg"
     }, {
         name: "冉德龙",
+        short: "rdl",
         position: "前后端维护",
         description: "",
-        image:"https://icys.top/images/avatar/teafrogsf.jpg"
     }, {
         name: "邵嘉明",
+        short: "sjm",
         position: "前后端维护",
         description: "",
-        image:"https://icys.top/images/avatar/teafrogsf.jpg"
     },
 ]
 
 const group3 = [
     {
         name: "黄敬成",
+        short: "hjc",
         position: "宣传组组长",
         description: "",
-        image:"https://icys.top/images/avatar/teafrogsf.jpg"
     }, {
         name:"李星烁",
+        short: "lxs",
         position:"视频录制",
         description: "",
-        image: "https://icys.top/images/avatar/teafrogsf.jpg"
     }, {
         name: "从春雨",
+        short: "ccy",
         position: "推文制作",
         description: "",
-        image:"https://icys.top/images/avatar/teafrogsf.jpg"
     }, {
         name: "倪士平",
+        short: "nsp",
         position: "图案设计",
         description: "",
-        image:"https://icys.top/images/avatar/teafrogsf.jpg"
     }, {
         name: "刘姿彤",
+        short: "lzt",
         position: "视频配音",
         description: "",
-        image:"https://icys.top/images/avatar/teafrogsf.jpg"
     }, {
         name: "高恺琦",
+        short: "gkq",
         position: "视频制作",
         description: "",
-        image:"https://icys.top/images/avatar/teafrogsf.jpg"
     }, {
         name: "张炳琪",
+        short: "zbq",
         position: "视频后期",
         description: "",
-        image:"https://icys.top/images/avatar/teafrogsf.jpg"
     }, {
         name: "高子寒",
+        short: "gzh",
         position: "视频策划",
         description: "",
-        image:"https://icys.top/images/avatar/teafrogsf.jpg"
     },
 ]
 
+
 function render_item(item) {
     const classes = styles();
+    console.log(item.name);
+    let short = require("./images/" + item.short + ".jpg");
+    console.log(short);
     return <div id="card">
         <div className={classes.card1}>
             <div className={classes.inner}>
                 <div className={classes.title}>
-                    <img className={classes.img} src={item.image} alt="img"/>
+                    <img className={classes.img} src={short.default} alt="img"/>
                     <div className={classes.divs}>
                         <h1 className={classes.name}>
                             {item.name}
@@ -170,7 +175,7 @@ function render_all(list, name) {
 const styles = makeStyles((themes) => ({
     p:{
         position:'relative',
-        top:"-30px",
+        top:"-25px",
     },
     authorContainer:{
         display: "flex",
@@ -198,7 +203,7 @@ const styles = makeStyles((themes) => ({
         paddingBottom: "8px",
         borderBottom: "2px solid #fff",
         position: "relative",
-        top: "-15px",
+        top: "-10px",
         left: "3px",
         margin: "48px 0 22px -5px",
         fontSize: "2.0rem",
