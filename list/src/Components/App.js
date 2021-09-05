@@ -82,7 +82,9 @@ function Header(){
         <AppBar position="static" color="default" elevation={0} className={classes.appBar}>
             <Toolbar className={classes.toolbar}>
                 {/* <img src={oops_logo} alt= "" style={{maxWidth:200, height:50}} /> */}
-                <img src={logo} alt= "" style={{maxWidth:200, height:50}} />
+                <a href="/">
+                    <img src={logo} alt= "" style={{maxWidth:200, height:50}} />
+                </a>
                 <Typography variant="h6" color="inherit" noWrap className={classes.toolbarTitle}>
 
                 </Typography>

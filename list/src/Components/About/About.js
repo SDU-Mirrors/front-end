@@ -83,6 +83,11 @@ const group2 = [
         position: "前后端维护",
         description: "",
         image:"https://icys.top/images/avatar/teafrogsf.jpg"
+    }, {
+        name: "邵嘉明",
+        position: "前后端维护",
+        description: "",
+        image:"https://icys.top/images/avatar/teafrogsf.jpg"
     },
 ]
 
@@ -136,16 +141,16 @@ function render_item(item) {
         <div className={classes.card1}>
             <div className={classes.inner}>
                 <div className={classes.title}>
-                    <img className={classes.img} src={item.image} alt="img"></img>
-                        <div className={classes.divs}>
-                            <h1 className={classes.name}>
-                                {item.name}
-                            </h1>
-                            <p className={classes.p}>
-                                {item.position}<br/>
-                                {item.description}
-                            </p>
-                        </div>
+                    <img className={classes.img} src={item.image} alt="img"/>
+                    <div className={classes.divs}>
+                        <h1 className={classes.name}>
+                            {item.name}
+                        </h1>
+                        <p className={classes.p}>
+                            {item.position}<br/>
+                            {item.description}
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
