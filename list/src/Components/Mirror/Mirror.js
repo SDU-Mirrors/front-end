@@ -14,12 +14,11 @@ const useStyles = makeStyles((theme) => ({
         marginBottom: theme.spacing(2),
     },
     list: {
-        marginLeft: theme.spacing(15),
-
+        marginLeft: theme.spacing(30),
     },
     right: {
-        marginLeft: theme.spacing(15),
-        marginRight: theme.spacing(25),
+        marginLeft: theme.spacing(10),
+        //marginRight: theme.spacing(30),
     }
 }));
 
@@ -31,10 +30,11 @@ export default function Mirror() {
                 <Grid item sm className={classes.list}>
                     <List/>
                 </Grid>
-                <Grid item sm>
-                    <Paper className={classes.right}>
-                        <Right/>
-                    </Paper>
+                <Grid item sm className={classes.right}>
+                    <Right/>
+                    {/*<Paper className={classes.right}>*/}
+                    {/*    <Right/>*/}
+                    {/*</Paper>*/}
                 </Grid>
             </Grid>
         </div>

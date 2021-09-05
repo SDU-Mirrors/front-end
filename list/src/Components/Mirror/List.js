@@ -109,28 +109,36 @@ export default class List extends Component {
         let rows = [];
         for (let key in mirrorsList) {
             const tmpName = mirrorsList[key]['name'].toLowerCase();
-            if (tmpName.indexOf(pattern_value) >= 0)
+            const help_list = 'archlinux|debian|rockylinux|ubuntu|windows-iso|lxc-images'
+            let match = help_list.search(tmpName)
+            if(match >= 0){
+                mirrorsList[key]['help_url'] = '/docs/guide/' + mirrorsList[key]['name']
+            }
+            if (tmpName.indexOf(pattern_value) >= 0){
                 rows.push(createData(mirrorsList[key]['name'], mirrorsList[key]['url'], mirrorsList[key]['help_url'],
                     mirrorsList[key]['size'], mirrorsList[key]['last_timestamp'], mirrorsList[key]['status']));
+            }
             //console.log(mirrorsList[key]['name'])
         }
         return (
             <React.Fragment>
-                <Grid container spacing={2}>
-                    <Grid item sm>
+                <Grid container spacing={2} justifyContent="space-between"  style={{marginBottom:3}}>
+                    {/*<Grid item sm>*/}
                         <Title><Icon component={ListSVG}/> 镜像列表</Title>
-                    </Grid>
-                    <Grid item sm>
+                    {/*</Grid>*/}
+                    {/*<Grid item sm>*/}
+                    <div>
                         <Input placeholder="搜索" inputProps={{'aria-label': 'description'}}
                                onChange={this.handleOnChange.bind(this)}/>
-                    </Grid>
+                    </div>
+                    {/*</Grid>*/}
                 </Grid>
                 <Table size="small">
                     <TableHead>
                         <TableRow>
                             <TableCell>镜像名称</TableCell>
-                            <TableCell>大小</TableCell>
-                            <TableCell>最近同步时间</TableCell>
+                            <TableCell align={"right"}>大小</TableCell>
+                            <TableCell align={"right"}>最近同步时间</TableCell>
                             {/*<TableCell>同步状态</TableCell>*/}
                         </TableRow>
                     </TableHead>
@@ -138,8 +146,8 @@ export default class List extends Component {
                         {rows.map((row) => (
                             <TableRow hover role="checkbox" key={row.id}>
                                 <TableCell>{row.Name}</TableCell>
-                                <TableCell>{row.Size}</TableCell>
-                                <TableCell>{row.update_timestamp}</TableCell>
+                                <TableCell align={"right"}>{row.Size}</TableCell>
+                                <TableCell align={"right"}>{row.update_timestamp}</TableCell>
                                 {/*<TableCell>{row.status}</TableCell>*/}
                             </TableRow>
                         ))}
