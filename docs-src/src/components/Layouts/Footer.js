@@ -42,14 +42,14 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: 'center'
   },
   image:{
-    maxWidth: 'max(calc(9vw), 100px)',
+    width: 'max(calc(9vw), 100px)',
     objectFit: 'contain', 
     // padding: theme.spacing(5, 0),
     height:'auto',
     display: 'inline-block'
   },
   un_tag_image: {
-    maxWidth: 'max(calc(9vw + 1em), 100px + 1em)',
+    width: 'max(calc(9vw + 1em), 100px + 1em)',
     objectFit: 'contain', 
     // padding: theme.spacing(5, 0),
     height:'auto',
