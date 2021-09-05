@@ -175,7 +175,7 @@ function render_all(list, name) {
 const styles = makeStyles((themes) => ({
     p:{
         position:'relative',
-        top:"-25px",
+        top:"-27px",
     },
     authorContainer:{
         display: "flex",
@@ -203,7 +203,7 @@ const styles = makeStyles((themes) => ({
         paddingBottom: "8px",
         borderBottom: "2px solid #fff",
         position: "relative",
-        top: "-10px",
+        top: "-12px",
         left: "3px",
         margin: "48px 0 22px -5px",
         fontSize: "2.0rem",
