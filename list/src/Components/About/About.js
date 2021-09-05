@@ -232,7 +232,8 @@ const styles = makeStyles((themes) => ({
     image: {
         maxWidth: "600px",
         height: "auto",
-        marginTop: "100px",
+        marginTop: "120px",
         marginBottom: "80px",
+        marginLeft: "-25px",
     },
 }));
