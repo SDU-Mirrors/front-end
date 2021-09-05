@@ -47,7 +47,7 @@ export default function ImageAvatars() {
 
             </div>
             <div>
-                <a href="#/docs" color="textPrimary" className={classes.link}>
+                <a href="/docs" color="textPrimary" className={classes.link}>
                     <img src={"/static/Oops.png"} className={classes.large}></img>
                     <Typography variant="h5" align="center" color="textSecondary" paragraph>
                         博客
