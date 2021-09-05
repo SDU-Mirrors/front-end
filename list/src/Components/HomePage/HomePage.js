@@ -73,7 +73,7 @@ export default function HomePage() {
                 <Container maxWidth="sm">
                     <img src={logoBig} alt="" className={classes.image} style={{marginBottom: 30}}/>
                     <Typography variant="h5" align="center" color="textSecondary" paragraph>
-                        这里是山东大学镜像站，在这里我们将提供给您丰富的镜像资源，以及相关的学习和帮助资料，并且展示我们相关的动态。
+                        这里是山东大学镜像站，在这里我们将提供给您丰富的镜像资源，以及相关的学习和帮助资料，并且分享我们相关的动态。
                     </Typography>
                     <div className={classes.heroButtons}>
                         <Grid container spacing={2} justify="center">
