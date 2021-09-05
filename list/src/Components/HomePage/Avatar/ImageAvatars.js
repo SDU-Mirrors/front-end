@@ -20,7 +20,7 @@ const useStyles = makeStyles((theme) => ({
     large: {
         width: theme.spacing(20),
         height: theme.spacing(20),
-        marginBottom: theme.spacing(1),
+        marginBottom: theme.spacing(1.7),
         borderRadius: "50%"
     },
     link: {
@@ -67,7 +67,7 @@ export default function ImageAvatars() {
                 <a href="https://www.nc.sdu.edu.cn/" color="textPrimary" className={classes.link}>
                     <img src={"/static/Oops.png"} className={classes.large}></img>
                     <Typography variant="h5" align="center" color="textSecondary" paragraph>
-                        信息化办公室
+                        信息化工作办公室
                     </Typography>
                 </a>
             </div>
@@ -75,7 +75,7 @@ export default function ImageAvatars() {
                 <a href="https://oops-sdu.cn/" color="textPrimary" className={classes.link}>
                     <img src={"/static/Oops.png"} className={classes.large}></img>
                     <Typography variant="h5" align="center" color="textSecondary" paragraph>
-                        oops
+                        Oops计算机社团
                     </Typography>
                 </a>
             </div>

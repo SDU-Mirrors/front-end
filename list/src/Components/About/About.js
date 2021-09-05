@@ -70,6 +70,11 @@ const group2 = [
         position: "前后端维护",
         description: "",
     }, {
+        name: "冉德龙",
+        short: "rdl",
+        position: "前后端维护",
+        description: "",
+    }, {
         name: "顿凯",
         short: "dk",
         position: "前后端维护",
@@ -77,11 +82,6 @@ const group2 = [
     }, {
         name: "宋家庆",
         short: "sjq",
-        position: "前后端维护",
-        description: "",
-    }, {
-        name: "冉德龙",
-        short: "rdl",
         position: "前后端维护",
         description: "",
     }, {
@@ -166,7 +166,7 @@ function render_all(list, name) {
     const classes = styles();
     return <div className={classes.list}>
         <h2 className={classes.h2}>{name}</h2>
-        <div className={classes.authorContainer}>
+        <div className={classes.authorContainer} id="block">
             {list.map(item => render_item(item))}
         </div>
     </div>

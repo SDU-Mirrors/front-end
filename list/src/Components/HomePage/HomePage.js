@@ -92,12 +92,12 @@ export default function HomePage() {
                 </Container>
             </div>
 
-            <Container maxWidth="md">
+            <Container maxWidth="lg">
                 {/* End hero unit */}
                 <ImageAvatars/>
             </Container>
 
-            <Container className={classes.cardGrid} maxWidth="md">
+            <Container className={classes.cardGrid} maxWidth="lg">
                 {/* End hero unit */}
                 <Typography component="h1" variant="h4" align="left" color="textPrimary" gutterBottom>
                     <Icon component={DocsSVG}/> 博客站
@@ -107,7 +107,7 @@ export default function HomePage() {
                 </Grid>
             </Container>
 
-            <Container className={classes.cardGrid} maxWidth="md">
+            <Container className={classes.cardGrid} maxWidth="lg">
                 {/* End hero unit */}
                 <Typography component="h1" variant="h4" align="left" color="textPrimary" gutterBottom>
                     <Icon component={TimelineSVG}/> 镜像站时间记录轴
