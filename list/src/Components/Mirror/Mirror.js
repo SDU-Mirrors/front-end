@@ -15,13 +15,11 @@ const useStyles = makeStyles((theme) => ({
         marginBottom: theme.spacing(6),
     },
     list: {
-        // marginLeft: theme.spacing(30),
-        flexBasis: "auto"
+        flexGrow: 3,
     },
     right: {
         marginLeft: theme.spacing(10),
-        //marginRight: theme.spacing(30),
-        flexBasis: "auto"
+        flexGrow: 1,
     }
 }));
 
@@ -31,15 +29,15 @@ export default function Mirror() {
         <Container maxWidth="lg">
             <Grid className={classes.main}>
                 <Grid container className={classes.content}>
-                    <Grid item sm className={classes.list}>
+                    <div className={classes.list}>
                         <List/>
-                    </Grid>
-                    <Grid item sm className={classes.right}>
+                    </div>
+                    <div className={classes.right}>
                         <Right/>
                         {/*<Paper className={classes.right}>*/}
                         {/*    <Right/>*/}
                         {/*</Paper>*/}
-                    </Grid>
+                    </div>
                 </Grid>
             </Grid>
         </Container>
