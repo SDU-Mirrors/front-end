@@ -83,7 +83,7 @@ export default function HomePage() {
                                 </Button>
                             </Grid>
                             <Grid item>
-                                <Button variant="outlined" color="primary" href="#/cards">
+                                <Button variant="outlined" color="primary" href="#/about">
                                     关 于 我 们
                                 </Button>
                             </Grid>
