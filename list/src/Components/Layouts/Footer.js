@@ -160,7 +160,7 @@ export default function Footer() {
             <div className={classes.image_div}>
               <TagedImage src={sduMirror} label={"镜像站开放群"}></TagedImage>
               <TagedImage src={sna} label={"山东大学（青岛）网管会"}></TagedImage>
-              <TagedImage src={oops} label={"oops计算机社团"}></TagedImage>
+              <TagedImage src={oops} label={"Oops计算机社团"}></TagedImage>
               <UntagedImage src={logo} label={""}></UntagedImage>
             </div>
           </div>
