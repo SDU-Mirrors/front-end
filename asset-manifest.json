@@ -3,8 +3,8 @@
     "static/js/0.538e2ff7.chunk.js": "/static/js/0.538e2ff7.chunk.js",
     "static/js/0.538e2ff7.chunk.js.map": "/static/js/0.538e2ff7.chunk.js.map",
     "main.css": "/static/css/main.387d0887.chunk.css",
-    "main.js": "/static/js/main.6087236b.chunk.js",
-    "main.js.map": "/static/js/main.6087236b.chunk.js.map",
+    "main.js": "/static/js/main.c3817c3f.chunk.js",
+    "main.js.map": "/static/js/main.c3817c3f.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.7dc457e9.js",
     "runtime-main.js.map": "/static/js/runtime-main.7dc457e9.js.map",
     "static/css/3.c02757eb.chunk.css": "/static/css/3.c02757eb.chunk.css",
@@ -48,8 +48,8 @@
     "static/media/hjc.jpg": "/static/media/hjc.c1c7c690.jpg",
     "static/media/hjx.jpg": "/static/media/hjx.676ed777.jpg",
     "static/media/list.cff08e78.svg": "/static/media/list.cff08e78.svg",
-    "static/media/logo.2deb2286.png": "/static/media/logo.2deb2286.png",
     "static/media/logo1.04f6b19b.png": "/static/media/logo1.04f6b19b.png",
+    "static/media/logo_white.18470ff0.png": "/static/media/logo_white.18470ff0.png",
     "static/media/logobig.66cc5347.png": "/static/media/logobig.66cc5347.png",
     "static/media/lxs.jpg": "/static/media/lxs.7b1bf2a2.jpg",
     "static/media/lzt.jpg": "/static/media/lzt.7f498654.jpg",
@@ -76,6 +76,6 @@
     "static/css/3.c02757eb.chunk.css",
     "static/js/3.433fd8c5.chunk.js",
     "static/css/main.387d0887.chunk.css",
-    "static/js/main.6087236b.chunk.js"
+    "static/js/main.c3817c3f.chunk.js"
   ]
 }
