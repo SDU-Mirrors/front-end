@@ -221,6 +221,7 @@ const styles = makeStyles((themes) => ({
         padding: "0 0.75rem",
         margin: "10px",
         borderRadius: "8px",
+        position: "relative",
     },
     devider: {
         borderTop: "1px solid rgba(34,36,38,0.15)",
@@ -241,11 +242,11 @@ const styles = makeStyles((themes) => ({
         marginLeft: "-25px",
     },
     sdu: {
-        position: "relative",
-        float: "right",
-        bottom: "55px",
+        position: "absolute",
+        right: "10px",
+        bottom: "10px",
         height: "40px",
         width: "auto",
-        opacity: "90%",
+        opacity: "85%",
     }
 }));
