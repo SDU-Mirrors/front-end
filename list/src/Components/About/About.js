@@ -111,7 +111,7 @@ const group3 = [
     }, {
         name: "倪士平",
         short: "nsp",
-        position: "图案设计",
+        position: "视觉设计",
         description: "",
     }, {
         name: "刘姿彤",
@@ -212,7 +212,8 @@ const styles = makeStyles((themes) => ({
         color: "rgba(255,255,255,0.85)",
     },
     card1:{
-        backgroundImage: "linear-gradient(to top, #48c6ef 0%, #6f86d6 100%)",
+        backgroundImage: "linear-gradient(to bottom, rgba(155,13,20,0.75) 0%, #ea5455 100%)",
+        // color: "rgba(255,67,67,0.93)";
         // border: "1px solid #000",
         padding: "0 0.75rem",
         margin: "10px",
