@@ -1,7 +1,7 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import {Container,Typography,Grid} from '@material-ui/core';
-import logo from '../source/logo.png'
+import logo from '../source/logo_white.png'
 import sduMirror from '../source/SDUMirror.png'
 import oops from '../source/oops.jpg'
 import sna from '../source/sna.jpg'
