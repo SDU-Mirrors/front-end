@@ -7,7 +7,7 @@ import Container from '@material-ui/core/Container';
 import { makeStyles } from "@material-ui/core";
 import './card.css'
 import logoBig from '../source/logobig.png'
-
+import sdu120 from '../source/sdu120.png'
 
 export default function About() {
     const classes = styles();
@@ -157,8 +157,11 @@ function render_item(item) {
                         </p>
                     </div>
                 </div>
+
             </div>
+            <img className={classes.sdu} src={sdu120} alt="sdu"/>
         </div>
+
     </div>
 }
 
@@ -237,4 +240,12 @@ const styles = makeStyles((themes) => ({
         marginBottom: "80px",
         marginLeft: "-25px",
     },
+    sdu: {
+        position: "relative",
+        float: "right",
+        bottom: "55px",
+        height: "40px",
+        width: "auto",
+        opacity: "90%",
+    }
 }));
