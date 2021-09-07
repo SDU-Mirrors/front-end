@@ -5,6 +5,7 @@ import Typography from '@material-ui/core/Typography';
 import Icon from "@ant-design/icons";
 import {ReactComponent as OopsSVG} from "../source/Oops.svg";
 import {Grid, Link} from "@material-ui/core";
+import sduLogo from "../source/sduLogo.jpg"
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -65,7 +66,7 @@ export default function ImageAvatars() {
             </div>
             <div>
                 <a href="https://www.nc.sdu.edu.cn/" color="textPrimary" className={classes.link}>
-                    <img src={"/static/Oops.png"} className={classes.large}></img>
+                    <img src={sduLogo} className={classes.large}></img>
                     <Typography variant="h5" align="center" color="textSecondary" paragraph>
                         信息化工作办公室
                     </Typography>
