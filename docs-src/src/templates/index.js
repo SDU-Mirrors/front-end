@@ -10,17 +10,17 @@ import Category from "../components/CategoryList"
 
 var _currentPage = -1;
 
-function pageChanged(event, pageNum){
-  if(pageNum !== _currentPage && _currentPage !== -1){
-    if(pageNum === 1){
+function pageChanged(event, pageNum) {
+  if (pageNum !== _currentPage && _currentPage !== -1) {
+    if (pageNum === 1) {
       window.location.href = "/docs";
-    }else{
-      window.location.href = "/docs/"+pageNum;
+    } else {
+      window.location.href = "/docs/" + pageNum;
     }
   }
 }
 
-const BlogIndex = function({ data, location,  pageContext }){
+const BlogIndex = function ({ data, location, pageContext }) {
   // const siteTitle = data.site.siteMetadata?.title || `Title`
   const posts = data.allMarkdownRemark.edges
   const { totalPage, currentPage } = pageContext
@@ -29,18 +29,18 @@ const BlogIndex = function({ data, location,  pageContext }){
 
   return (
     <App>
-      <div style={{display: "block"}}>
-        <div style={{width: "100%", display: "flex", justifyContent: "center"}}>
+      <div style={{ display: "block" }}>
+        <div style={{ width: "100%", display: "flex", justifyContent: "center" }}>
           <div className="docs-body">
-          
+
             <div>
-              <BlogList data={posts}/>
+              <BlogList data={posts} />
             </div>
 
             <div className="docs-category">
               <Category tags_list={pageContext.tags_list}></Category>
             </div>
-          </div>  
+          </div>
         </div>
         <Page totalPage={totalPage} defaultPage={currentPage} onChange={pageChanged}></Page>
       </div>

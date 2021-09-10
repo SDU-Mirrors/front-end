@@ -2,7 +2,7 @@ const path = require(`path`)
 const { createFilePath } = require(`gatsby-source-filesystem`)
 
 //生成每篇blog
-function createEachBlog(posts, blogPost, createPage){
+function createEachBlog(posts, blogPost, createPage) {
   posts.forEach((post, index) => {
     const previousPostId = index === 0 ? null : posts[index - 1].id;
     const nextPostId = index === posts.length - 1 ? null : posts[index + 1].id;
@@ -20,17 +20,17 @@ function createEachBlog(posts, blogPost, createPage){
 }
 
 // 建立主页分页
-function createSeperatePage(posts, homePaginate, createPage){
+function createSeperatePage(posts, homePaginate, createPage) {
   const postsPerPage = 8; // 每页8篇
   const numPages = Math.ceil(posts.length / postsPerPage);
-  
+
   Array.from({ length: numPages }).forEach((_, i) => {
     createPage({
       path: i === 0 ? `/` : `/${i + 1}`,
       component: homePaginate,
       context: {
-        currentPage: i+1,
-        totalPage:numPages,
+        currentPage: i + 1,
+        totalPage: numPages,
         tags_list: getTagsList(posts),
         limit: postsPerPage,
         skip: i * postsPerPage,
@@ -41,22 +41,22 @@ function createSeperatePage(posts, homePaginate, createPage){
 
 // 建立标签页
 
-function getTagsList(posts){
+function getTagsList(posts) {
   let tags_list = [];
   posts.forEach((v, i) => {
     // console.log(v);
-      tags_list = tags_list.concat(v.frontmatter.tags);
+    tags_list = tags_list.concat(v.frontmatter.tags);
   });
   tags_list = Array.from(new Set(tags_list));
   // console.log(tags_list);
   return tags_list;
 }
 
-function createTagsPage(posts, tags, createPage){
+function createTagsPage(posts, tags, createPage) {
   let tags_list = getTagsList(posts);
-  if(tags_list == undefined){return;}
+  if (tags_list == undefined) { return; }
   tags_list.forEach((v, i) => {
-    if(v != null)
+    if (v != null)
       createPage({
         path: v,
         component: tags,

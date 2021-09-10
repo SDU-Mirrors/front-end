@@ -7,25 +7,25 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Category from "../components/CategoryList"
 
 
-const TagsTem = function({ data, location,  pageContext }){
+const TagsTem = function ({ data, location, pageContext }) {
   // const siteTitle = data.site.siteMetadata?.title || `Title`
   const posts = data.allMarkdownRemark.edges
   // console.log(posts);
   // console.log(pageContext, posts);
   return (
     <App>
-      <div style={{display: "block"}}>
-        <div style={{width: "100%", display: "flex", justifyContent: "center"}}>
+      <div style={{ display: "block" }}>
+        <div style={{ width: "100%", display: "flex", justifyContent: "center" }}>
           <div className="docs-body">
-          
+
             <div>
-              <BlogList data={posts}/>
+              <BlogList data={posts} />
             </div>
 
             <div className="docs-category">
               <Category tags_list={pageContext.tags_list}></Category>
             </div>
-          </div>  
+          </div>
         </div>
       </div>
     </App>
