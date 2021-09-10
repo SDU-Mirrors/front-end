@@ -29,7 +29,7 @@ function timeTransfer(last_timestamp) {
 function formatNumber(num) {
     if (isNaN(+num))
         return "";
-    return (num + "").replace(/(?<!.*\..*)\B(?=((\d{3})+)\b)/g, ",")
+    return (num + "").replace(new RegExp("(?<!.*\\..*)\\B(?=((\\d{3})+)\\b)", "g"), ",")
 }
 
 //创建表格数据
