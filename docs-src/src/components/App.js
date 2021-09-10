@@ -1,31 +1,31 @@
-import React,{Fragment} from 'react'
-import {Header,Footer} from './Layouts'
+import React, { Fragment } from 'react'
+import { Header, Footer } from './Layouts'
 import { makeStyles } from '@material-ui/core/styles';
 // import Container from '@material-ui/core/Container';
-import {Container, Row} from 'react-bootstrap'
+import { Container, Row } from 'react-bootstrap'
 import 'prismjs/themes/prism.css'
 
 const useStyles = makeStyles((theme) => ({
-   Layout:{
+    Layout: {
         marginTop: 100,
         display: "block"
-   }
+    }
 }));
 
-export default function App({location, children}){
+export default function App({ location, children }) {
     const classes = useStyles();
 
     return (
         <div >
             <Fragment>
-                <Header/>
-                
+                <Header />
+
                 <Container className={classes.Layout}>
                     {/* <Row> */}
-                        {children}
+                    {children}
                     {/* </Row> */}
                 </Container>
-                <Footer/>
+                <Footer />
             </Fragment>
         </div>
     )
