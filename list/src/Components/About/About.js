@@ -34,17 +34,27 @@ const group1 = [
         name: "齐划一",
         short: "qhy",
         position: "后端维护",
-        description: "",
+        description: "泰山学堂",
     }, {
         name:"苏晓斌",
         short: "sxb",
         position:"前端搭建",
-        description: "",
+        description: "计算机科学与技术学院",
+    }, {
+        name: "崔晨",
+        short: "cc",
+        position: "镜像程序编写",
+        description: "计算机科学与技术学院",
     }, {
         name: "薛天扬",
         short: "xty",
         position: "运营维护",
-        description: "",
+        description: "泰山学堂",
+    }, {
+        name: "李港",
+        short: "lg",
+        position: "运营维护",
+        description: "计算机科学与技术学院",
     },
 ]
 
@@ -53,42 +63,47 @@ const group2 = [
         name: "齐划一",
         short: "qhy",
         position: "技术组组长",
-        description: "",
+        description: "计算机科学与技术学院",
     }, {
         name:"于逸潇",
         short: "yyx",
         position:"前后端维护",
-        description: "",
+        description: "泰山学堂",
     }, {
         name: "张祖源",
         short: "zzy",
         position: "前端搭建",
-        description: "",
+        description: "泰山学堂",
     }, {
         name: "洪吉祥",
         short: "hjx",
         position: "前后端维护",
-        description: "",
+        description: "泰山学堂",
     }, {
         name: "冉德龙",
         short: "rdl",
         position: "前后端维护",
-        description: "",
+        description: "泰山学堂",
     }, {
         name: "顿凯",
         short: "dk",
         position: "前后端维护",
-        description: "",
+        description: "计算机科学与技术学院",
+    }, {
+        name: "孙英皓",
+        short: "syh",
+        position: "防火墙设计",
+        description: "网络空间安全学院",
     }, {
         name: "宋家庆",
         short: "sjq",
         position: "前后端维护",
-        description: "",
+        description: "计算机科学与技术学院",
     }, {
         name: "邵嘉明",
         short: "sjm",
         position: "前后端维护",
-        description: "",
+        description: "计算机科学与技术学院",
     },
 ]
 
@@ -97,42 +112,42 @@ const group3 = [
         name: "黄敬成",
         short: "hjc",
         position: "宣传组组长",
-        description: "",
+        description: "泰山学堂",
     }, {
         name:"李星烁",
         short: "lxs",
         position:"视频录制",
-        description: "",
+        description: "计算机科学与技术学院",
     }, {
         name: "从春雨",
         short: "ccy",
         position: "推文制作",
-        description: "",
+        description: "信息科学与工程学院",
     }, {
         name: "倪士平",
         short: "nsp",
         position: "视觉设计",
-        description: "",
+        description: "网络空间安全学院",
     }, {
         name: "刘姿彤",
         short: "lzt",
         position: "视频配音",
-        description: "",
+        description: "计算机科学与技术学院",
     }, {
         name: "高恺琦",
         short: "gkq",
         position: "视频制作",
-        description: "",
+        description: "计算机科学与技术学院",
     }, {
         name: "张炳琪",
         short: "zbq",
         position: "视频后期",
-        description: "",
+        description: "泰山学堂",
     }, {
         name: "高子寒",
         short: "gzh",
         position: "视频策划",
-        description: "",
+        description: "泰山学堂",
     },
 ]
 
@@ -152,8 +167,8 @@ function render_item(item) {
                             {item.name}
                         </h1>
                         <p className={classes.p}>
-                            {item.position}<br/>
-                            {item.description}
+                            {/*{item.position}<br/>*/}
+                            {item.description}<br/>
                         </p>
                     </div>
                 </div>

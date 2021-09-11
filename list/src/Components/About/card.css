@@ -9,7 +9,7 @@
     /*position: relative;*/
     /*display: flex;*/
     /*float: left;*/
-    flex: 1 1 300px;
+    flex: 1 1 400px;
 }
 @media only screen and (min-width: 600px) {
     #card {
