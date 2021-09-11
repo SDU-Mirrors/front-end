@@ -13,7 +13,7 @@ export default function About() {
     const classes = styles();
     return (
         <React.Fragment>
-            <Container maxWidth="md" style={{marginTop: "120px", marginBottom: "80px", padding: 0}}>
+            <Container maxWidth="md" style={{marginTop: "120px", marginBottom: "80px", padding: 0, textAlign: "center"}}>
                 <img src={logoBig} alt="" className={classes.image}/>
             </Container>
             <Container maxWidth="lg" style={{marginBottom: "80px"}}>
