@@ -253,8 +253,7 @@ const styles = makeStyles((themes) => ({
         width: "80vw",
         maxWidth: "600px",
         height: "auto",
-        marginLeft: "max(10vw, calc(50% - 300px))",
-        marginRight: "max(10vw, calc(50% - 300px))"
+        margin: "auto",
     },
     sdu: {
         position: "absolute",

@@ -25,9 +25,8 @@ const useStyles = makeStyles((theme) => ({
         width: "80vw",
         maxWidth: "600px",
         height: "auto",
-        marginLeft: "max(10vw, calc(50% - 300px))",
-        marginRight: "max(10vw, calc(50% - 300px))",
-        marginBottom: "30px",
+        margin: "auto",
+        paddingBottom: "30px",
     },
     Picture: {
         width: 400,

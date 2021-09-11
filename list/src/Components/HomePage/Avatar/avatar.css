@@ -1,0 +1,21 @@
+.box {
+    width: 33.333333%;
+    flex: 1 0 150px;
+}
+.large {
+    width: 20vw;
+    max-width: 200px;
+    height: 20vw;
+    max-height: 200px;
+    border-radius: 50%;
+    margin: auto;
+}
+@media only screen and (min-width: 993px) {
+    .box {
+        width: 20%;
+    }
+    .large {
+        width: 12vw;
+        height: 12vw;
+    }
+}
