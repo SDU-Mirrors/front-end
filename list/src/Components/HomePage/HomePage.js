@@ -25,8 +25,8 @@ const useStyles = makeStyles((theme) => ({
         width: "80vw",
         maxWidth: "600px",
         height: "auto",
-        marginLeft: "max(calc(10vw - 24px), calc(50% - 300px))",
-        marginRight: "max(calc(10vw - 24px), calc(50% - 300px))",
+        marginLeft: "max(10vw, calc(50% - 300px))",
+        marginRight: "max(10vw, calc(50% - 300px))",
         marginBottom: "30px",
     },
     Picture: {
@@ -73,7 +73,7 @@ export default function HomePage() {
         <main>
             {/* Hero unit */}
             <div className={classes.heroContent}>
-                <Container maxWidth="md">
+                <Container maxWidth="md" style={{padding: 0}}>
                     <img src={logoBig} alt="" className={classes.image}/>
                 </Container>
                 <Container maxWidth="sm">
