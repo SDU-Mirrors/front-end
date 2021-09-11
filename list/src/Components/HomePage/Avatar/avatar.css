@@ -1,6 +1,6 @@
 .box {
     width: 33.333333%;
-    flex: 1 0 150px;
+    flex: 1 1 33.33333%;
 }
 .large {
     width: 20vw;
@@ -13,6 +13,7 @@
 @media only screen and (min-width: 993px) {
     .box {
         width: 20%;
+        flex: 1 1 20%;
     }
     .large {
         width: 12vw;
