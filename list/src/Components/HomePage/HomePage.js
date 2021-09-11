@@ -22,9 +22,12 @@ import {Link} from "react-router-dom";
 
 const useStyles = makeStyles((theme) => ({
     image: {
-        marginLeft: -25,
-        maxWidth: 600,
-        height: 'auto',
+        width: "80vw",
+        maxWidth: "600px",
+        height: "auto",
+        marginLeft: "max(calc(10vw - 24px), calc(50% - 300px))",
+        marginRight: "max(calc(10vw - 24px), calc(50% - 300px))",
+        marginBottom: "30px",
     },
     Picture: {
         width: 400,
@@ -70,8 +73,10 @@ export default function HomePage() {
         <main>
             {/* Hero unit */}
             <div className={classes.heroContent}>
+                <Container maxWidth="md">
+                    <img src={logoBig} alt="" className={classes.image}/>
+                </Container>
                 <Container maxWidth="sm">
-                    <img src={logoBig} alt="" className={classes.image} style={{marginBottom: 30}}/>
                     <Typography variant="h5" align="center" color="textSecondary" paragraph>
                         这里是山东大学镜像站，在这里我们将提供给您丰富的镜像资源，以及相关的学习和帮助资料，并且分享我们相关的动态。
                     </Typography>

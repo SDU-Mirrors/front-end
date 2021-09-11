@@ -13,7 +13,7 @@ export default function About() {
     const classes = styles();
     return (
         <React.Fragment>
-            <Container maxWidth="sm">
+            <Container maxWidth="md" style={{marginTop: "120px", marginBottom: "80px",}}>
                 <img src={logoBig} alt="" className={classes.image}/>
             </Container>
             <Container maxWidth="lg" style={{marginBottom: "80px"}}>
@@ -250,11 +250,11 @@ const styles = makeStyles((themes) => ({
         fontWeight: "bold",
     },
     image: {
+        width: "80vw",
         maxWidth: "600px",
         height: "auto",
-        marginTop: "120px",
-        marginBottom: "80px",
-        marginLeft: "-25px",
+        marginLeft: "max(calc(10vw - 24px), calc(50% - 300px))",
+        marginRight: "max(calc(10vw - 24px), calc(50% - 300px))"
     },
     sdu: {
         position: "absolute",
@@ -263,5 +263,5 @@ const styles = makeStyles((themes) => ({
         height: "40px",
         width: "auto",
         opacity: "85%",
-    }
+    },
 }));

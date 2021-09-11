@@ -5,11 +5,7 @@
     margin-left: auto;
     left: auto;
     right: auto;
-    /*display: flex;*/
-    /*position: relative;*/
-    /*display: flex;*/
-    /*float: left;*/
-    flex: 1 1 400px;
+    flex: 1 1 350px;
 }
 @media only screen and (min-width: 600px) {
     #card {
