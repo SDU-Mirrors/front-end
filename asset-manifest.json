@@ -2,9 +2,9 @@
   "files": {
     "static/js/0.a3b7ae59.chunk.js": "/static/js/0.a3b7ae59.chunk.js",
     "static/js/0.a3b7ae59.chunk.js.map": "/static/js/0.a3b7ae59.chunk.js.map",
-    "main.css": "/static/css/main.e0779136.chunk.css",
-    "main.js": "/static/js/main.87debbcc.chunk.js",
-    "main.js.map": "/static/js/main.87debbcc.chunk.js.map",
+    "main.css": "/static/css/main.72497932.chunk.css",
+    "main.js": "/static/js/main.93de0000.chunk.js",
+    "main.js.map": "/static/js/main.93de0000.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.b992c5f3.js",
     "runtime-main.js.map": "/static/js/runtime-main.b992c5f3.js.map",
     "static/css/3.c02757eb.chunk.css": "/static/css/3.c02757eb.chunk.css",
@@ -32,7 +32,7 @@
     "static/css/6.1b2e0db3.chunk.css.map": "/static/css/6.1b2e0db3.chunk.css.map",
     "static/css/7.1b2e0db3.chunk.css.map": "/static/css/7.1b2e0db3.chunk.css.map",
     "static/css/8.1b2e0db3.chunk.css.map": "/static/css/8.1b2e0db3.chunk.css.map",
-    "static/css/main.e0779136.chunk.css.map": "/static/css/main.e0779136.chunk.css.map",
+    "static/css/main.72497932.chunk.css.map": "/static/css/main.72497932.chunk.css.map",
     "static/js/0.a3b7ae59.chunk.js.LICENSE.txt": "/static/js/0.a3b7ae59.chunk.js.LICENSE.txt",
     "static/js/3.45bf8127.chunk.js.LICENSE.txt": "/static/js/3.45bf8127.chunk.js.LICENSE.txt",
     "static/media/Oops.87534df8.svg": "/static/media/Oops.87534df8.svg",
@@ -56,11 +56,11 @@
     "static/media/logobig.e9b1fa58.png": "/static/media/logobig.e9b1fa58.png",
     "static/media/lxs.jpg": "/static/media/lxs.7b1bf2a2.jpg",
     "static/media/lzt.jpg": "/static/media/lzt.7f498654.jpg",
-    "static/media/nsp.jpg": "/static/media/nsp.743fa1b5.jpg",
+    "static/media/nsp.jpg": "/static/media/nsp.b6df667b.jpg",
     "static/media/oops.fb8bc6d5.jpg": "/static/media/oops.fb8bc6d5.jpg",
     "static/media/oops_logo.b71c5411.png": "/static/media/oops_logo.b71c5411.png",
     "static/media/pypi.cf5b3c98.md": "/static/media/pypi.cf5b3c98.md",
-    "static/media/qhy.jpg": "/static/media/qhy.789b0e25.jpg",
+    "static/media/qhy.jpg": "/static/media/qhy.4aa7029e.jpg",
     "static/media/rdl.jpg": "/static/media/rdl.eea2c4cd.jpg",
     "static/media/sdu120.f226f2c1.png": "/static/media/sdu120.f226f2c1.png",
     "static/media/sduLogo.f70da565.jpg": "/static/media/sduLogo.f70da565.jpg",
@@ -80,7 +80,7 @@
     "static/js/runtime-main.b992c5f3.js",
     "static/css/3.c02757eb.chunk.css",
     "static/js/3.45bf8127.chunk.js",
-    "static/css/main.e0779136.chunk.css",
-    "static/js/main.87debbcc.chunk.js"
+    "static/css/main.72497932.chunk.css",
+    "static/js/main.93de0000.chunk.js"
   ]
 }
