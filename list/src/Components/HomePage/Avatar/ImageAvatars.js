@@ -6,6 +6,9 @@ import Icon from "@ant-design/icons";
 import {ReactComponent as OopsSVG} from "../source/Oops.svg";
 import {Grid, Link} from "@material-ui/core";
 import sduLogo from "../source/sduLogo.jpg"
+import linux from "../source/linux.png"
+import docs from "../source/docs.png"
+import member from "../source/member.png"
 import "./avatar.css"
 
 const useStyles = makeStyles((theme) => ({
@@ -41,7 +44,7 @@ export default function ImageAvatars() {
                 {/*    /!*<Icon component={OopsSVG}/>*!/*/}
                 {/*</Avatar>*/}
                 <a href="#/mirror" color="textPrimary" className={classes.link}>
-                    <img src={"/static/Oops.png"} class="large"></img>
+                    <img src={linux} class="icon"></img>
                     <Typography variant="h5" align="center" color="textSecondary" className={classes.fonts} paragraph>
                         开源镜像
                     </Typography>
@@ -50,7 +53,7 @@ export default function ImageAvatars() {
             </div>
             <div class="box">
                 <a href="/docs" color="textPrimary" className={classes.link}>
-                    <img src={"/static/Oops.png"} class="large"></img>
+                    <img src={docs} class="icon"></img>
                     <Typography variant="h5" align="center" color="textSecondary" className={classes.fonts} paragraph>
                         博客
                     </Typography>
@@ -59,7 +62,7 @@ export default function ImageAvatars() {
             </div>
             <div class="box">
                 <a href="#/about" color="textPrimary" className={classes.link}>
-                    <img src={"/static/Oops.png"} class="large"></img>
+                    <img src={member} class="icon"></img>
                     <Typography variant="h5" align="center" color="textSecondary" className={classes.fonts} paragraph>
                         成员信息
                     </Typography>

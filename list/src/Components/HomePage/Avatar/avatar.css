@@ -3,11 +3,18 @@
     flex: 1 1 33.33333%;
 }
 .large {
-    width: 20vw;
+    width: auto;
     max-width: 200px;
     height: 20vw;
     max-height: 200px;
     border-radius: 50%;
+    margin: auto;
+}
+.icon {
+    width: auto;
+    max-width: 200px;
+    height: 20vw;
+    max-height: 200px;
     margin: auto;
 }
 @media only screen and (min-width: 993px) {
