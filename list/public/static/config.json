@@ -12,8 +12,8 @@
         "value": "bionic"
       },
       {
-        "label":"16.04 LTS",
-        "value":"xenial"
+        "label": "16.04 LTS",
+        "value": "xenial"
       }
     ]
   },
@@ -24,6 +24,10 @@
       {
         "label": "10 buster",
         "value": "buster"
+      },
+      {
+        "label": "11 bullseye",
+        "value": "bullseye"
       }
     ]
   },
