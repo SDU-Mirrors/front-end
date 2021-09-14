@@ -10,7 +10,7 @@ class BlogBody extends Component{
     }
     render(){
         const post = this.props.article;
-        document.title = '山东大学镜像站';
+        // document.title = '山东大学镜像站';
         return (
             <div className={"blog-body-" + this.props.table}>
                 <h1 itemProp="headline">{post.frontmatter.title}</h1>
