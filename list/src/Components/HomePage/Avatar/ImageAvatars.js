@@ -9,6 +9,7 @@ import sduLogo from "../source/sduLogo.jpg"
 import linux from "../source/linux.png"
 import docs from "../source/docs.png"
 import member from "../source/member.png"
+import oops from "../source/Oops.png"
 import "./avatar.css"
 
 const useStyles = makeStyles((theme) => ({
@@ -78,7 +79,7 @@ export default function ImageAvatars() {
             </div>
             <div class="box">
                 <a href="https://oops-sdu.cn/" color="textPrimary" className={classes.link}>
-                    <img src={"/static/Oops.png"} class="large"></img>
+                    <img src={oops} class="large"></img>
                     <Typography variant="h5" align="center" color="textSecondary" className={classes.fonts} paragraph>
                         Oops计算机社团
                     </Typography>
