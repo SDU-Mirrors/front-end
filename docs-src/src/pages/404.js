@@ -6,7 +6,8 @@ const NotFoundPage = ({ data, location }) => {
   // const siteTitle = data.site.siteMetadata.title
 
   return (
-    <div>404 not found.</div>
+      document.title = '404 - 山东大学镜像站';
+      <div>404 not found.</div>
   )
 }
 
