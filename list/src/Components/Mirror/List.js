@@ -99,6 +99,7 @@ export default class List extends Component {
     }
 
     render() {
+        document.title = '镜像 - 山东大学镜像站';
         const mirrorsList = this.state.mirrorsList;
         const pattern_value = this.state.pattern_value.toLowerCase();
         //console.log(this.state.pattern_value)

@@ -68,6 +68,7 @@ const cards = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 
 export default function HomePage() {
     const classes = useStyles();
+    document.title = '主页 - 山东大学镜像站';
     return (
         <main>
             {/* Hero unit */}

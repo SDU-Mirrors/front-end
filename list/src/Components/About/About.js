@@ -11,6 +11,7 @@ import sdu120 from '../source/sdu120.png'
 
 export default function About() {
     const classes = styles();
+    document.title = '关于 - 山东大学镜像站';
     return (
         <React.Fragment>
             <Container maxWidth="md" style={{marginTop: "120px", marginBottom: "80px", padding: 0, textAlign: "center"}}>

@@ -97,6 +97,7 @@ export default class DocPage extends Component {
   }
 
   render() {
+    document.title = '帮助 - 山东大学镜像站';
     return (
       <Layout style={{margin: "100px" }}>
         <Sider breakpoint="md" collapsedWidth="0">
