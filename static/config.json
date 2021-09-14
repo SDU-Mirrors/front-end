@@ -22,12 +22,12 @@
     "value": "debian",
     "children": [
       {
-        "label": "10 buster",
-        "value": "buster"
-      },
-      {
         "label": "11 bullseye",
         "value": "bullseye"
+      },
+      {
+        "label": "10 buster",
+        "value": "buster"
       }
     ]
   },
