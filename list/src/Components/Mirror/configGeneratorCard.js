@@ -240,12 +240,23 @@ function buildDebianLine(val, version) {
  * @returns {string} 返回Debian软件源配置的文本块
  */
 function buildDebianBlock(version) {
-    return (
-        // "目前还未提供debian-security，请注意添加\n" +
-        buildDebianLine("deb", "") +
-        buildDebianLine("deb", "" + "-security buster/updates") +
-        buildDebianLine("deb", " " + "buster-updates")
-    );
+    // console.log(version)
+    if (version == "buster") {
+        return (
+            // buildDebianLine("deb", " " + version) +
+            // buildDebianLine("deb", "" + "-security buster/updates") +
+            // buildDebianLine("deb", " " + "buster-updates")
+            "deb https://mirrors.sdu.edu.cn/debian buster main contrib non-free\n" +
+            "deb https://mirrors.sdu.edu.cn/debian-security buster/updates main contrib non-free\n" +
+            "deb https://mirrors.sdu.edu.cn/debian buster-updates main contrib non-free"
+        );
+    } else {
+        return (
+            "deb https://mirrors.sdu.edu.cn/debian bullseye main contrib non-free\n" +
+            "deb https://mirrors.sdu.edu.cn/debian-security bullseye-security main contrib non-free\n" +
+            "deb https://mirrors.sdu.edu.cn/debian bullseye-updates main contrib non-free"
+        )
+    }
 }
 
 /**
