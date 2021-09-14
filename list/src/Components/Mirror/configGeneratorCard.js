@@ -209,7 +209,6 @@ function buildUbuntuLine(val, version) {
  */
 function buildUbuntuBlock(version) {
     return (
-        // "# 默认注释了源码镜像以提高 apt update 速度，如有需要可自行取消注释\n" +
         buildUbuntuLine("deb", version) +
         buildUbuntuLine("deb", version + "-security") +
         buildUbuntuLine("deb", version + "-updates")
@@ -248,13 +247,13 @@ function buildDebianBlock(version) {
             // buildDebianLine("deb", " " + "buster-updates")
             "deb https://mirrors.sdu.edu.cn/debian buster main contrib non-free\n" +
             "deb https://mirrors.sdu.edu.cn/debian-security buster/updates main contrib non-free\n" +
-            "deb https://mirrors.sdu.edu.cn/debian buster-updates main contrib non-free"
+            "deb https://mirrors.sdu.edu.cn/debian buster-updates main contrib non-free\n"
         );
     } else {
         return (
             "deb https://mirrors.sdu.edu.cn/debian bullseye main contrib non-free\n" +
             "deb https://mirrors.sdu.edu.cn/debian-security bullseye-security main contrib non-free\n" +
-            "deb https://mirrors.sdu.edu.cn/debian bullseye-updates main contrib non-free"
+            "deb https://mirrors.sdu.edu.cn/debian bullseye-updates main contrib non-free\n"
         )
     }
 }

@@ -20,7 +20,7 @@ const featuredPosts = [
             '为什么选择 LXC？\n' +
             '无论是搭建镜像站，还是其他服务，首要的任务是实现功能，其次是保证稳定，有余力则追求美观。\n' +
             '\n' +
-            '因此，在单一 Linux 发行版上部署所有服务是十分不明智的做法...',
+            '因此，在单一 Linux 发行版上部署所有服务是十分不明智的做法。例如，激进的发行版提供更多、更新的软件包，而保守的发行版则具有更好的稳定性...',
         image: Logo,
         imageText: 'Image Text',
         link: '/docs/blog/BackendConfigJournal/'
