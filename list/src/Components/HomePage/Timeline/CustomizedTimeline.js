@@ -103,7 +103,7 @@ export default function CustomizedTimeline() {
                 <TimelineContent>
                     <Paper elevation={3} className={classes.paper}>
                         <Typography variant="h6" component="h1">
-                            镜像站由虚拟机改为使用实体机，镜像站硬盘扩容至 4 TB，并申请了山大官方域名mirrors 。
+                            镜像站由虚拟机改为使用实体机，镜像站硬盘扩容至 4 TB，并申请了山大官方域名<a href={"/"}>mirrors.sdu.edu.cn</a> 。
                         </Typography>
                     </Paper>
                 </TimelineContent>
