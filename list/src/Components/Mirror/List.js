@@ -70,8 +70,9 @@ export default class List extends Component {
         this.setState({
             fetching_slots: true
         });
+        let domain = "//mirrors.sdu.edu.cn/"
         axios({
-            url: "/static/sync.json",
+            url: domain + "sync.json",
             method: "get"
         }).then(response => {
             const mirrorsList = response.data;
@@ -112,10 +113,10 @@ export default class List extends Component {
             const tmpName = mirrorsList[key]['name'].toLowerCase();
             const help_list = 'archlinux|debian|rockylinux|ubuntu|windows-iso|lxc-images'
             let match = help_list.search(tmpName)
-            if(match >= 0){
+            if (match >= 0) {
                 mirrorsList[key]['help_url'] = '/docs/guide/' + mirrorsList[key]['name']
             }
-            if (tmpName.indexOf(pattern_value) >= 0){
+            if (tmpName.indexOf(pattern_value) >= 0) {
                 rows.push(createData(mirrorsList[key]['name'], mirrorsList[key]['url'], mirrorsList[key]['help_url'],
                     mirrorsList[key]['size'], mirrorsList[key]['last_timestamp'], mirrorsList[key]['status']));
             }
@@ -123,9 +124,9 @@ export default class List extends Component {
         }
         return (
             <React.Fragment>
-                <Grid container spacing={2} justifyContent="space-between"  style={{marginBottom:3}}>
+                <Grid container spacing={2} justifyContent="space-between" style={{marginBottom: 3}}>
                     {/*<Grid item sm>*/}
-                        <Title><Icon component={ListSVG}/> 镜像列表</Title>
+                    <Title><Icon component={ListSVG}/> 镜像列表</Title>
                     {/*</Grid>*/}
                     {/*<Grid item sm>*/}
                     <div>
