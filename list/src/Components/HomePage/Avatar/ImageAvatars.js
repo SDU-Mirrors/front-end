@@ -77,7 +77,7 @@ export default function ImageAvatars() {
                 </a>
             </div>
             <div class="box">
-                <a href="https://oops-sdu.cn/" color="textPrimary" className={classes.link}>
+                <a href="https://oops.qd.sdu.edu.cn/" color="textPrimary" className={classes.link}>
                     <img src={"/static/Oops.png"} class="large"></img>
                     <Typography variant="h5" align="center" color="textSecondary" className={classes.fonts} paragraph>
                         Oops计算机社团
