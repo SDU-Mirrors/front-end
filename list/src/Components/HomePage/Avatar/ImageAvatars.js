@@ -9,6 +9,7 @@ import sduLogo from "../source/sduLogo.jpg"
 import linux from "../source/linux.png"
 import docs from "../source/docs.png"
 import member from "../source/member.png"
+import oops from "../source/Oops.png"
 import "./avatar.css"
 
 const useStyles = makeStyles((theme) => ({
