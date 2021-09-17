@@ -114,13 +114,13 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Gatsby Starter Blog`,
-        short_name: `GatsbyJS`,
-        start_url: `/`,
+        name: `山东大学镜像站`,
+        short_name: `山东大学镜像站`,
+        start_url: `/docs`,
         background_color: `#ffffff`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `/favicon.ico`, // This path is relative to the root of the site.
+        icon: `static/logo512.png`, // This path is relative to the root of the site.
       },
     },
     `gatsby-plugin-react-helmet`,
