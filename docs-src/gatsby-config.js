@@ -3,14 +3,12 @@ module.exports = {
   siteMetadata: {
     title: `山东大学镜像站`,
     author: {
-      name: `Kyle Mathews`,
-      summary: `who lives and works in San Francisco building useful things.`,
+      name: `山东大学镜像站`,
+      summary: `山东大学镜像站`,
     },
-    description: `A starter blog demonstrating what Gatsby can do.`,
-    siteUrl: `https://gatsbystarterblogsource.gatsbyjs.io/`,
-    social: {
-      twitter: `kylemathews`,
-    },
+    description: `山东大学镜像站是由山东大学（青岛）学生Oops计算机社团在山东大学（青岛）信息化工作办公室指导下立项，由山东大学（青岛）网管会镜像站学生运营团队运营的开源镜像站平台。
+本镜像站为技术爱好者、工程师、科研人员等开源爱好者提供开源软件镜像服务，致力于打造以山东大学为中心的开源爱好者社区，提高山东大学影响力。`,
+    siteUrl: `http://mirrors.sdu.edu.cn/`,
   },
   plugins: [
     `gatsby-plugin-sharp`,
