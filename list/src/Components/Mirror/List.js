@@ -35,7 +35,7 @@ function formatNumber(num) {
 //创建表格数据
 function createData(name, url, help_url, size, last_timestamp, status) {
     let Name;
-    if (help_url != '') {
+    if (help_url != '' && help_url != null) {
         Name =
             <div>
                 <a href={url}>{name}</a>
@@ -60,7 +60,7 @@ export default class List extends Component {
         // 是否已经获取了镜像列表
         loaded: false,
         // 搜索
-        pattern_value: ''
+        search_value: ''
     };
 
     /**
@@ -70,8 +70,9 @@ export default class List extends Component {
         this.setState({
             fetching_slots: true
         });
+        let domain = "//mirrors.sdu.edu.cn/"
         axios({
-            url: "/static/sync.json",
+            url: domain + "sync.json",
             method: "get"
         }).then(response => {
             const mirrorsList = response.data;
@@ -90,7 +91,7 @@ export default class List extends Component {
         //console.log("on change");
         //console.log(event.target.value);
         this.setState({
-            pattern_value: event.target.value
+            search_value: event.target.value
         })
     }
 
@@ -101,8 +102,8 @@ export default class List extends Component {
     render() {
         document.title = '镜像 - 山东大学镜像站';
         const mirrorsList = this.state.mirrorsList;
-        const pattern_value = this.state.pattern_value.toLowerCase();
-        //console.log(this.state.pattern_value)
+        const search_value = this.state.search_value.toLowerCase();
+        //console.log(this.state.search_value)
         if (mirrorsList == null)
             return null;
         //console.log("in render", mirrorsList);
@@ -110,12 +111,12 @@ export default class List extends Component {
         let rows = [];
         for (let key in mirrorsList) {
             const tmpName = mirrorsList[key]['name'].toLowerCase();
-            const help_list = 'archlinux|debian|rockylinux|ubuntu|windows-iso|lxc-images'
-            let match = help_list.search(tmpName)
-            if(match >= 0){
-                mirrorsList[key]['help_url'] = '/docs/guide/' + mirrorsList[key]['name']
-            }
-            if (tmpName.indexOf(pattern_value) >= 0){
+            // const help_list = 'archlinux|debian|rockylinux|ubuntu|windows-iso|lxc-images'
+            // let match = help_list.search(tmpName)
+            // if (match >= 0) {
+            //     mirrorsList[key]['help_url'] = '/docs/guide/' + mirrorsList[key]['name']
+            // }
+            if (tmpName.indexOf(search_value) >= 0 && mirrorsList[key]['url'] != null && mirrorsList[key]['url'] != '') {
                 rows.push(createData(mirrorsList[key]['name'], mirrorsList[key]['url'], mirrorsList[key]['help_url'],
                     mirrorsList[key]['size'], mirrorsList[key]['last_timestamp'], mirrorsList[key]['status']));
             }
@@ -123,9 +124,9 @@ export default class List extends Component {
         }
         return (
             <React.Fragment>
-                <Grid container spacing={2} justifyContent="space-between"  style={{marginBottom:3}}>
+                <Grid container spacing={2} justifyContent="space-between" style={{marginBottom: 3}}>
                     {/*<Grid item sm>*/}
-                        <Title><Icon component={ListSVG}/> 镜像列表</Title>
+                    <Title><Icon component={ListSVG}/> 镜像列表</Title>
                     {/*</Grid>*/}
                     {/*<Grid item sm>*/}
                     <div>
