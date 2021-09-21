@@ -264,7 +264,7 @@ function buildDebianBlock(version) {
  * @returns {string} 返回ArchLinux软件源配置的文本块
  */
 function buildArchBlock() {
-    return "Server = https://mirrors.sdu.edu.cn/archlinux/$repo/os/$arch ";
+    return "# 编辑 /etc/pacman.d/mirrorlist，改为以下内容：\n" + "Server = https://mirrors.sdu.edu.cn/archlinux/$repo/os/$arch ";
 }
 
 /**

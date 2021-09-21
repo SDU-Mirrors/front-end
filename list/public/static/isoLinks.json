@@ -4,8 +4,8 @@
     "label": "Arch Linux",
     "children": [
       {
-        "label": "2021.08.01 (x86_64, CLI-only)",
-        "value": "/archlinux/iso/latest/archlinux-2021.08.01-x86_64.iso"
+        "label": "2021.09.01 (x86_64, CLI-only)",
+        "value": "/archlinux/iso/2021.09.01/archlinux-2021.09.01-x86_64.iso"
       }
     ]
   },
@@ -22,12 +22,28 @@
         "value": "/ubuntu-iso/ubuntu-21.04-live-server-amd64.iso"
       },
       {
+        "label": "20.04.2.0 (amd64, Desktop)",
+        "value": "/ubuntu-iso/ubuntu-20.04.2.0-desktop-amd64.iso"
+      },
+      {
+        "label": "20.04.2 (amd64, Server)",
+        "value": "/ubuntu-iso/ubuntu-20.04.2-live-server-amd64.iso"
+      },
+      {
         "label": "18.04.5 (amd64, Desktop)",
         "value": "/ubuntu-iso/ubuntu-18.04.5-desktop-amd64.iso"
       },
       {
         "label": "18.04.5 (amd64, Server)",
         "value": "/ubuntu-iso/ubuntu-18.04.5-live-server-amd64.iso"
+      },
+      {
+        "label": "16.04.7 (amd64, Desktop)",
+        "value": "/ubuntu-iso/ubuntu-16.04.7-desktop-amd64.iso"
+      },
+      {
+        "label": "16.04.7 (amd64, Server)",
+        "value": "/ubuntu-iso/ubuntu-16.04.7-server-amd64.iso"
       }
     ]
   },
@@ -64,6 +80,36 @@
       {
         "label": "10.10.0 (amd64, Network installer)",
         "value": "/debian-iso/debian-non-free/firmware-10.10.0-amd64-netinst.iso"
+      }
+    ]
+  },
+  {
+    "value": "Rocky",
+    "label": "Rocky",
+    "children": [
+      {
+        "label": "8.4 (aarch64, Boot)",
+        "value": "/rocky/8/isos/aarch64/Rocky-8.4-aarch64-boot.iso"
+      },
+      {
+        "label": "8.4 (aarch64, DVD)",
+        "value": "/rocky/8/isos/aarch64/Rocky-8.4-aarch64-dvd1.iso"
+      },
+      {
+        "label": "8.4 (aarch64, Minimal)",
+        "value": "/rocky/8/isos/aarch64/Rocky-8.4-aarch64-minimal.iso"
+      },
+      {
+        "label": "8.4 (x86_64, Boot)",
+        "value": "/rocky/8/isos/x86_64/Rocky-8.4-x86_64-boot.iso"
+      },
+      {
+        "label": "8.4 (x86_64, DVD)",
+        "value": "/rocky/8/isos/x86_64/Rocky-8.4-x86_64-dvd1.iso"
+      },
+      {
+        "label": "8.4 (x86_64, Minimal)",
+        "value": "/rocky/8/isos/x86_64/Rocky-8.4-x86_64-minimal.iso"
       }
     ]
   }
