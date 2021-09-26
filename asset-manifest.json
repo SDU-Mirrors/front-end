@@ -3,8 +3,8 @@
     "static/js/0.a3b7ae59.chunk.js": "/static/js/0.a3b7ae59.chunk.js",
     "static/js/0.a3b7ae59.chunk.js.map": "/static/js/0.a3b7ae59.chunk.js.map",
     "main.css": "/static/css/main.72497932.chunk.css",
-    "main.js": "/static/js/main.eae36a70.chunk.js",
-    "main.js.map": "/static/js/main.eae36a70.chunk.js.map",
+    "main.js": "/static/js/main.fdb6c741.chunk.js",
+    "main.js.map": "/static/js/main.fdb6c741.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.b992c5f3.js",
     "runtime-main.js.map": "/static/js/runtime-main.b992c5f3.js.map",
     "static/css/3.c02757eb.chunk.css": "/static/css/3.c02757eb.chunk.css",
@@ -67,7 +67,7 @@
     "static/media/rdl.jpg": "/static/media/rdl.eea2c4cd.jpg",
     "static/media/sdu120.f226f2c1.png": "/static/media/sdu120.f226f2c1.png",
     "static/media/sduLogo.f70da565.jpg": "/static/media/sduLogo.f70da565.jpg",
-    "static/media/sjm.jpg": "/static/media/sjm.726fa240.jpg",
+    "static/media/sjm.jpg": "/static/media/sjm.cf29c6b3.jpg",
     "static/media/sjq.jpg": "/static/media/sjq.7feeab82.jpg",
     "static/media/sna.ac7b5655.jpg": "/static/media/sna.ac7b5655.jpg",
     "static/media/sxb.jpg": "/static/media/sxb.e0f78abd.jpg",
@@ -84,6 +84,6 @@
     "static/css/3.c02757eb.chunk.css",
     "static/js/3.45bf8127.chunk.js",
     "static/css/main.72497932.chunk.css",
-    "static/js/main.eae36a70.chunk.js"
+    "static/js/main.fdb6c741.chunk.js"
   ]
 }
