@@ -164,6 +164,7 @@ export default function Footer() {
               <UntagedImage src={logo} label={""}></UntagedImage>
             </div>
           </div>
+          {/* footer_body */}
         </div>
 
         <div className={classes.footer_icp}>
