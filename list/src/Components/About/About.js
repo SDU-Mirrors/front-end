@@ -154,9 +154,9 @@ const group3 = [
 
 function render_item(item) {
     const classes = styles();
-    console.log(item.name);
+    // console.log(item.name);
     let short = require("./images/" + item.short + ".jpg");
-    console.log(short);
+    // console.log(short);
     return <div id="card">
         <div className={classes.card1}>
             <div className={classes.inner}>
