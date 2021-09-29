@@ -187,7 +187,7 @@ export default function CustomizedTimeline() {
                 <TimelineContent>
                     <Paper elevation={3} className={classes.paper}>
                         <Typography variant="h6" component="h1">
-                            镜像站新前端上线。
+                            镜像站新前端上线，关于镜像站的介绍登上“山东大学”官方公众号。
                         </Typography>
                     </Paper>
                 </TimelineContent>
