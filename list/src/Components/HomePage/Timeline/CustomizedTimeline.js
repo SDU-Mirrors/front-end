@@ -166,7 +166,7 @@ export default function CustomizedTimeline() {
                 <TimelineContent>
                     <Paper elevation={3} className={classes.paper}>
                         <Typography variant="h6" component="h1">
-                            镜像站第一期视频《WSL的安装》在b站上线。
+                            镜像站第一期视频《WSL的安装》在B站上线。
                     </Typography>
                     </Paper>
                 </TimelineContent>
