@@ -682,7 +682,7 @@ rm -rf "${DIR_NEW}"
 
 ### systemd 的 service 和 timer
 
-镜像站需要定期执行同步任务。我们不使用老旧的 corntab，而是将同步任务作为 systemd 的服务，并配置合适的定时器来定期执行。举例如下。
+镜像站需要定期执行同步任务。我们不使用老旧的 crontab，而是将同步任务作为 systemd 的服务，并配置合适的定时器来定期执行。举例如下。
 
 `/etc/systemd/system/example-task.service` 文件如下。
 
