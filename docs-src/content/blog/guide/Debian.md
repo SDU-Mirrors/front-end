@@ -35,11 +35,7 @@ deb https://mirrors.sdu.edu.cn/debian-security buster/updates main contrib non-f
 deb https://mirrors.sdu.edu.cn/debian buster-updates main contrib non-free
 ```
 
-## 一点小提示
-
-debian-security 的 buster/updates 提供了重要的安全更新。自 Debian 11 (bullseye) 起，debian-security 仓库使用了 Ubuntu 的命名方式，不再使用令人疑惑的 codename/updates，而是使用 codename-security，例如 bullseye-security。类比于 Ubuntu 中的 bionic-security。
-
-debian 的 buster-updates 提前提供下一个更新点的部分软件更新，如病毒扫描程序和时区数据等。类比于 Ubuntu 中的 bionic-updates。
+## 提示
 
 对于精简安装的 Debian，apt-get 工具不一定能够支持 https。使用如下命令安装依赖包。
 

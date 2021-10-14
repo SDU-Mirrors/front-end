@@ -4,8 +4,8 @@
     "label": "Arch Linux",
     "children": [
       {
-        "label": "2021.09.01 (x86_64, CLI-only)",
-        "value": "/archlinux/iso/2021.09.01/archlinux-2021.09.01-x86_64.iso"
+        "label": "2021.10.01 (x86_64, CLI-only)",
+        "value": "/archlinux/iso/latest/archlinux-2021.10.01-x86_64.iso"
       }
     ]
   },

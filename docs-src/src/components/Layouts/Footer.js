@@ -147,8 +147,8 @@ export default function Footer() {
             {/* <br></br>
             <br></br> */}
             <div className={classes.discription}>
-              <div className={classes.discription_p}>山东大学镜像站是由山东大学（青岛）学生Oops计算机社团在山东大学（青岛）信息化工作办公室指导下立项，由山东大学（青岛）网管会镜像站学生运营团队运营的开源镜像站平台。</div>
-              <div className={classes.discription_p}>本镜像站为技术爱好者、工程师、科研人员等开源爱好者提供开源软件镜像服务，致力于打造以山东大学为中心的开源爱好者社区，提高山东大学影响力。</div>
+              <div className={classes.discription_p}>    山东大学镜像站是由山东大学（青岛）学生Oops计算机社团在山东大学（青岛）信息化工作办公室指导下立项，由山东大学（青岛）网管会镜像站学生运营团队运营的开源镜像站平台。</div>
+              <div className={classes.discription_p}>    本镜像站为技术爱好者、工程师、科研人员等开源爱好者提供开源软件镜像服务，致力于打造以山东大学为中心的开源爱好者社区，提高山东大学影响力。</div>
             </div>
           </div>
 
