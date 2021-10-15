@@ -58,7 +58,7 @@ jobs:
         uses: Yikun/hub-mirror-action@master
         with:
           # 必选，需要同步的Github用户（源）
-          src: github/mirrors-sdu
+          src: github/SDU-Mirrors
           # 必选，需要同步到的Gitee的用户（目的）
           dst: gitee/mirrors-sdu
           # 必选，Gitee公钥对应的私钥，https://gitee.com/profile/sshkeys
