@@ -100,11 +100,6 @@ const group2 = [
         short: "sjq",
         position: "前后端维护",
         description: "计算机科学与技术学院",
-    }, {
-        name: "邵嘉明",
-        short: "sjm",
-        position: "前后端维护",
-        description: "计算机科学与技术学院",
     },
 ]
 
