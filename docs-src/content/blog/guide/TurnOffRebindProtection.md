@@ -1,6 +1,6 @@
 ---
 title: "校内用户必看：路由器关闭 Rebind Protection"
-date: "2021-05-12T22:12:03.284Z"
+date: "2019-04-30T22:12:03.284Z"
 description: ""
 tags: ["帮助文档"]
 ---
