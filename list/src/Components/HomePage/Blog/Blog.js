@@ -15,7 +15,7 @@ const useStyles = makeStyles((theme) => ({
 const featuredPosts = [
     {
         title: '镜像站后端配置记录',
-        date: '2021-05-12',
+        date: '2019-05-08',
         description:
             '为什么选择 LXC？\n' +
             '无论是搭建镜像站，还是其他服务，首要的任务是实现功能，其次是保证稳定，有余力则追求美观。\n' +
@@ -27,7 +27,7 @@ const featuredPosts = [
     },
     {
         title: '一个镜像站的诞生',
-        date: '2021-05-12',
+        date: '2019-04-21',
         description:
             '正逢学校虚拟化平台建设时机，山东大学（青岛） Oops 计算机社团和山东大学' +
             '（青岛）网管会向山东大学（青岛）信息化办公室办提出建设山东大学镜像站的申请。' +
