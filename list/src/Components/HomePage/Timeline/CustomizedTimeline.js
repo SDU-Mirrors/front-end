@@ -193,6 +193,26 @@ export default function CustomizedTimeline() {
                 </TimelineContent>
             </TimelineItem>
 
+            <TimelineItem>
+                <TimelineOppositeContent>
+                    <Typography variant="body2" color="textSecondary">
+                        2021年10-11月
+                    </Typography>
+                </TimelineOppositeContent>
+                <TimelineSeparator>
+                    <TimelineDot style={{backgroundColor: "#FF9770"}}>
+                    </TimelineDot>
+                    <TimelineConnector className={classes.connector}/>
+                </TimelineSeparator>
+                <TimelineContent>
+                    <Paper elevation={3} className={classes.paper}>
+                        <Typography variant="h6" component="h1">
+                            山东大学（青岛）网管会公开课成功举办，其中关于镜像站基础知识部分内容获同学们好评。
+                        </Typography>
+                    </Paper>
+                </TimelineContent>
+            </TimelineItem>
+
 
         </Timeline>
     );
