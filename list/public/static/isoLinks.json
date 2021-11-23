@@ -4,8 +4,8 @@
     "label": "Arch Linux",
     "children": [
       {
-        "label": "2021.10.01 (x86_64, CLI-only)",
-        "value": "/archlinux/iso/latest/archlinux-2021.10.01-x86_64.iso"
+        "label": "2021.11.01 (x86_64, CLI-only)",
+        "value": "/archlinux/iso/latest/archlinux-2021.11.01-x86_64.iso"
       }
     ]
   },
@@ -13,21 +13,14 @@
     "value": "Ubuntu",
     "label": "Ubuntu",
     "children": [
+
       {
-        "label": "21.04 (amd64, Desktop)",
-        "value": "/ubuntu-iso/ubuntu-21.04-desktop-amd64.iso"
+        "label": "20.04.3 (amd64, Desktop)",
+        "value": "/ubuntu-iso/ubuntu-20.04.3-desktop-amd64.iso"
       },
       {
-        "label": "21.04 (amd64, Server)",
-        "value": "/ubuntu-iso/ubuntu-21.04-live-server-amd64.iso"
-      },
-      {
-        "label": "20.04.2.0 (amd64, Desktop)",
-        "value": "/ubuntu-iso/ubuntu-20.04.2.0-desktop-amd64.iso"
-      },
-      {
-        "label": "20.04.2 (amd64, Server)",
-        "value": "/ubuntu-iso/ubuntu-20.04.2-live-server-amd64.iso"
+        "label": "20.04.3 (amd64, Server)",
+        "value": "/ubuntu-iso/ubuntu-20.04.3-live-server-amd64.iso"
       },
       {
         "label": "18.04.5 (amd64, Desktop)",
@@ -52,12 +45,12 @@
     "label": "Debian",
     "children": [
       {
-        "label": "11.0.0 (amd64, Network installer)",
-        "value": "/debian-iso/debian/debian-11.0.0-amd64-netinst.iso"
+        "label": "11.1.0 (amd64, Network installer)",
+        "value": "/debian-iso/debian/debian-11.1.0-amd64-netinst.iso"
       },
       {
-        "label": "11.0.0 (amd64, live CD with xfce)",
-        "value": "/debian-iso/debian/debian-live-11.0.0-amd64-xfce.iso"
+        "label": "11.1.0 (amd64, live CD with xfce)",
+        "value": "/debian-iso/debian/debian-live-11.1.0-amd64-xfce.iso"
       },
       {
         "label": "10.10.0 (amd64, Network installer)",
@@ -74,8 +67,8 @@
     "label": "Debian non-free",
     "children": [
       {
-        "label": "11.0.0 (amd64, Network installer)",
-        "value": "/debian-iso/debian-non-free/firmware-11.0.0-amd64-netinst.iso"
+        "label": "11.1.0 (amd64, Network installer)",
+        "value": "/debian-iso/debian-non-free/firmware-11.1.0-amd64-netinst.iso"
       },
       {
         "label": "10.10.0 (amd64, Network installer)",
@@ -88,28 +81,28 @@
     "label": "Rocky",
     "children": [
       {
-        "label": "8.4 (aarch64, Boot)",
-        "value": "/rocky/8/isos/aarch64/Rocky-8.4-aarch64-boot.iso"
+        "label": "8.5 (aarch64, Boot)",
+        "value": "/rocky/8/isos/aarch64/Rocky-8.5-aarch64-boot.iso"
       },
       {
-        "label": "8.4 (aarch64, DVD)",
-        "value": "/rocky/8/isos/aarch64/Rocky-8.4-aarch64-dvd1.iso"
+        "label": "8.5 (aarch64, DVD)",
+        "value": "/rocky/8/isos/aarch64/Rocky-8.5-aarch64-dvd1.iso"
       },
       {
-        "label": "8.4 (aarch64, Minimal)",
-        "value": "/rocky/8/isos/aarch64/Rocky-8.4-aarch64-minimal.iso"
+        "label": "8.5 (aarch64, Minimal)",
+        "value": "/rocky/8/isos/aarch64/Rocky-8.5-aarch64-minimal.iso"
       },
       {
-        "label": "8.4 (x86_64, Boot)",
-        "value": "/rocky/8/isos/x86_64/Rocky-8.4-x86_64-boot.iso"
+        "label": "8.5 (x86_64, Boot)",
+        "value": "/rocky/8/isos/x86_64/Rocky-8.5-x86_64-boot.iso"
       },
       {
-        "label": "8.4 (x86_64, DVD)",
-        "value": "/rocky/8/isos/x86_64/Rocky-8.4-x86_64-dvd1.iso"
+        "label": "8.5 (x86_64, DVD)",
+        "value": "/rocky/8/isos/x86_64/Rocky-8.5-x86_64-dvd1.iso"
       },
       {
-        "label": "8.4 (x86_64, Minimal)",
-        "value": "/rocky/8/isos/x86_64/Rocky-8.4-x86_64-minimal.iso"
+        "label": "8.5 (x86_64, Minimal)",
+        "value": "/rocky/8/isos/x86_64/Rocky-8.5-x86_64-minimal.iso"
       }
     ]
   }
