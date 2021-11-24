@@ -16,9 +16,9 @@ tags: ["帮助文档"]
 
 Ubuntu 20.04 LTS (focal) 用户请将 `/etc/apt/sources.list` 文件改为以下内容：
 
-    deb https://mirrors.sdu.edu.cn/ubuntu/ focal main restricted universe multiverse
-    deb https://mirrors.sdu.edu.cn/ubuntu/ focal-security main restricted universe multiverse
-    deb https://mirrors.sdu.edu.cn/ubuntu/ focal-updates main restricted universe multiverse
+    deb http://mirrors.sdu.edu.cn/ubuntu/ focal main restricted universe multiverse
+    deb http://mirrors.sdu.edu.cn/ubuntu/ focal-security main restricted universe multiverse
+    deb http://mirrors.sdu.edu.cn/ubuntu/ focal-updates main restricted universe multiverse
 
 支持的指令集：amd64、i386。
 
@@ -26,9 +26,9 @@ Ubuntu 20.04 LTS (focal) 用户请将 `/etc/apt/sources.list` 文件改为以下
 
 Ubuntu 18.04 LTS (bionic) 用户请将 `/etc/apt/sources.list` 文件改为以下内容：
 
-    deb https://mirrors.sdu.edu.cn/ubuntu/ bionic main restricted universe multiverse
-    deb https://mirrors.sdu.edu.cn/ubuntu/ bionic-security main restricted universe multiverse
-    deb https://mirrors.sdu.edu.cn/ubuntu/ bionic-updates main restricted universe multiverse
+    deb http://mirrors.sdu.edu.cn/ubuntu/ bionic main restricted universe multiverse
+    deb http://mirrors.sdu.edu.cn/ubuntu/ bionic-security main restricted universe multiverse
+    deb http://mirrors.sdu.edu.cn/ubuntu/ bionic-updates main restricted universe multiverse
 
 支持的指令集：amd64、i386。
 
@@ -36,9 +36,9 @@ Ubuntu 18.04 LTS (bionic) 用户请将 `/etc/apt/sources.list` 文件改为以�
 
 Ubuntu 16.04 LTS (xenial) 用户请将 `/etc/apt/sources.list` 文件改为以下内容：
 
-    deb https://mirrors.sdu.edu.cn/ubuntu/ xenial main restricted universe multiverse
-    deb https://mirrors.sdu.edu.cn/ubuntu/ xenial-security main restricted universe multiverse
-    deb https://mirrors.sdu.edu.cn/ubuntu/ xenial-updates main restricted universe multiverse
+    deb http://mirrors.sdu.edu.cn/ubuntu/ xenial main restricted universe multiverse
+    deb http://mirrors.sdu.edu.cn/ubuntu/ xenial-security main restricted universe multiverse
+    deb http://mirrors.sdu.edu.cn/ubuntu/ xenial-updates main restricted universe multiverse
 
 支持的指令集：amd64、i386。
 
