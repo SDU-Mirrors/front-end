@@ -39,6 +39,7 @@ jobs:
           cd ./docs-src
           npm install
           npm i -g gatsby-cli
+          npm install node-sass@latest
           gatsby build --prefix-paths
           cp -r ./public ../docs-part
           cd ..
