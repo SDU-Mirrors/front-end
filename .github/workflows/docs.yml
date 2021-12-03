@@ -30,11 +30,11 @@ jobs:
         run: |
           cd ./list
           echo "begin installing"
-          # npm install
-          # npm set CI=false
+          npm install
+          npm set CI=false
           echo "begin generating main-page"
-          # npm run build-linux
-          # cp -r ./build ../build-part
+          npm run build-linux
+          cp -r ./build ../build-part
           cd ..
           cd ./docs-src
           # npm install node-sass@latest
