@@ -12,7 +12,10 @@ tags: ["帮助文档"]
 
 1.下载 Ubuntu Desktop 20.04 LTS 的 ISO 镜像。
 
-2.打开 VMware Workstation ，选择创建新的虚拟机。
+![](./images/QQ截图20211203215050.png)
+![](./images/Snipaste_2021-12-03_17-03-38.png)
+
+2.打开 VMware Workstation，选择创建新的虚拟机。
 
 ![](./images/Snipaste_2021-11-19_08-45-32.png)
 
@@ -40,11 +43,11 @@ tags: ["帮助文档"]
 
 ![](./images/Snipaste_2021-11-19_08-56-03.png)
 
-9.推荐将虚拟机配置改为1个处理器、2个内核，内存4GB ，如有其他需求可自行修改。虚拟化引擎中的第一项可提高虚拟机性能，建议开启。
+9.根据自己电脑的配置情况，酌情分配CPU数量和内存容量，如有其他需求可自行修改。
 
-![](./images/Snipaste_2021-11-19_08-59-40.png)
+![](./images/QQ截图20211203214941.png)
 
-10.（可选）由于 Ubuntu 安装时会联网下载更新，但默认软件源在国内下载速度较慢，因此可以取消勾选网络适配器中的`启动时连接`，以阻止自动下载，提高安装速度，安装完成后可切换至速度较快的软件源并手动安装。
+10.（可选）由于 Ubuntu 安装时会联网下载更新，但默认软件源在国内下载速度较慢，因此可以取消勾选网络适配器中的`启动时连接`，以阻止自动下载，提高安装速度，安装完成后可切换至速度较快的软件源并手动更新。
 
 ![](./images/Snipaste_2021-11-19_09-04-29.png)
 
@@ -70,7 +73,7 @@ tags: ["帮助文档"]
 
 ![](./images/Snipaste_2021-12-03_13-31-47.png)
 
-2.在桌面按 Ctrl+Alt+T ，打开终端，输入
+2.在桌面按`Ctrl+Alt+T`，打开终端，输入
 
 `sudo gedit /etc/apt/sources.list`
 
@@ -78,9 +81,11 @@ tags: ["帮助文档"]
 
 ![](./images/Snipaste_2021-12-03_13-35-52.png)
 
-3.点击右上角的菜单键，选择 Find and Replace ，将所有的`deb http://us.archive.ubuntu.com/ubuntu/` 替换为 `deb http://mirrors.sdu.edu.cn/ubuntu/`。完成后点击 Save 保存，关闭窗口。
+3.点击右上角的菜单键，选择 Find and Replace，将所有的`deb http://us.archive.ubuntu.com/ubuntu/` 替换为 `deb http://mirrors.sdu.edu.cn/ubuntu/`。完成后点击 Save 保存，关闭窗口。也可根据镜像站的[Ubuntu 镜像源使用说明](https://mirrors.sdu.edu.cn/docs/guide/Ubuntu/) 的指示，将原有文件内容全部删除，并替换为网页中给出的内容。
 
 ![](./images/Snipaste_2021-12-03_13-41-51.png)
+
+![](./images/QQ截图20211203215620.png)
 
 4.在终端输入 `sudo apt update` 和 `sudo apt upgrade` ，体验镜像站的校内速度并更新软件。可能需要输入 `y`并按回车以确认安装。
 
@@ -90,13 +95,13 @@ tags: ["帮助文档"]
 
 ### 更改语言和时区
 
-1.点击右上角的电源按钮，选择 Settings ，选择左侧的 Region & Language 。
+1.点击右上角的电源按钮，选择 Settings ，选择左侧的 Region & Language。
 
 ![](./images/Snipaste_2021-11-24_11-03-19.png)
 
-![](./images/Snipaste_2021-11-24_11-03-45.png)
+![](Snipaste_2021-11-24_11-03-45.png)
 
-2.点击 Manage Installed Languages ，会提示英文语言包不完整，点击 Remind Me Later 。
+2.点击 Manage Installed Languages，会提示英文语言包不完整，点击 Remind Me Later。
 
 ![](./images/Snipaste_2021-11-24_11-04-55.png)
 
@@ -104,11 +109,11 @@ tags: ["帮助文档"]
 
 ![](./images/Snipaste_2021-11-24_11-05-46.png)
 
-4.将 Language for menus and windows 中的`汉语（中国）`拖动到最上方，然后点击 Apply System-Wide 。
+4.将 Language for menus and windows 中的`汉语（中国）`拖动到最上方，然后点击 Apply System-Wide。
 
 ![](./images/Snipaste_2021-12-03_14-07-39.png)
 
-5.选择 Regional Formats ，调整为`汉语（中国）`，点击 Apply System-wide 。完成后关闭窗口。
+5.选择 Regional Formats，调整为`汉语（中国）`，点击 Apply System-wide。完成后关闭窗口。
 
 ![](./images/Snipaste_2021-11-24_11-09-26.png)
 
@@ -116,7 +121,7 @@ tags: ["帮助文档"]
 
 ![](./images/Snipaste_2021-11-24_11-11-09.png)
 
-7.再次进入设置，选择左侧的日期和时间，将时区更改为 `UTC+08` 。（直接在地图上选择位置）
+7.再次进入设置，选择左侧的日期和时间，将时区更改为 `UTC+08` 。（直接在地图上点击上海即可）
 
 ![](./images/Snipaste_2021-12-03_14-15-24.png)
 
