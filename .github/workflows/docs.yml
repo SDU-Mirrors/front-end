@@ -37,7 +37,8 @@ jobs:
           # cp -r ./build ../build-part
           cd ..
           cd ./docs-src
-          npm install node-sass@latest
+          # npm install node-sass@latest
+          npm update
           # npm install
           #npm i -g gatsby-cli
           #gatsby build --prefix-paths
