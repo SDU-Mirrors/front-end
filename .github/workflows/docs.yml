@@ -30,16 +30,16 @@ jobs:
         run: |
           cd ./list
           echo "begin installing"
-          npm install
-          npm set CI=false
+          # npm install
+          # npm set CI=false
           echo "begin generating main-page"
-          npm run build-linux
+          # npm run build-linux
           cp -r ./build ../build-part
           cd ..
           cd ./docs-src
+          npm install node-sass@latest
           npm install
           npm i -g gatsby-cli
-          npm install node-sass@latest
           gatsby build --prefix-paths
           cp -r ./public ../docs-part
           cd ..
