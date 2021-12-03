@@ -34,7 +34,7 @@ jobs:
           # npm set CI=false
           echo "begin generating main-page"
           # npm run build-linux
-          cp -r ./build ../build-part
+          # cp -r ./build ../build-part
           cd ..
           cd ./docs-src
           npm install node-sass@latest
