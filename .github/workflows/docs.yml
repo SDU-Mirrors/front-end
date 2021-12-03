@@ -7,8 +7,8 @@ on:
   # Triggers the workflow on push or pull request events but only for the master branch
   push:
     branches: [ master ]
-  pull_request:
-    branches: [ master ]
+    # pull_request:
+    # branches: [ master ]
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -24,7 +24,7 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
-      
+
       # Runs a set of commands using the runners shell
       - name: Build
         run: |
@@ -37,6 +37,8 @@ jobs:
           cp -r ./build ../build-part
           cd ..
           cd ./docs-src
+          # npm install node-sass@latest
+          npm update
           npm install
           npm i -g gatsby-cli
           gatsby build --prefix-paths
@@ -54,11 +56,11 @@ jobs:
           FOLDER: ./build-part # The directory where your assets are generated
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # GitHub will automatically add this - you don't need to bother getting a token
           MESSAGE: "Build: ({sha}) {msg}" # The commit message
-      - name: sync
+      - name: Sync
         uses: Yikun/hub-mirror-action@master
         with:
           # 必选，需要同步的Github用户（源）
-          src: github/mirrors-sdu
+          src: github/SDU-Mirrors
           # 必选，需要同步到的Gitee的用户（目的）
           dst: gitee/mirrors-sdu
           # 必选，Gitee公钥对应的私钥，https://gitee.com/profile/sshkeys
