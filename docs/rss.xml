@@ -1,8 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[山东大学镜像站]]></title><description><![CDATA[山东大学镜像站是由山东大学（青岛）学生Oops计算机社团在山东大学（青岛）信息化工作办公室指导下立项，由山东大学（青岛）网管会镜像站学生运营团队运营的开源镜像站平台。
-本镜像站为技术爱好者、工程师、科研人员等开源爱好者提供开源软件镜像服务，致力于打造以山东大学为中心的开源爱好者社区，提高山东大学影响力。]]></description><link>http://mirrors.sdu.edu.cn</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 03 Dec 2021 14:04:31 GMT</lastBuildDate><item><title><![CDATA[VMware 安装 Ubuntu 20.04 教程]]></title><description><![CDATA[VMware安装Ubuntu20.04教程 安装 Ubuntu 1.下载 Ubuntu Desktop 20.04 LTS 的 ISO 镜像。 2.打开 VMware Workstation ，选择创建新的虚拟机。  3.进入新建虚拟机向导，选择，点击下一步。…]]></description><link>http://mirrors.sdu.edu.cn/guide/InstallUbuntuInVMware/</link><guid isPermaLink="false">http://mirrors.sdu.edu.cn/guide/InstallUbuntuInVMware/</guid><pubDate>Wed, 24 Nov 2021 20:45:03 GMT</pubDate><content:encoded>&lt;h1 id=&quot;vmware安装ubuntu2004教程&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#vmware%E5%AE%89%E8%A3%85ubuntu2004%E6%95%99%E7%A8%8B&quot; aria-label=&quot;vmware安装ubuntu2004教程 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;VMware安装Ubuntu20.04教程&lt;/h1&gt;
+本镜像站为技术爱好者、工程师、科研人员等开源爱好者提供开源软件镜像服务，致力于打造以山东大学为中心的开源爱好者社区，提高山东大学影响力。]]></description><link>http://mirrors.sdu.edu.cn</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 03 Dec 2021 14:38:39 GMT</lastBuildDate><item><title><![CDATA[VMware 安装 Ubuntu 20.04 教程]]></title><description><![CDATA[VMware安装Ubuntu20.04教程 安装 Ubuntu 1.下载 Ubuntu Desktop 20.04 LTS 的 ISO 镜像。 
+ 2.打开 VMware Workstation，选择创建新的虚拟机。  3.进入新建虚拟机向导，选择，点击下一步。…]]></description><link>http://mirrors.sdu.edu.cn/guide/InstallUbuntuInVMware/</link><guid isPermaLink="false">http://mirrors.sdu.edu.cn/guide/InstallUbuntuInVMware/</guid><pubDate>Wed, 24 Nov 2021 20:45:03 GMT</pubDate><content:encoded>&lt;h1 id=&quot;vmware安装ubuntu2004教程&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#vmware%E5%AE%89%E8%A3%85ubuntu2004%E6%95%99%E7%A8%8B&quot; aria-label=&quot;vmware安装ubuntu2004教程 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;VMware安装Ubuntu20.04教程&lt;/h1&gt;
 &lt;h3 id=&quot;安装-ubuntu&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%E5%AE%89%E8%A3%85-ubuntu&quot; aria-label=&quot;安装 ubuntu permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;安装 Ubuntu&lt;/h3&gt;
 &lt;p&gt;1.下载 Ubuntu Desktop 20.04 LTS 的 ISO 镜像。&lt;/p&gt;
-&lt;p&gt;2.打开 VMware Workstation ，选择创建新的虚拟机。&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/docs/static/0433d4961dc9cf9841d463dfc89f6a69/78415/QQ%E6%88%AA%E5%9B%BE20211203215050.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 69.62025316455697%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAOCAYAAAAvxDzwAAAACXBIWXMAAAsTAAALEwEAmpwYAAABnElEQVQ4y52SzW7bMBCE9f4PlUMPOfWUOjHSNI5bp7JZWaRIkeLPqp5iSSmQ0hyMHAaCluDHmd2tvn+9Q719hNhucdxsYPse1jlYaz+lyriAvtNwss0KwcP76xRCyFrWKkoJNBKcJxgb4X1ESukqzUBKhESUa1WMEUSEum6x3wukVIBcX6rUCmD+d85lV8YYdF2XzzJwJILSFvu6w+6nAaX4H5AvnpsGzg2rB7U2EELgdDyWyDGm7Kr3hKfXAYe6B1F8izM7GoYBWut8if/ns56HOA1kcpiyI2UTNs89VDdgJO7POi7Ha9sWwwScoRyVpZRaA7WNEF2CaIcVbAayw6Zp8ncJlFJBSgnZSvglUJqA3Sng7rGD92G6EN8ic6Ts8B1QqeJuNRReHZMuOKgRLpSevnfJvWPY/EDRege5VkXew+Bhn17w7eYB4sdv/L2Mq4scmZvPkf0HPWSHHLs4ZGAMMM+/cP9lC7E7ISyWdjnpeV2W9eWiF4dTZB0v2J1H3Nz+gbX+w+W+RnkoI0W0JuLQBJzPNvfwMzAG/gNoQTuzTLtmCAAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;QQ  20211203215050&quot;
+        title=&quot;QQ  20211203215050&quot;
+        src=&quot;/docs/static/0433d4961dc9cf9841d463dfc89f6a69/f058b/QQ%E6%88%AA%E5%9B%BE20211203215050.png&quot;
+        srcset=&quot;/docs/static/0433d4961dc9cf9841d463dfc89f6a69/c26ae/QQ%E6%88%AA%E5%9B%BE20211203215050.png 158w,
+/docs/static/0433d4961dc9cf9841d463dfc89f6a69/6bdcf/QQ%E6%88%AA%E5%9B%BE20211203215050.png 315w,
+/docs/static/0433d4961dc9cf9841d463dfc89f6a69/f058b/QQ%E6%88%AA%E5%9B%BE20211203215050.png 630w,
+/docs/static/0433d4961dc9cf9841d463dfc89f6a69/40601/QQ%E6%88%AA%E5%9B%BE20211203215050.png 945w,
+/docs/static/0433d4961dc9cf9841d463dfc89f6a69/78415/QQ%E6%88%AA%E5%9B%BE20211203215050.png 1207w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;
+&lt;img src=&quot;./images/Snipaste_2021-12-03_17-03-38.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;2.打开 VMware Workstation，选择创建新的虚拟机。&lt;/p&gt;
 &lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
@@ -213,38 +246,38 @@
       /&gt;
   &lt;/a&gt;
     &lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;9.推荐将虚拟机配置改为1个处理器、2个内核，内存4GB ，如有其他需求可自行修改。虚拟化引擎中的第一项可提高虚拟机性能，建议开启。&lt;/p&gt;
+&lt;p&gt;9.根据自己电脑的配置情况，酌情分配CPU数量和内存容量，如有其他需求可自行修改。&lt;/p&gt;
 &lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/docs/static/269d160d089703dea735fe899a5a50f2/6e9ba/Snipaste_2021-11-19_08-59-40.png&quot;
+    href=&quot;/docs/static/ae2510807949f164c52e28b5add9a510/914ae/QQ%E6%88%AA%E5%9B%BE20211203214941.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
   &gt;
     &lt;span
     class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 106.32911392405065%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAVCAIAAADJt1n/AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAB2UlEQVQ4y+2TSW/bMBCF9f8vvbZF0VOORc89pIcuiN3WjrJ4qRwvWm3JFB2Jm6QRySlk+RAEMNAcC/RhDsQjPs4DMeMkyVZVNROSccmFklXNpepLyKoBsNa2WtfNUQANQN001lrP8xxCCCsookVEqFVBUuxk+xJ57rkuzzLDheECirItWU0pIk5nMyfcZh9/rC/G9O1V+n6Yvfrkvf62fTfI3nzfXYxItonm7vXUdfMkKff7Is0YzcsgREQ/CJyM5J8HNx8uh+N1fhs+Xo68q3n8a5kNfu9uwwM7FMvJ/XR8nazXbE+AMaMUlCUiBmHoUEofvHkcbBCxrqrYX1qjT8EROaXT0TiPYiNkU5aKHjghdVF0nX3fIXnueZ6UEhGrqp5MplKqjrXGWJR74n756t9Plu7NZDDcLR4eo0il2Sm2EKJtW631EbAAYIw5/hkaYwHaJI5zQsiehGEY+L6Uor/tOiul8IzMUc9M20XqzCAInD7k38DW2qeHl8HPXvkP/zPwZrPpxvOlcG/OZjOHc26M1dr0BdACgNa6bdu6brQ+2/k02/24GmOstVEULbxF3q3aYrVaAcA5OOz3mXPOnqg8qj+cHMYEZyktf86D8SKOtul6tbq7u/sDTGu4bZQSgo0AAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+    style=&quot;padding-bottom: 39.24050632911392%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAICAYAAAD5nd/tAAAACXBIWXMAAAsTAAALEwEAmpwYAAABi0lEQVQoz02RS2/TQBSF82tAgU3/JwmCDVvYUIkFG8QK1AUSlVCRadrGUuw8bNclcWpHjl/jGTfxh2Yah17p05w7o3t0rqZ38nbKs1cTnh/oD92j1ui3/sDh5WuXF0OH/mBywKE/PDBwzNvJG4deGkewV0BjyJMV7CXwcLxr6orA9yjyjEZJg6wFtaiQQhitpCDZ5vS+WTM+X6ecXqZ8tDa8O5vx4dfaaM37i4RZlPM3DLi5GROtIoqiIMsyhBCGsixplCLZFvQu7AWnZ5d8+unw3b7ny2+Pr39Czr2Sc6/gx7xgmVYs70LGY5vpdEoYhiRJcjSsqgqlFLE2DBZT5pMxqkzRdX/ng6p4Wg9KEtzeEgSBSbbb7ailREppjKTR9aOh67pE67UZ3O1bZvMFy1XEvn3s9SlEbVJpw+12SxzHhs1mY86qEv8TlmVhYutq25a6rg1dr0s1Db7vc311hW3bjEYjLMvC8zxj2CU1ht1a3fDTvrvTA1mWm3R6Zf0pWuuEWkulUFKaT/kHPcNDPFRD3rsAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
   &gt;&lt;/span&gt;
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;Snipaste 2021 11 19 08 59 40&quot;
-        title=&quot;Snipaste 2021 11 19 08 59 40&quot;
-        src=&quot;/docs/static/269d160d089703dea735fe899a5a50f2/f058b/Snipaste_2021-11-19_08-59-40.png&quot;
-        srcset=&quot;/docs/static/269d160d089703dea735fe899a5a50f2/c26ae/Snipaste_2021-11-19_08-59-40.png 158w,
-/docs/static/269d160d089703dea735fe899a5a50f2/6bdcf/Snipaste_2021-11-19_08-59-40.png 315w,
-/docs/static/269d160d089703dea735fe899a5a50f2/f058b/Snipaste_2021-11-19_08-59-40.png 630w,
-/docs/static/269d160d089703dea735fe899a5a50f2/6e9ba/Snipaste_2021-11-19_08-59-40.png 731w&quot;
+        alt=&quot;QQ  20211203214941&quot;
+        title=&quot;QQ  20211203214941&quot;
+        src=&quot;/docs/static/ae2510807949f164c52e28b5add9a510/f058b/QQ%E6%88%AA%E5%9B%BE20211203214941.png&quot;
+        srcset=&quot;/docs/static/ae2510807949f164c52e28b5add9a510/c26ae/QQ%E6%88%AA%E5%9B%BE20211203214941.png 158w,
+/docs/static/ae2510807949f164c52e28b5add9a510/6bdcf/QQ%E6%88%AA%E5%9B%BE20211203214941.png 315w,
+/docs/static/ae2510807949f164c52e28b5add9a510/f058b/QQ%E6%88%AA%E5%9B%BE20211203214941.png 630w,
+/docs/static/ae2510807949f164c52e28b5add9a510/914ae/QQ%E6%88%AA%E5%9B%BE20211203214941.png 860w&quot;
         sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
         style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
         loading=&quot;lazy&quot;
       /&gt;
   &lt;/a&gt;
     &lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;10.（可选）由于 Ubuntu 安装时会联网下载更新，但默认软件源在国内下载速度较慢，因此可以取消勾选网络适配器中的&lt;code class=&quot;language-text&quot;&gt;启动时连接&lt;/code&gt;，以阻止自动下载，提高安装速度，安装完成后可切换至速度较快的软件源并手动安装。&lt;/p&gt;
+&lt;p&gt;10.（可选）由于 Ubuntu 安装时会联网下载更新，但默认软件源在国内下载速度较慢，因此可以取消勾选网络适配器中的&lt;code class=&quot;language-text&quot;&gt;启动时连接&lt;/code&gt;，以阻止自动下载，提高安装速度，安装完成后可切换至速度较快的软件源并手动更新。&lt;/p&gt;
 &lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
@@ -459,7 +492,7 @@
       /&gt;
   &lt;/a&gt;
     &lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;2.在桌面按 Ctrl+Alt+T ，打开终端，输入&lt;/p&gt;
+&lt;p&gt;2.在桌面按&lt;code class=&quot;language-text&quot;&gt;Ctrl+Alt+T&lt;/code&gt;，打开终端，输入&lt;/p&gt;
 &lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;sudo gedit /etc/apt/sources.list&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;然后输入密码，即可编辑软件源。输入密码时终端不会有任何提示，这是为了防止泄露密码长度，直接输入后按回车即可。&lt;/p&gt;
 &lt;p&gt;&lt;span
@@ -492,7 +525,7 @@
       /&gt;
   &lt;/a&gt;
     &lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;3.点击右上角的菜单键，选择 Find and Replace ，将所有的&lt;code class=&quot;language-text&quot;&gt;deb http://us.archive.ubuntu.com/ubuntu/&lt;/code&gt; 替换为 &lt;code class=&quot;language-text&quot;&gt;deb http://mirrors.sdu.edu.cn/ubuntu/&lt;/code&gt;。完成后点击 Save 保存，关闭窗口。&lt;/p&gt;
+&lt;p&gt;3.点击右上角的菜单键，选择 Find and Replace，将所有的&lt;code class=&quot;language-text&quot;&gt;deb http://us.archive.ubuntu.com/ubuntu/&lt;/code&gt; 替换为 &lt;code class=&quot;language-text&quot;&gt;deb http://mirrors.sdu.edu.cn/ubuntu/&lt;/code&gt;。完成后点击 Save 保存，关闭窗口。也可根据镜像站的&lt;a href=&quot;https://mirrors.sdu.edu.cn/docs/guide/Ubuntu/&quot;&gt;Ubuntu 镜像源使用说明&lt;/a&gt; 的指示，将原有文件内容全部删除，并替换为网页中给出的内容。&lt;/p&gt;
 &lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
@@ -517,6 +550,37 @@
 /docs/static/6787198928fa859c43d9365753449951/6bdcf/Snipaste_2021-12-03_13-41-51.png 315w,
 /docs/static/6787198928fa859c43d9365753449951/f058b/Snipaste_2021-12-03_13-41-51.png 630w,
 /docs/static/6787198928fa859c43d9365753449951/5a190/Snipaste_2021-12-03_13-41-51.png 800w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/docs/static/e32b696932795a86c3f03a62aef9f4e6/d3f96/QQ%E6%88%AA%E5%9B%BE20211203215620.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 60.12658227848101%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAMCAYAAABiDJ37AAAACXBIWXMAAAsTAAALEwEAmpwYAAABvElEQVQoz42S627iMBCFef+X4h8SRTQ3AiQUmqghEBI3kEDU3PytbARiq7LdkY5nPGMfz8WDuq7JsoyiKDgej+z3e1arFZvNhiAIWK/XhGFIkiQokVJqPJNBWZa4rovnefryfD5nOBwyGo2YTCaMx2MN3/f/j7DrOoT41DifLzRNSy8lbdfRNA1t294P/4voTqiWNE0JgpAo2pIJgRCCbRzrR6qq0qS3zH7NUC2Xy4V4tyPPj5TlWffzUlV/HbyR/EqogtfBCFQ/8zzXhI9Ez/BTGwZISRzv2EYxSXIg+oiu9j7RPX0mmrTvr3h4RJcsTgWfp4K8LMnyk95nqvyqoul7ajWgvqdRw5LQ/lCyvJdc15RvK07ekpPnUfge2czRSG2TxDQ4mAaZbZE6yj/T+it4pwlD6iCgiyJk9EGX5wxIU0LLZO7YrBcu/sxmvZzjuzaeY/GmfK5zxczGm9msXIeFZbKwTVxjysZfEnkLzssFA5lliNcpO8sgdSxSnYlFYhnszVcSlaVlsjOmGspWULGDbXGwTGIVexnz5S2vQxFJwmG7pRCCQn3wPIemAfWplb7hcd9+87cNsuv4A8ukkXl7pcrrAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;QQ  20211203215620&quot;
+        title=&quot;QQ  20211203215620&quot;
+        src=&quot;/docs/static/e32b696932795a86c3f03a62aef9f4e6/f058b/QQ%E6%88%AA%E5%9B%BE20211203215620.png&quot;
+        srcset=&quot;/docs/static/e32b696932795a86c3f03a62aef9f4e6/c26ae/QQ%E6%88%AA%E5%9B%BE20211203215620.png 158w,
+/docs/static/e32b696932795a86c3f03a62aef9f4e6/6bdcf/QQ%E6%88%AA%E5%9B%BE20211203215620.png 315w,
+/docs/static/e32b696932795a86c3f03a62aef9f4e6/f058b/QQ%E6%88%AA%E5%9B%BE20211203215620.png 630w,
+/docs/static/e32b696932795a86c3f03a62aef9f4e6/40601/QQ%E6%88%AA%E5%9B%BE20211203215620.png 945w,
+/docs/static/e32b696932795a86c3f03a62aef9f4e6/d3f96/QQ%E6%88%AA%E5%9B%BE20211203215620.png 1093w&quot;
         sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
         style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
         loading=&quot;lazy&quot;
@@ -556,7 +620,7 @@
   &lt;/a&gt;
     &lt;/span&gt;&lt;/p&gt;
 &lt;h3 id=&quot;更改语言和时区&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%E6%9B%B4%E6%94%B9%E8%AF%AD%E8%A8%80%E5%92%8C%E6%97%B6%E5%8C%BA&quot; aria-label=&quot;更改语言和时区 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;更改语言和时区&lt;/h3&gt;
-&lt;p&gt;1.点击右上角的电源按钮，选择 Settings ，选择左侧的 Region &amp;#x26; Language 。&lt;/p&gt;
+&lt;p&gt;1.点击右上角的电源按钮，选择 Settings ，选择左侧的 Region &amp;#x26; Language。&lt;/p&gt;
 &lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 344px; &quot;
@@ -586,38 +650,8 @@
       /&gt;
   &lt;/a&gt;
     &lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span
-      class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
-    &gt;
-      &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/docs/static/ad80a2c1626c45df67895b11d2054124/e548f/Snipaste_2021-11-24_11-03-45.png&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-    &lt;span
-    class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 84.17721518987341%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAARCAIAAABSJhvpAAAACXBIWXMAAA7EAAAOxAGVKw4bAAABxUlEQVQ4y5WSy47TMBSG81JtmkoVM4sWhg0vg1izQqwRG5BAiNmPNAtegDcZRNqkie0TX85xJr6gidtomEqgfvLK9nd8/NvZ5uLi2Wr1cvN8VRTry8tiPi/m82WeF7NZMZst8/zFen212Vxt1sv5/DDyfLlYvFotsl93d7/LUgAIzpum2W63u92uLMuqquqRJtE2dV2XZVlut2lPXe0yMqiUstbGGEMI3nvnXNd1zrl4AiJKKTsA55z3PgMO0HUhhBij9x4RicgY4314jB+JMWqtAYDIElEGXBhjUmHvPREJIeq6FkIgohlJFYkIEa21iKi1HmUBT2QpZV3XbduqB7SUEhH7I0T0MHuQuQCAYRhSb4g4DINSSko5XXVqPsZoR1KVTEkJAM1+by2FENIhUyNJSOE9juAgc8YBQGvd39/7UU7XSycopdq2ZYw1TSOl6vs+zac9GTDOWYvGeOe8c5M8JaSPGGPobzKu+653xkefnoqeYo+crFBWfXijvr7F7++6j6+76/d4Uv4fZO3tl/3Np+rms/7xDX/enifL3tkx0jHegHQGGTAGggNnqHU4Cew/cgcdF0JrPX2SM2TG2PSZzpX/APTWoyZmWN09AAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
-  &gt;&lt;/span&gt;
-  &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;Snipaste 2021 11 24 11 03 45&quot;
-        title=&quot;Snipaste 2021 11 24 11 03 45&quot;
-        src=&quot;/docs/static/ad80a2c1626c45df67895b11d2054124/f058b/Snipaste_2021-11-24_11-03-45.png&quot;
-        srcset=&quot;/docs/static/ad80a2c1626c45df67895b11d2054124/c26ae/Snipaste_2021-11-24_11-03-45.png 158w,
-/docs/static/ad80a2c1626c45df67895b11d2054124/6bdcf/Snipaste_2021-11-24_11-03-45.png 315w,
-/docs/static/ad80a2c1626c45df67895b11d2054124/f058b/Snipaste_2021-11-24_11-03-45.png 630w,
-/docs/static/ad80a2c1626c45df67895b11d2054124/40601/Snipaste_2021-11-24_11-03-45.png 945w,
-/docs/static/ad80a2c1626c45df67895b11d2054124/e548f/Snipaste_2021-11-24_11-03-45.png 975w&quot;
-        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
-        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
-        loading=&quot;lazy&quot;
-      /&gt;
-  &lt;/a&gt;
-    &lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;2.点击 Manage Installed Languages ，会提示英文语言包不完整，点击 Remind Me Later 。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;Snipaste_2021-11-24_11-03-45.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;2.点击 Manage Installed Languages，会提示英文语言包不完整，点击 Remind Me Later。&lt;/p&gt;
 &lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 580px; &quot;
@@ -677,7 +711,7 @@
       /&gt;
   &lt;/a&gt;
     &lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;4.将 Language for menus and windows 中的&lt;code class=&quot;language-text&quot;&gt;汉语（中国）&lt;/code&gt;拖动到最上方，然后点击 Apply System-Wide 。&lt;/p&gt;
+&lt;p&gt;4.将 Language for menus and windows 中的&lt;code class=&quot;language-text&quot;&gt;汉语（中国）&lt;/code&gt;拖动到最上方，然后点击 Apply System-Wide。&lt;/p&gt;
 &lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 515px; &quot;
@@ -707,7 +741,7 @@
       /&gt;
   &lt;/a&gt;
     &lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;5.选择 Regional Formats ，调整为&lt;code class=&quot;language-text&quot;&gt;汉语（中国）&lt;/code&gt;，点击 Apply System-wide 。完成后关闭窗口。&lt;/p&gt;
+&lt;p&gt;5.选择 Regional Formats，调整为&lt;code class=&quot;language-text&quot;&gt;汉语（中国）&lt;/code&gt;，点击 Apply System-wide。完成后关闭窗口。&lt;/p&gt;
 &lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 515px; &quot;
@@ -768,7 +802,7 @@
       /&gt;
   &lt;/a&gt;
     &lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;7.再次进入设置，选择左侧的日期和时间，将时区更改为 &lt;code class=&quot;language-text&quot;&gt;UTC+08&lt;/code&gt; 。（直接在地图上选择位置）&lt;/p&gt;
+&lt;p&gt;7.再次进入设置，选择左侧的日期和时间，将时区更改为 &lt;code class=&quot;language-text&quot;&gt;UTC+08&lt;/code&gt; 。（直接在地图上点击上海即可）&lt;/p&gt;
 &lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
