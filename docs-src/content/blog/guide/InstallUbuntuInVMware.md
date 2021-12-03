@@ -13,6 +13,7 @@ tags: ["帮助文档"]
 1.下载 Ubuntu Desktop 20.04 LTS 的 ISO 镜像。
 
 ![](./images/QQ截图20211203215050.png)
+
 ![](./images/Snipaste_2021-12-03_17-03-38.png)
 
 2.打开 VMware Workstation，选择创建新的虚拟机。
