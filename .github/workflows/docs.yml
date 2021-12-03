@@ -38,12 +38,12 @@ jobs:
           cd ..
           cd ./docs-src
           npm install node-sass@latest
-          npm install
-          npm i -g gatsby-cli
-          gatsby build --prefix-paths
-          cp -r ./public ../docs-part
-          cd ..
-          cp -r ./docs-part ./build-part/docs
+          # npm install
+          #npm i -g gatsby-cli
+          #gatsby build --prefix-paths
+          #cp -r ./public ../docs-part
+          #cd ..
+          #cp -r ./docs-part ./build-part/docs
           # mkdir ./public
           # cp -r ./public ../page/docs
           # echo test, and deploy your project.
