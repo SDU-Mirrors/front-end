@@ -98,7 +98,7 @@ tags: ["帮助文档"]
 
 ![](./images/Snipaste_2021-11-24_11-03-19.png)
 
-![](Snipaste_2021-11-24_11-03-45.png)
+![](./images/Snipaste_2021-11-24_11-03-45.png)
 
 2.点击 Manage Installed Languages，会提示英文语言包不完整，点击 Remind Me Later。
 
