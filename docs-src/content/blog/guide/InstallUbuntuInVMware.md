@@ -6,8 +6,6 @@ tags: ["帮助文档"]
 ---
 
 
-# VMware安装Ubuntu20.04教程
-
 ### 安装 Ubuntu
 
 1.下载 Ubuntu Desktop 20.04 LTS 的 ISO 镜像。
