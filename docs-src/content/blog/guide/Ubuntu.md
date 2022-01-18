@@ -23,7 +23,6 @@ Ubuntu 18.04 LTS (bionic) 用户请将 `/etc/apt/sources.list` 文件改为以�
     deb http://mirrors.sdu.edu.cn/ubuntu/ bionic-security main restricted universe multiverse
     deb http://mirrors.sdu.edu.cn/ubuntu/ bionic-updates main restricted universe multiverse
 
-支持的指令集：amd64、i386。
 
 ## Ubuntu 16.04 LTS
 
@@ -33,7 +32,6 @@ Ubuntu 16.04 LTS (xenial) 用户请将 `/etc/apt/sources.list` 文件改为以�
     deb http://mirrors.sdu.edu.cn/ubuntu/ xenial-security main restricted universe multiverse
     deb http://mirrors.sdu.edu.cn/ubuntu/ xenial-updates main restricted universe multiverse
 
-支持的指令集：amd64、i386。
 
 ## 强迫症选项
 
