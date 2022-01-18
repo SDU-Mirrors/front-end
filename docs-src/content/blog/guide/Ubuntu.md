@@ -4,13 +4,7 @@ date: "2019-04-19T22:12:03.284Z"
 description: ""
 tags: ["帮助文档"]
 ---
-受镜像站硬盘容量限制，只对部分内容进行了同步。
 
-- 支持的版本：focal、bionic 和 xenial。
-
-- 支持的指令集：amd64、i386。
-
-- 仅二进制包，不包含源码。
 
 ## Ubuntu 20.04 LTS
 
@@ -20,7 +14,6 @@ Ubuntu 20.04 LTS (focal) 用户请将 `/etc/apt/sources.list` 文件改为以下
     deb http://mirrors.sdu.edu.cn/ubuntu/ focal-security main restricted universe multiverse
     deb http://mirrors.sdu.edu.cn/ubuntu/ focal-updates main restricted universe multiverse
 
-支持的指令集：amd64、i386。
 
 ## Ubuntu 18.04 LTS
 
