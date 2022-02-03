@@ -1,6 +1,6 @@
-slug ��value ��ǰ׺ģʽ��û�и���
-��·���ǶԵ�
+slug 的value 在前缀模式下没有更改
+但路径是对的
 
-��ʱ��������ҳ���в���·����ʱ�����ƫ�Ƶ�ַ
+暂时的做法是页面中插入路径的时候加入偏移地址
 
 gatsby build --prefix-paths
