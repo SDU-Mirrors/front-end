@@ -26,11 +26,11 @@ export default class Right extends Component {
             fetching_slots: true
         });
         axios({
-            url: "/static/isoLinks.json",
+            url: "/iso-links.json",
             method: "get"
         }).then(response => {
             const isoLinks = response.data;
-            console.log("in fetch_iso_links", isoLinks);
+            // console.log("in fetch_iso_links", isoLinks);
             this.setState({
                 isoLinks: isoLinks
             });
@@ -49,7 +49,7 @@ export default class Right extends Component {
             method: "get"
         }).then(response => {
             const config = response.data;
-            console.log("in fetch_config", config);
+            // console.log("in fetch_config", config);
             this.setState({
                 config: config
             });

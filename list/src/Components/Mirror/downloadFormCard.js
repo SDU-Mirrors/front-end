@@ -67,7 +67,7 @@ export default class DownloadFormCard extends Component {
             <div>
                 <h2 style={this.myStyle.header}><Icon component={DownloadedSVG}/> 下载链接</h2>
                 {/*<Title style={this.myStyle.header}><Icon component={DownloadedSVG}/> 下载链接</Title>*/}
-                <p style={this.myStyle.text}>常用 Linux 发行版 iso 文件下载</p>
+                <p style={this.myStyle.text}>常用 Linux 发行版 ISO 文件下载</p>
                 <Button
                     type="default"
                     // icon={<Icon component={DownloadedSVG}/>}
@@ -107,6 +107,7 @@ export default class DownloadFormCard extends Component {
                             </Row>
                         </Form.Item>
                     </Form>
+                    <p>ISO 数据通过 <a href="https://github.com/tuna/mirror-web" rel="external nofollow">tuna/mirror-web</a> 中的 geninfo 程序生成。</p>
                 </Modal>
             </div>
         );
