@@ -62,7 +62,7 @@ export default class DownloadFormCard extends Component {
     };
 
     render() {
-        console.log(this.state.downloadFormVisible)
+        // console.log(this.state.downloadFormVisible)
         return (
             <div>
                 <h2 style={this.myStyle.header}><Icon component={DownloadedSVG}/> 下载链接</h2>
