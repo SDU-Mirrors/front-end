@@ -1,0 +1,9 @@
+{
+  "main.js": "render-page.js",
+  "render-page.js.map": "render-page.js.map",
+  "static/logo1.png": "static/logo1-04f6b19bc0e8db31286da6a83d5e9f71.png",
+  "static/logo_white.png": "static/logo_white-18470ff0e98901779b1732ae7e5a4de4.png",
+  "static/oops.jpg": "static/oops-fb8bc6d5e6817255fe6b071c06ac6e23.jpg",
+  "static/oops_logo.png": "static/oops_logo-b71c541185a4f8028e993d8733966514.png",
+  "static/sna.jpg": "static/sna-ac7b5655a2d2fd87e6ab8c724cc30249.jpg"
+}
