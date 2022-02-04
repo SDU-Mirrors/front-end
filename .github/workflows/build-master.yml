@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: Build
+name: build-master
 
 # Controls when the workflow will run
 on:
@@ -66,4 +66,6 @@ jobs:
           # 必选，Gitee公钥对应的私钥，https://gitee.com/profile/sshkeys
           dst_key: ${{ secrets.GITEE_PRIVATE_KEY }}
           # 必选，Gitee对应的用于创建仓库的token，https://gitee.com/profile/personal_access_tokens
-          dst_token:  ${{ secrets.GITEE_TOKEN }}
+          dst_token: ${{ secrets.GITEE_TOKEN }}
+          # 只同步指定仓库
+          white_list: front-end
