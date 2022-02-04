@@ -2,7 +2,8 @@ name: sync
 on:
   workflow_dispatch:
   push:
-
+  schedule:
+    - cron: "0 0 * * *" # at the end of every day
 jobs:
   sync-gitee:
     runs-on: ubuntu-latest
