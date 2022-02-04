@@ -47,7 +47,7 @@ export default class DownloadFormCard extends Component {
     handleDownloadFormCancel = () => {
         this.setState({downloadFormVisible: false});
         this.forceUpdate()
-        console.log("in hanleCancel")
+        console.log("in handleCancel")
     };
 
     /**
