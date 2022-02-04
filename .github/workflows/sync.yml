@@ -6,6 +6,7 @@ on:
 jobs:
   sync-gitee:
     runs-on: ubuntu-latest
+    timeout-minutes: 10
     steps:
       - name: sync
         uses: Yikun/hub-mirror-action@master
