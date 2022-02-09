@@ -38,19 +38,19 @@ tags: ["帮助文档"]
 #### 下载
 - 校内：[https://ftp.oops-sdu.cn/mirrors/windows-iso/Consumer/](https://ftp.oops-sdu.cn/mirrors/windows-iso/Consumer/)
 
-- 微软官方下载：使用任意设备打开 [下载 Windows 11](https://www.microsoft.com/zh-cn/software-download/windows11/)页面，或使用**除 Windows 以外的**设备打开 [下载 Windows 10 光盘映像（ISO 文件）](https://www.microsoft.com/zh-cn/software-download/windows10ISO/) 页面，以便下载 ISO 文件。如不需要 ISO 文件，也可使用 **Windows** 设备打开 [下载 Windows 10 光盘映像（ISO 文件）](https://www.microsoft.com/zh-cn/software-download/windows10ISO/) 页面，以便下载更友好的安装工具。请在“版本选择”中选择 “Windows 11 (multi-edition ISO)”“Windows 10 (multi-edition ISO)”。
+- 微软官方下载：使用任意设备打开 [下载 Windows 11](https://www.microsoft.com/zh-cn/software-download/windows11/) 页面，或使用**除 Windows 以外的**设备打开 [下载 Windows 10 光盘映像（ISO 文件）](https://www.microsoft.com/zh-cn/software-download/windows10ISO/) 页面，以便下载 ISO 文件。如不需要 ISO 文件，也可使用 **Windows** 设备打开 [下载 Windows 10 光盘映像（ISO 文件）](https://www.microsoft.com/zh-cn/software-download/windows10ISO/) 页面，以便下载更友好的安装工具。请在“版本选择”中选择 “Windows 11 (multi-edition ISO)”“Windows 10 (multi-edition ISO)”。
 
-### Windows 10 China Get Genuine
+### Windows 10 / 11 China Get Genuine
 
 如果您的电脑在中国大陆销售，且由 OEM 预装了正版的 Windows 10，请选择此版本，无需输入序列号，联网即可识别为正版。
 
 #### 包含的版本
-- Windows 10 家庭中文版 (OEM 版)
+- Windows 10 / 11 家庭中文版 (OEM 版)
 
 #### 下载
 - 校内：[https://ftp.oops-sdu.cn/mirrors/windows-iso/China/](https://ftp.oops-sdu.cn/mirrors/windows-iso/China/)
 
-- 微软官方下载：使用任意设备打开 [下载 Windows 11](https://www.microsoft.com/zh-cn/software-download/windows11/)页面，或使用**除 Windows 以外的**设备打开 [下载 Windows 10 光盘映像（ISO 文件）](https://www.microsoft.com/zh-cn/software-download/windows10ISO/) 页面，以便下载 ISO 文件。如不需要 ISO 文件，也可使用 **Windows** 设备打开 [下载 Windows 10 光盘映像（ISO 文件）](https://www.microsoft.com/zh-cn/software-download/windows10ISO/) 页面，以便下载更友好的安装工具。请在“版本选择”中选择 “Windows 11 家庭版 (仅限中国)”“Windows 10 家庭版 (仅限中国)”。
+- 微软官方下载：使用任意设备打开 [下载 Windows 11](https://www.microsoft.com/zh-cn/software-download/windows11/) 页面，或使用**除 Windows 以外的**设备打开 [下载 Windows 10 光盘映像（ISO 文件）](https://www.microsoft.com/zh-cn/software-download/windows10ISO/) 页面，以便下载 ISO 文件。如不需要 ISO 文件，也可使用 **Windows** 设备打开 [下载 Windows 10 光盘映像（ISO 文件）](https://www.microsoft.com/zh-cn/software-download/windows10ISO/) 页面，以便下载更友好的安装工具。请在“版本选择”中选择 “Windows 11 家庭版 (仅限中国)”“Windows 10 家庭版 (仅限中国)”。
 
 
 ## Windows 10 长期服务分支
