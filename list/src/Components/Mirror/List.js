@@ -43,13 +43,13 @@ function createData(name, display_name, is_limited_image, sync_method, url, help
     }
 
     if (is_limited_image == '1') {
-        Limited = <a class="Attribute Attribute-LightOrange default-cursor">limited</a>;
+        Limited = <a class="Attribute Attribute-LightPurple default-cursor" title="只对部分内容进行了同步">limited</a>;
     } else {
         Limited = null;
     }
 
     if (sync_method != null) {
-        Sync = <a class="Attribute Attribute-LightGrey default-cursor">{sync_method}</a>;
+        Sync = <a class="Attribute Attribute-LightRed default-cursor" title="同步方式">{sync_method}</a>;
     } else {
         Sync = null;
     }

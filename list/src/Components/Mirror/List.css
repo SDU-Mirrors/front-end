@@ -19,12 +19,12 @@
     background-color: #4b5bc457;
 }
 
-.Attribute-LightOrange {
-    background-color: #c4944b88;
+.Attribute-LightPurple {
+    background-color: hsla(306.8, 82.8%, 25.1%, 0.5);
 }
 
-.Attribute-LightGrey {
-    background-color: #c0c0c080;
+.Attribute-LightRed {
+    background-color: hsla(0, 93.2%, 40.2%, 0.5);
 }
 
 a.default-cursor {
