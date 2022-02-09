@@ -32,32 +32,24 @@ function formatNumber(num) {
     return (num + "").toLocaleString('en-US');
 }
 
-function help_url_content(help_url) {
-    if (help_url != '' && help_url != null) {
-        return <a href={help_url} className="Help">HELP</a>
-    } else {
-        return null
-    }
-}
-
 //创建表格数据
 function createData(name, display_name, is_limited_image, sync_method, url, help_url, size, last_timestamp, status) {
     let Name, Help, Limited, Sync;
     Name = <a href={url}>{name}</a>;
     if (help_url != '' && help_url != null) {
-        Help = <a href={help_url} class="Help">HELP</a>;
+        Help = <div href={help_url} class="Attribute Attribute-Blue">HELP</div>;
     } else {
         Help = null;
     }
 
     if (is_limited_image == '1') {
-        Limited = <a class="Help">limited</a>;
+        Limited = <div class="Attribute Attribute-LightOrange">limited</div>;
     } else {
         Limited = null;
     }
 
     if (sync_method != null) {
-        Sync = <a class="Help">{sync_method}</a>;
+        Sync = <div class="Attribute Attribute-LightGrey">{sync_method}</div>;
     } else {
         Sync = null;
     }
