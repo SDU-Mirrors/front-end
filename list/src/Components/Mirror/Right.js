@@ -71,6 +71,7 @@ export default class Right extends Component {
                     {/*        <AnnouncementIcon color="secondary"/>新闻公告：*/}
                     {/*    </Typography>*/}
                     {/*</div>*/}
+
                     <div className="side-card">
                         <DownloadFormCard isoLinks={this.state.isoLinks}/>
                     </div>

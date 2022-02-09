@@ -32,24 +32,43 @@ function formatNumber(num) {
     return (num + "").toLocaleString('en-US');
 }
 
-//创建表格数据
-function createData(name, url, help_url, size, last_timestamp, status) {
-    let Name;
+function help_url_content(help_url) {
     if (help_url != '' && help_url != null) {
-        Name =
-            <div>
-                <a href={url}>{name}</a>
-                <a href={help_url} class="Help">HELP</a>
-            </div>;
+        return <a href={help_url} className="Help">HELP</a>
     } else {
-        Name = <a href={url}>{name}</a>;
+        return null
     }
+}
+
+//创建表格数据
+function createData(name, display_name, is_limited_image, sync_method, url, help_url, size, last_timestamp, status) {
+    let Name, Help, Limited, Sync;
+    Name = <a href={url}>{name}</a>;
+    if (help_url != '' && help_url != null) {
+        Help = <a href={help_url} class="Help">HELP</a>;
+    } else {
+        Help = null;
+    }
+
+    if (is_limited_image == '1') {
+        Limited = <a class="Help">limited</a>;
+    } else {
+        Limited = null;
+    }
+
+    if (sync_method != null) {
+        Sync = <a class="Help">{sync_method}</a>;
+    } else {
+        Sync = null;
+    }
+    Name = <div>{Name}{Help}{Limited}{Sync}</div>;
     let update_timestamp = timeTransfer(last_timestamp);
     let Size = null;
     if (size != 0) {
         Size = formatNumber(size) + ' MB';
     }
-    return {Name, update_timestamp, Size, status};
+
+    return {Name, display_name, update_timestamp, Size, status};
 }
 
 
@@ -117,7 +136,8 @@ export default class List extends Component {
             //     mirrorsList[key]['help_url'] = '/docs/guide/' + mirrorsList[key]['name']
             // }
             if (tmpName.indexOf(search_value) >= 0 && mirrorsList[key]['url'] != null && mirrorsList[key]['url'] != '') {
-                rows.push(createData(mirrorsList[key]['name'], mirrorsList[key]['url'], mirrorsList[key]['help_url'],
+                rows.push(createData(mirrorsList[key]['name'], mirrorsList[key]['display_name'], mirrorsList[key]['is_limited_image'],
+                    mirrorsList[key]['sync_method'], mirrorsList[key]['url'], mirrorsList[key]['help_url'],
                     mirrorsList[key]['size'], mirrorsList[key]['last_timestamp'], mirrorsList[key]['status']));
             }
             //console.log(mirrorsList[key]['name'])
@@ -139,6 +159,7 @@ export default class List extends Component {
                     <TableHead>
                         <TableRow>
                             <TableCell>镜像名称</TableCell>
+                            <TableCell>友好名称</TableCell>
                             <TableCell align={"right"}>大小</TableCell>
                             <TableCell align={"right"}>最近同步时间</TableCell>
                             {/*<TableCell>同步状态</TableCell>*/}
@@ -148,6 +169,7 @@ export default class List extends Component {
                         {rows.map((row) => (
                             <TableRow hover role="checkbox" key={row.id}>
                                 <TableCell>{row.Name}</TableCell>
+                                <TableCell>{row.display_name}</TableCell>
                                 <TableCell align={"right"}>{row.Size}</TableCell>
                                 <TableCell align={"right"}>{row.update_timestamp}</TableCell>
                                 {/*<TableCell>{row.status}</TableCell>*/}
