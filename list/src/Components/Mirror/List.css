@@ -11,6 +11,10 @@
     margin-left: .5em;
 }
 
+.TextUppercase {
+    text-transform:uppercase
+}
+
 .Attribute-Blue {
     background-color: #4b5cc4;
 }
