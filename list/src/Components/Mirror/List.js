@@ -37,19 +37,19 @@ function createData(name, display_name, is_limited_image, sync_method, url, help
     let Name, Help, Limited, Sync;
     Name = <a href={url}>{name}</a>;
     if (help_url != '' && help_url != null) {
-        Help = <div href={help_url} class="Attribute Attribute-Blue">HELP</div>;
+        Help = <a href={help_url} class="Attribute Attribute-Blue">HELP</a>;
     } else {
         Help = null;
     }
 
     if (is_limited_image == '1') {
-        Limited = <div class="Attribute Attribute-LightOrange">limited</div>;
+        Limited = <a class="Attribute Attribute-LightOrange default-cursor">limited</a>;
     } else {
         Limited = null;
     }
 
     if (sync_method != null) {
-        Sync = <div class="Attribute Attribute-LightGrey">{sync_method}</div>;
+        Sync = <a class="Attribute Attribute-LightGrey default-cursor">{sync_method}</a>;
     } else {
         Sync = null;
     }

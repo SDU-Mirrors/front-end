@@ -20,11 +20,15 @@
 }
 
 .Attribute-LightOrange {
-    background-color: #c4944b57;
+    background-color: #c4944b88;
 }
 
 .Attribute-LightGrey {
-    background-color: #c0c0c057;
+    background-color: #c0c0c080;
+}
+
+a.default-cursor {
+    cursor: default;
 }
 
 /*.material-icons {*/
