@@ -5,9 +5,9 @@ import logo from '../source/logo_white.png'
 import sduMirror from '../source/SDUMirror.png'
 import oops from '../source/oops.jpg'
 import sna from '../source/sna.jpg'
+import './footer.css'
 const useStyles = makeStyles((theme) => ({
   footer: {
-    minWidth: '1050px',
     marginTop: 'auto',
     backgroundColor: 'RGBA(64,64,64,0.87)',
     color: 'RGBA(255,255,255,0.87)',
@@ -24,62 +24,74 @@ const useStyles = makeStyles((theme) => ({
   },
   footer_body: {
     display: 'flex',
-    justifyContent: 'center'
+    justifyContent: 'center',
+    margin: '0 30px'
   },
   footer_icp: {
     display: 'flex',
     justifyContent: 'center',
     paddingBottom: '14px',
-    paddingTop: '14px'
+    paddingTop: '14px',
+    flexWrap: 'wrap'
   },
   icp_text:{
     paddingLeft: '10px',
     paddingRight: '10px',
-    fontSize: '14px'
+    fontSize: '14px',
+    // flex: '1 1 200px'
   },
   image_div:{
+    justifyContent: 'center',
+    maxWidth: '40vw',
     display: 'flex',
-    justifyContent: 'center'
+    flexWrap: 'wrap',
+    marginLeft: '5px'
   },
   image:{
-    width: 'max(calc(9vw), 100px)',
+    display: 'flex',
     objectFit: 'contain', 
     // padding: theme.spacing(5, 0),
-    height:'auto',
-    display: 'inline-block'
+    width: 'max(calc(8.5vw + 1em), 100px)',
+    display: 'inline-block',
+    flex: '1 1 100px'
   },
   un_tag_image: {
     width: 'max(calc(9vw + 1em), 100px + 1em)',
     objectFit: 'contain', 
     // padding: theme.spacing(5, 0),
     height:'auto',
-    display: 'inline-block'
+    display: 'inline-block',
+    flex: '1 1 80px',
+    display: 'flex'
   },
   image_body: {
     display: 'block',
-    paddingLeft: '30px'
+    paddingLeft: '15px',
+    paddingRight: '15px',
+    // width: '100%'
   },
   image_label: {
     display: 'block',
     textAlign: 'center',
-    fontSize: '5px'
+    fontSize: 'calc(0.5em + 0.5vw)'
   },
   contact_us_div: {
     paddingLeft: '30px'
   },
   discription_body:{
-    width: 'auto'
+    width: 'auto',
+    flex: '1 1 400px',
   },
   discription: {
-    height: 'calc(9vw + 1em)',
     display: 'flex',
     flexDirection: 'column',
     justifyContent: 'space-between',
-    paddingTop: '40.8px'
+    paddingTop: '30px',
+    paddingBottom: '10px'
   },
   discription_p:{
     marginBottom: '0px',
-    fontSize: "16.1px",
+    fontSize: "calc(1em + 0.2vw)",
     fontFamily: '"Roboto", "Helvetica", "Arial", sans-serif',
     textIndent: '2em'
   },
@@ -148,21 +160,21 @@ export default function Footer() {
             {/* <br></br>
             <br></br> */}
             <div className={classes.discription}>
-              <div className={classes.discription_p}>山东大学镜像站是由山东大学（青岛）学生Oops计算机社团在山东大学（青岛）信息化工作办公室指导下立项，由山东大学（青岛）网管会镜像站学生运营团队运营的开源镜像站平台。</div>
+              <div className={classes.discription_p}>山东大学镜像站是由山东大学（青岛）学生 Oops 计算机社团在山东大学（青岛）信息化工作办公室指导下立项，由山东大学（青岛）网管会镜像站学生运营团队运营的开源镜像站平台。</div>
               <div className={classes.discription_p}>本镜像站为技术爱好者、工程师、科研人员等开源爱好者提供开源软件镜像服务，致力于打造以山东大学为中心的开源爱好者社区，提高山东大学影响力。</div>
             </div>
           </div>
 
-          <div >
+          <div id="contact" style={{maxWidth: '50vw', flex: '2 2 500px'}}>
             <div className={classes.contact_us_div}>
               <div className={classes.h4_p}>联系我们</div>
             </div>
             
             <div className={classes.image_div}>
               <TagedImage src={sduMirror} label={"镜像站开放群"}></TagedImage>
-              <TagedImage src={sna} label={"山东大学（青岛）网管会"}></TagedImage>
+              <TagedImage src={sna} label={"山大青岛网管会"}></TagedImage>
               <TagedImage src={oops} label={"Oops计算机社团"}></TagedImage>
-              <UntagedImage src={logo} label={""}></UntagedImage>
+              {/* <UntagedImage src={logo} label={""}></UntagedImage> */}
             </div>
           </div>
           {/* footer_body */}
