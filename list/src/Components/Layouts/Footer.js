@@ -53,7 +53,8 @@ const useStyles = makeStyles((theme) => ({
     // padding: theme.spacing(5, 0),
     width: 'max(calc(8.5vw + 1em), 100px)',
     display: 'inline-block',
-    flex: '1 1 100px'
+    flex: '1 1 100px',
+    maxWidth: '180px'
   },
   un_tag_image: {
     width: 'max(calc(9vw + 1em), 100px + 1em)',
@@ -62,7 +63,8 @@ const useStyles = makeStyles((theme) => ({
     height:'auto',
     display: 'inline-block',
     flex: '1 1 80px',
-    display: 'flex'
+    display: 'flex',
+    maxWidth: '180px'
   },
   image_body: {
     display: 'block',

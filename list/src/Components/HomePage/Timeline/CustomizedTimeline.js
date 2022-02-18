@@ -197,7 +197,7 @@ export default function CustomizedTimeline() {
             <TimelineItem>
                 <TimelineOppositeContent>
                     <Typography variant="body2" color="textSecondary">
-                        2021年10-11月
+                        2021年10—11月
                     </Typography>
                 </TimelineOppositeContent>
                 <TimelineSeparator>
