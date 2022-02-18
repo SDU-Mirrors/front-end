@@ -50,3 +50,21 @@ jobs:
           FOLDER: ./build-part # The directory where your assets are generated
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # GitHub will automatically add this - you don't need to bother getting a token
           MESSAGE: "Build: ({sha}) {msg}" # The commit message
+  sync-gitee:
+    needs: build
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: sync
+        uses: Yikun/hub-mirror-action@master
+        with:
+          # 必选，需要同步的Github用户（源）
+          src: github/SDU-Mirrors
+          # 必选，需要同步到的Gitee的用户（目的）
+          dst: gitee/mirrors-sdu
+          # 必选，Gitee公钥对应的私钥，https://gitee.com/profile/sshkeys
+          dst_key: ${{ secrets.GITEE_PRIVATE_KEY }}
+          # 必选，Gitee对应的用于创建仓库的token，https://gitee.com/profile/personal_access_tokens
+          dst_token: ${{ secrets.GITEE_TOKEN }}
+          # 只同步指定仓库
+          static_list: front-end
