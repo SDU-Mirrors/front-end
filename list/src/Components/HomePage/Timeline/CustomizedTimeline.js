@@ -193,7 +193,7 @@ export default function CustomizedTimeline() {
                     </Paper>
                 </TimelineContent>
             </TimelineItem>
-`
+
             <TimelineItem>
                 <TimelineOppositeContent>
                     <Typography variant="body2" color="textSecondary">
