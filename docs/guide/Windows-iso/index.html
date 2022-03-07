@@ -147,6 +147,10 @@
 <div class="gatsby-highlight" data-language="shell"><pre class="language-shell"><code class="language-shell">reg <span class="token function">add</span> <span class="token string">"HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Power"</span> /v HiberbootEnabled /t REG_DWORD /d <span class="token number">0</span> /f</code></pre></div>
 </li>
 <li>Windows 自带杀毒软件，名为 Windows Defender，因此无需因“需要装一个杀毒软件”的焦虑而选择某些广告较多或过于流氓的杀毒软件。</li>
+<li>
+<p>Windows 默认开启<a href="https://docs.microsoft.com/en-us/troubleshoot/windows-client/networking/lots-disk-io-writes-wfpdiag-etl-log">端口扫描防护筛选器的日志写入功能</a>，该功能会对硬盘产生相当大规模的无意义写入（只保留最近 1 MB 左右的数据，意味着绝大部分日志数据被写入后不久即被覆盖），极大影响固态硬盘的使用寿命，其具体写入量与计算机的网络活动规模有关。微软表示，这是设计使然，因此不会对这种行为做出修复。因此，强烈推荐以管理员权限执行以下命令以禁用 WFP 日志记录。此命令仅仅禁止 WFP 日志写入硬盘，并不会对端口扫描防护筛选器的正常工作产生影响。</p>
+<div class="gatsby-highlight" data-language="shell"><pre class="language-shell"><code class="language-shell">netsh wfp <span class="token builtin class-name">set</span> options <span class="token assign-left variable">netevents</span><span class="token operator">=</span>off</code></pre></div>
+</li>
 </ol>
 <h3 id="4-有人说系统安装到-c-盘软件装-d-盘对吗" style="position:relative;"><a href="#4-%E6%9C%89%E4%BA%BA%E8%AF%B4%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E5%88%B0-c-%E7%9B%98%E8%BD%AF%E4%BB%B6%E8%A3%85-d-%E7%9B%98%E5%AF%B9%E5%90%97" aria-label="4 有人说系统安装到 c 盘软件装 d 盘对吗 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>4. 有人说系统安装到 C 盘，软件装 D 盘，对吗？</h3>
 <p>不正确，“系统安装到 C 盘，软件装 D 盘”是旧时代的优化策略，具有时代的局限性，不适用于现在。具体而言，机械硬盘是由圆形的盘片组成，角速度相同，故线速度外圈大于内圈，造成了不同区域访问速度不一致的情况。划分小容量 C 盘并将软件放到 D 盘，是为了将最快的部分留给操作系统，次快的部分留给应用程序。目前固态硬盘已经普及，这样的优化策略已经失效，不是正确的使用习惯，不应该提倡，更不应该作为“考试题目”“经验之谈”误导更多的人。</p>
