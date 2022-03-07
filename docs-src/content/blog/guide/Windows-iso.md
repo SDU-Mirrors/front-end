@@ -102,6 +102,11 @@ reg add "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Power" /v Hiberbo
 ```
 3. Windows 自带杀毒软件，名为 Windows Defender，因此无需因“需要装一个杀毒软件”的焦虑而选择某些广告较多或过于流氓的杀毒软件。
 
+4. Windows 默认开启[端口扫描防护筛选器的日志写入功能](https://docs.microsoft.com/en-us/troubleshoot/windows-client/networking/lots-disk-io-writes-wfpdiag-etl-log)，该功能会对硬盘产生相当大规模的无意义写入（只保留最近 1 MB 左右的数据，意味着绝大部分日志数据被写入后不久即被覆盖），极大影响固态硬盘的使用寿命，其具体写入量与计算机的网络活动规模有关。微软表示，这是设计使然，因此不会对这种行为做出修复。因此，强烈推荐以管理员权限执行以下命令以禁用 WFP 日志记录。此命令仅仅禁止 WFP 日志写入硬盘，并不会对端口扫描防护筛选器的正常工作产生影响。
+```shell
+netsh wfp set options netevents=off
+```
+
 ### 4. 有人说系统安装到 C 盘，软件装 D 盘，对吗？
 不正确，“系统安装到 C 盘，软件装 D 盘”是旧时代的优化策略，具有时代的局限性，不适用于现在。具体而言，机械硬盘是由圆形的盘片组成，角速度相同，故线速度外圈大于内圈，造成了不同区域访问速度不一致的情况。划分小容量 C 盘并将软件放到 D 盘，是为了将最快的部分留给操作系统，次快的部分留给应用程序。目前固态硬盘已经普及，这样的优化策略已经失效，不是正确的使用习惯，不应该提倡，更不应该作为“考试题目”“经验之谈”误导更多的人。
 
