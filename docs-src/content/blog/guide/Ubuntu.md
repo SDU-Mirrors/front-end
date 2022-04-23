@@ -5,6 +5,14 @@ description: ""
 tags: ["帮助文档"]
 ---
 
+## Ubuntu 22.04 LTS
+
+Ubuntu 22.04 LTS (jammy) 用户请将 `/etc/apt/sources.list` 文件改为以下内容：
+
+    deb http://mirrors.sdu.edu.cn/ubuntu/ jammy main restricted universe multiverse
+    deb http://mirrors.sdu.edu.cn/ubuntu/ jammy-security main restricted universe multiverse
+    deb http://mirrors.sdu.edu.cn/ubuntu/ jammy-updates main restricted universe multiverse
+
 
 ## Ubuntu 20.04 LTS
 
