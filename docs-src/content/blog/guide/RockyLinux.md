@@ -14,7 +14,7 @@ tags: ["帮助文档"]
 sed -e 's|^mirrorlist=|#mirrorlist=|g' \
     -e 's|^#baseurl=http://dl.rockylinux.org/$contentdir|baseurl=https://mirrors.sdu.edu.cn/rocky|g' \
     -i.bak \
-    /etc/yum.repos.d/[Rr]ocky-*.repo
+    /etc/yum.repos.d/[Rr]ocky*.repo
 ```
 
 注，若之前已经将镜像源替换为了其他镜像站，现在想要切换到山东大学镜像站，请参考 `/etc/yum.repos.d/` 中的 repo 文件，将上述命令中的 `#baseurl` 部分替换为 `baseurl`，再将 `http://dl.rockylinux.org/$contentdir` 部分替换为对应镜像站的地址。
