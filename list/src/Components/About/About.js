@@ -23,6 +23,8 @@ export default function About() {
                 {render_all(group2, "镜像站第二届运营成员·技术组")}
                 <div className={classes.devider}></div>
                 {render_all(group3, "镜像站第二届运营成员·宣传组")}
+                <div className={classes.devider}></div>
+                {render_all(group4, "镜像站第三届运营成员")}
             </Container>
 
         </React.Fragment>
@@ -144,6 +146,45 @@ const group3 = [
         short: "gzh",
         position: "视频策划",
         description: "泰山学堂",
+    },
+]
+
+const group4 = [
+    {
+        name: "齐划一",
+        short:"qhy",
+        position:"镜像站组组长",
+        description:"计算机科学与技术学院",
+    }, {
+        name:"刘绪波",
+        short:"lxb",
+        position:"前后端维护",
+        description:"计算机科学与技术学院",
+    }, {
+        name:"谢斌",
+        short:"xb",
+        position:"前后端维护",
+        description:"计算机科学与技术学院",
+    }, {
+        name:"张亦宁",
+        short:"zyn",
+        position:"前后端维护",
+        description:"计算机科学与技术学院",
+    }, {
+        name:"肖康",
+        short:"xk",
+        position:"前后端维护",
+        description:"网络空间安全学院",
+    }, {
+        name:"郑傲宇",
+        short:"zay",
+        position:"前后端维护",
+        description:"网络空间安全学院",
+    }, {
+        name:"邹晓宇",
+        short:"zxy",
+        position:"前后端维护",
+        description:"计算机科学与技术学院",
     },
 ]
 
