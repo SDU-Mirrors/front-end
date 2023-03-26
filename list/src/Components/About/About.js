@@ -154,7 +154,7 @@ const group4 = [
         name: "齐划一",
         short:"qhy",
         position:"镜像站组组长",
-        description:"泰山学堂",
+        description:"计算机科学与技术学院",
     }, {
         name:"刘绪波",
         short:"lxb",
@@ -166,15 +166,15 @@ const group4 = [
         position:"前后端维护",
         description:"计算机科学与技术学院",
     }, {
-        name:"肖康",
-        short:"xk",
-        position:"前后端维护",
-        description:"网络空间安全学院",
-    }, {
         name:"张亦宁",
         short:"zyn",
         position:"前后端维护",
         description:"计算机科学与技术学院",
+    }, {
+        name:"肖康",
+        short:"xk",
+        position:"前后端维护",
+        description:"网络空间安全学院",
     }, {
         name:"郑傲宇",
         short:"zay",
