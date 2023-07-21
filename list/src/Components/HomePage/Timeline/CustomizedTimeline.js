@@ -203,6 +203,7 @@ export default function CustomizedTimeline() {
                 <TimelineSeparator>
                     <TimelineDot style={{backgroundColor: "#FF9770"}}>
                     </TimelineDot>
+                    <TimelineConnector className={classes.connector}/>
                 </TimelineSeparator>
                 <TimelineContent>
                     <Paper elevation={3} className={classes.paper}>
@@ -222,6 +223,7 @@ export default function CustomizedTimeline() {
                 <TimelineSeparator>
                     <TimelineDot style={{backgroundColor: "#FFD670"}}>
                     </TimelineDot>
+                    <TimelineConnector className={classes.connector}/>
                 </TimelineSeparator>
                 <TimelineContent>
                     <Paper elevation={3} className={classes.paper}>
@@ -241,6 +243,7 @@ export default function CustomizedTimeline() {
                 <TimelineSeparator>
                     <TimelineDot style={{backgroundColor: "#9EB3C2"}}>
                     </TimelineDot>
+                    <TimelineConnector className={classes.connector}/>
                 </TimelineSeparator>
                 <TimelineContent>
                     <Paper elevation={3} className={classes.paper}>
