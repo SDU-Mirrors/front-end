@@ -24,7 +24,9 @@ export default function About() {
                 <div className={classes.devider}></div>
                 {render_all(group3, "镜像站第二届运营成员·宣传组")}
                 <div className={classes.devider}></div>
-                {render_all(group4, "镜像站第三届运营成员")}
+                {render_all(group4, "镜像站第三届运营成员·技术顾问")}
+                <div className={classes.devider}></div>
+                {render_all(group5, "镜像站第三届运营成员·开发组")}
             </Container>
 
         </React.Fragment>
@@ -151,40 +153,59 @@ const group3 = [
 
 const group4 = [
     {
+        name: "陈宇翔",
+        short: "cyx",
+        position: "技术顾问",
+        description: "中国科学院 计算技术研究所",
+    }, {
+        name: "崔晨",
+        short: "cc",
+        position: "技术顾问",
+        description: "香港大学",
+    }, {
+        name: "冉德龙",
+        short: "rdl",
+        position: "技术顾问",
+        description: "清华大学",
+    },
+]
+
+const group5 = [
+    {
         name: "齐划一",
-        short:"qhy",
-        position:"镜像站组组长",
-        description:"计算机科学与技术学院",
+        short: "qhy",
+        position: "镜像站组组长",
+        description: "计算机科学与技术学院",
     }, {
-        name:"刘绪波",
-        short:"lxb",
-        position:"前后端维护",
-        description:"计算机科学与技术学院",
+        name: "刘绪波",
+        short: "lxb",
+        position: "前后端维护",
+        description: "计算机科学与技术学院",
     }, {
-        name:"谢斌",
-        short:"xb",
-        position:"前后端维护",
-        description:"计算机科学与技术学院",
+        name: "谢斌",
+        short: "xb",
+        position: "前后端维护",
+        description: "计算机科学与技术学院",
     }, {
-        name:"张亦宁",
-        short:"zyn",
-        position:"前后端维护",
-        description:"计算机科学与技术学院",
+        name: "张亦宁",
+        short: "zyn",
+        position: "前后端维护",
+        description: "计算机科学与技术学院",
     }, {
-        name:"肖康",
-        short:"xk",
-        position:"前后端维护",
-        description:"网络空间安全学院",
+        name: "肖康",
+        short: "xk",
+        position: "前后端维护",
+        description: "网络空间安全学院",
     }, {
-        name:"郑傲宇",
-        short:"zay",
-        position:"前后端维护",
-        description:"网络空间安全学院",
+        name: "郑傲宇",
+        short: "zay",
+        position: "前后端维护",
+        description: "网络空间安全学院",
     }, {
-        name:"邹晓宇",
-        short:"zxy",
-        position:"前后端维护",
-        description:"计算机科学与技术学院",
+        name: "邹晓宇",
+        short: "zxy",
+        position: "前后端维护",
+        description: "计算机科学与技术学院",
     },
 ]
 

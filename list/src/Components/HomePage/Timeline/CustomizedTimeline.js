@@ -197,7 +197,7 @@ export default function CustomizedTimeline() {
             <TimelineItem>
                 <TimelineOppositeContent>
                     <Typography variant="body2" color="textSecondary">
-                        2021年10—11月
+                        2021年10月—11月
                     </Typography>
                 </TimelineOppositeContent>
                 <TimelineSeparator>
@@ -208,6 +208,63 @@ export default function CustomizedTimeline() {
                     <Paper elevation={3} className={classes.paper}>
                         <Typography variant="h6" component="h1">
                             山东大学（青岛）网管会公开课成功举办，其中关于镜像站基础知识部分的内容获同学们好评。
+                        </Typography>
+                    </Paper>
+                </TimelineContent>
+            </TimelineItem>
+
+            <TimelineItem>
+                <TimelineOppositeContent>
+                    <Typography variant="body2" color="textSecondary">
+                        2022年10月
+                    </Typography>
+                </TimelineOppositeContent>
+                <TimelineSeparator>
+                    <TimelineDot style={{backgroundColor: "#FFD670"}}>
+                    </TimelineDot>
+                </TimelineSeparator>
+                <TimelineContent>
+                    <Paper elevation={3} className={classes.paper}>
+                        <Typography variant="h6" component="h1">
+                            镜像站开始对多服务器方案的架构设计与硬件准备。
+                        </Typography>
+                    </Paper>
+                </TimelineContent>
+            </TimelineItem>
+
+            <TimelineItem>
+                <TimelineOppositeContent>
+                    <Typography variant="body2" color="textSecondary">
+                        2023年2月
+                    </Typography>
+                </TimelineOppositeContent>
+                <TimelineSeparator>
+                    <TimelineDot style={{backgroundColor: "#9EB3C2"}}>
+                    </TimelineDot>
+                </TimelineSeparator>
+                <TimelineContent>
+                    <Paper elevation={3} className={classes.paper}>
+                        <Typography variant="h6" component="h1">
+                            多服务器方案正式开始编写。
+                        </Typography>
+                    </Paper>
+                </TimelineContent>
+            </TimelineItem>
+
+            <TimelineItem>
+                <TimelineOppositeContent>
+                    <Typography variant="body2" color="textSecondary">
+                        2023年7月
+                    </Typography>
+                </TimelineOppositeContent>
+                <TimelineSeparator>
+                    <TimelineDot style={{backgroundColor: "#706DFF"}}>
+                    </TimelineDot>
+                </TimelineSeparator>
+                <TimelineContent>
+                    <Paper elevation={3} className={classes.paper}>
+                        <Typography variant="h6" component="h1">
+                            针对即将上线的五台服务器进行硬件维护。
                         </Typography>
                     </Paper>
                 </TimelineContent>
