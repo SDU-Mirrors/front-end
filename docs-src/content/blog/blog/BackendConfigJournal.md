@@ -277,7 +277,10 @@ firewall-cmd --zone=external --add-forward-port=port=443:proto=tcp:toport=443:to
 firewall-cmd --reload
 ```
 
-注意，因为 firewalld 服务已经开启，如果这里没有设置 `--add-masquerade`，systemd-networkd 中设置的 `IPMasquerade=yes` 无效。另外，不要搞混在哪里设置 masquerade。对于 firewalld，在 NAT 的出口设置 masquerade；对于 systemd-networkd，在 NAT 的入口设置 masquerade。
+注意，因为 firewalld 服务已经开启，如果这里没有设置 `--add-masquerade`，systemd-networkd 中设置的 `IPMasquerade=yes` 无效。
+另外，不要搞混在哪里设置 masquerade。
+对于 firewalld，在 NAT 的出口设置 masquerade，这部分 masquerade 用于实现端口转发；
+对于 systemd-networkd，在 NAT 的入口设置 masquerade，这部分 masquerade 用于让连接网桥的容器能够访问外部网络。
 
 ###### 配置内网
 
@@ -287,9 +290,12 @@ firewall-cmd --reload
 firewall-cmd --zone=internal --add-interface=lxc-bridge --permanent
 firewall-cmd --zone=internal --add-service=dhcp --permanent
 firewall-cmd --zone=internal --add-service=dns --permanent
+firewall-cmd --zone=internal --set-target=ACCEPT --permanent
 
 firewall-cmd --reload
 ```
+
+由于 `lxc-bridge` 的 NAT 是由 systemd-networkd 配置的而非 firewalld，这里将 `internal` 区域的默认行为改为了 `ACCEPT`，否则 firewalld 会拦截容器访问外部网络的网络流量。
 
 ###### 重要提示
 
