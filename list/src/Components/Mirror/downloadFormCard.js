@@ -67,7 +67,7 @@ export default class DownloadFormCard extends Component {
             <div>
                 <h2 style={this.myStyle.header}><Icon component={DownloadedSVG}/> 下载链接</h2>
                 {/*<Title style={this.myStyle.header}><Icon component={DownloadedSVG}/> 下载链接</Title>*/}
-                <p style={this.myStyle.text}>常用 Linux 发行版 ISO 文件下载</p>
+                <p style={this.myStyle.text}>常用 Linux 发行版 ISO 文件<br/>和应用工具安装包下载</p>
                 <Button
                     type="default"
                     // icon={<Icon component={DownloadedSVG}/>}
@@ -88,7 +88,7 @@ export default class DownloadFormCard extends Component {
                                 <Col span={18}>
                                     <Cascader
                                         expandTrigger="hover"
-                                        placeholder="请选择发行版"
+                                        placeholder="请选择发行版或应用工具"
                                         options={this.props.isoLinks}
                                         onChange={this.onDownloadLinkChange}
                                         style={this.myStyle.CascaderStyle}

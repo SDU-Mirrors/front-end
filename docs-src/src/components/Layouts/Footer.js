@@ -183,7 +183,7 @@ export default function Footer() {
         </div>
 
         <div className={classes.footer_icp}>
-          <div className={classes.icp_text}>© 2019-2022 山东大学镜像站</div>
+          <div className={classes.icp_text}>© 2019-2023 山东大学镜像站</div>
           <div className={classes.icp_text}><a href="https://beian.miit.gov.cn">鲁ICP备05001952号-1</a></div>
         </div>
         
