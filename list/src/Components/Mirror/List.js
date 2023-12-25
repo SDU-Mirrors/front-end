@@ -81,9 +81,8 @@ export default class List extends Component {
         this.setState({
             fetching_slots: true
         });
-        let domain = "//mirrors.sdu.edu.cn/"
         axios({
-            url: domain + "sync.json",
+            url: "sync.json",
             method: "get"
         }).then(response => {
             const mirrorsList = response.data;
